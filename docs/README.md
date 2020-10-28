@@ -23,16 +23,16 @@ An application-oriented unified storage layer for Golang.
 
 ### Widely services support
 
-- [azblob](./services/azblob/): [Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/)
-- [cos](./services/cos/): [Tencent Cloud Object Storage](https://cloud.tencent.com/product/cos)
-- [dropbox](./services/dropbox/): [Dropbox](https://www.dropbox.com)
-- [fs](./services/fs/): Local file system
-- [gcs](./services/gcs/): [Google Cloud Storage](https://cloud.google.com/storage/)
-- [kodo](./services/kodo/): [qiniu kodo](https://www.qiniu.com/products/kodo)
-- [oss](./services/oss/): [Aliyun Object Storage](https://www.aliyun.com/product/oss)
-- [qingstor](./services/qingstor/): [QingStor Object Storage](https://www.qingcloud.com/products/qingstor/)
-- [s3](./services/s3/): [Amazon S3](https://aws.amazon.com/s3/)
-- [uss](./services/uss/): [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
+- [azblob](./golang/services/azblob/): [Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/)
+- [cos](./golang/services/cos/): [Tencent Cloud Object Storage](https://cloud.tencent.com/product/cos)
+- [dropbox](./golang/services/dropbox/): [Dropbox](https://www.dropbox.com)
+- [fs](./golang/services/fs/): Local file system
+- [gcs](./golang/services/gcs/): [Google Cloud Storage](https://cloud.google.com/storage/)
+- [kodo](./golang/services/kodo/): [qiniu kodo](https://www.qiniu.com/products/kodo)
+- [oss](./golang/services/oss/): [Aliyun Object Storage](https://www.aliyun.com/product/oss)
+- [qingstor](./golang/services/qingstor/): [QingStor Object Storage](https://www.qingcloud.com/products/qingstor/)
+- [s3](./golang/services/s3/): [Amazon S3](https://aws.amazon.com/s3/)
+- [uss](./golang/services/uss/): [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
 
 ### Servicer operation support
 
@@ -85,7 +85,7 @@ Optional metadata
 - `content-md5`: md5 digest as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.15)
 - `content-type`: media type as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.17)
 - `etag`: entity tag as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.19)
-- `storage-class`: object's storage class as defined in [storage proposal](./docs/design/8-normalize-metadata-storage-class.md)
+- `storage-class`: object's storage class
 
 ## Quick Start
 
