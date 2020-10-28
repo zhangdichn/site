@@ -36,7 +36,7 @@ module.exports = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     routeBasePath: '/',
                     editUrl:
-                        'https://github.com/aos-dev/site/edit/master/docs/',
+                        'https://github.com/aos-dev/site/edit/master/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
