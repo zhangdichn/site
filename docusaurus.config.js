@@ -14,6 +14,9 @@ module.exports = {
             contextualSearch: true,
             searchParameters: {},
         },
+        gtag: {
+            trackingID: 'G-EKQWL4FN09',
+        },
         navbar: {
             title: 'aos',
             logo: {
