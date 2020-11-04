@@ -8,6 +8,12 @@ module.exports = {
     organizationName: 'aos-dev',
     projectName: 'site',
     themeConfig: {
+        algolia: {
+            apiKey: 'f4ddbe3ff0762522d5a9a6a75fe0c00c',
+            indexName: 'aos',
+            contextualSearch: true,
+            searchParameters: {},
+        },
         navbar: {
             title: 'aos',
             logo: {
