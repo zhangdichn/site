@@ -33,9 +33,13 @@ Caller:
 
 Read will read the file's data.
 
-Caller:
+Implementer:
 
 - MUST close reader while error happened or all data read.
+
+Caller:
+
+- MUST close input writer while error happened or all data written.
 
 ## Stat
 
@@ -45,6 +49,10 @@ Stat will stat a path to get info of an object.
 
 Write will write data into a file.
 
+Implementer:
+
+- MUST close writer while error happened or all data written.
+
 Caller:
 
-- MUST close reader while error happened or all data written.
+- MUST close input reader while error happened or all data read.
