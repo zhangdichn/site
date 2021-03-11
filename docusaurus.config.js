@@ -7,6 +7,18 @@ module.exports = {
     favicon: 'img/favicon.ico',
     organizationName: 'aos-dev',
     projectName: 'site',
+    i18n: {
+        defaultLocale: 'en_US',
+        locales: ['en_US', 'zh_Hans'],
+        localeConfigs: {
+            en_US: {
+                label: 'English',
+            },
+            zh_Hans: {
+                label: '简体中文',
+            },
+        },
+    },
     themeConfig: {
         algolia: {
             apiKey: 'f4ddbe3ff0762522d5a9a6a75fe0c00c',
@@ -25,8 +37,7 @@ module.exports = {
             },
             items: [
                 {
-                    href: 'https://github.com/aos-dev',
-                    label: 'GitHub',
+                    type: 'localeDropdown',
                     position: 'right',
                 }
             ],
