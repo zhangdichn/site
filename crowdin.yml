@@ -1,6 +1,6 @@
 files:
   - source: /docs/**/*
     translation: >-
-      /i18n/%locale_with_underscore%/docusaurus-plugin-content-docs/current/**/%original_file_name%
-  - source: /i18n/en_US/**/*
-    translation: /i18n/%locale_with_underscore%/**/%original_file_name%
+      /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+  - source: /i18n/en-US/**/*
+    translation: /i18n/%locale%/**/%original_file_name%
