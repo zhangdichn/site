@@ -8,13 +8,13 @@ module.exports = {
     organizationName: 'aos-dev',
     projectName: 'site',
     i18n: {
-        defaultLocale: 'en_US',
-        locales: ['en_US', 'zh_Hans'],
+        defaultLocale: 'en-US',
+        locales: ['en-US', 'zh-CN'],
         localeConfigs: {
-            en_US: {
+            'en-US': {
                 label: 'English',
             },
-            zh_Hans: {
+            'zh-CN': {
                 label: '简体中文',
             },
         },
@@ -36,10 +36,24 @@ module.exports = {
                 src: 'img/logo.svg',
             },
             items: [
+                {to: 'docs', label: 'Docs', position: 'left'},
+                {to: 'blog', label: 'Blog', position: 'left'},
                 {
                     type: 'localeDropdown',
                     position: 'right',
-                }
+                    dropdownItemsAfter: [
+                        {
+                            to: 'https://aos-dev.crowdin.com/site',
+                            label: 'Help Us Translate',
+                        },
+                    ],
+                },
+                {
+                    href: 'https://github.com/aos-dev',
+                    position: 'right',
+                    className: 'header-github-link',
+                    'aria-label': 'GitHub repository',
+                },
             ],
         },
         footer: {
@@ -54,9 +68,20 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    routeBasePath: '/',
                     editUrl:
                         'https://github.com/aos-dev/site/edit/master/',
+                },
+                blog: {
+                    path: 'blog',
+                    editUrl:
+                        'https://github.com/aos-dev/site/edit/master/',
+                    routeBasePath: 'blog',
+                    include: ['*.md', '*.mdx'],
+                    showReadingTime: true,
+                    feedOptions: {
+                        type: 'all',
+                        copyright: `Copyright © ${new Date().getFullYear()} aos-dev.`,
+                    },
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

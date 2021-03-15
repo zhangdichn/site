@@ -1,7 +1,0 @@
-## Create
-
-## Delete
-
-## Get
-
-## List
