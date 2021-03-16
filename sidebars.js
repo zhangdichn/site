@@ -2,35 +2,39 @@ module.exports = {
     docs: [
         {
             type: 'doc',
-            id: 'README',
+            id: 'index',
         },
         {
             type: 'category',
-            label: 'Golang',
+            label: 'go-storage',
             items: [
                 {
+                    type: 'doc',
+                    id: 'go-storage/index'
+                },
+                {
                     'Operations': [
-                        'golang/operations/README',
-                        'golang/operations/servicer',
-                        'golang/operations/storager',
-                        'golang/operations/prefix_lister',
-                        'golang/operations/prefix_segments_lister',
-                        'golang/operations/reacher',
-                        'golang/operations/segmenter',
-                        'golang/operations/statistician',
+                        'go-storage/operations/index',
+                        'go-storage/operations/servicer',
+                        'go-storage/operations/storager',
+                        'go-storage/operations/prefix_lister',
+                        'go-storage/operations/prefix_segments_lister',
+                        'go-storage/operations/reacher',
+                        'go-storage/operations/segmenter',
+                        'go-storage/operations/statistician',
                     ],
                     'Services': [
-                        'golang/services/README',
-                        'golang/services/azblob',
-                        'golang/services/cos',
-                        'golang/services/dropbox',
-                        'golang/services/fs',
-                        'golang/services/gcs',
-                        'golang/services/kodo',
-                        'golang/services/oss',
-                        'golang/services/qingstor',
-                        'golang/services/s3',
-                        'golang/services/uss',
+                        'go-storage/services/index',
+                        'go-storage/services/azblob',
+                        'go-storage/services/cos',
+                        'go-storage/services/dropbox',
+                        'go-storage/services/fs',
+                        'go-storage/services/gcs',
+                        'go-storage/services/kodo',
+                        'go-storage/services/oss',
+                        'go-storage/services/qingstor',
+                        'go-storage/services/s3',
+                        'go-storage/services/uss',
                     ]
                 }
             ]
