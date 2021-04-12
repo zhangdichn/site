@@ -5,9 +5,11 @@ title: Introduction
 [![Build Status](https://github.com/aos-dev/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/aos-dev/go-storage/actions?query=workflow%3AUnittest)
 [![Go dev](https://godoc.org/github.com/aos-dev/go-storage?status.svg)](https://godoc.org/github.com/aos-dev/go-storage)
 [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE)
-[![Join the chat](https://img.shields.io/badge/chat-online-blue?style=flat&logo=zulip)](https://aos-dev.zulipchat.com/join/c3sqj64sp53tlau7oojg3yll/)
+[![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
 
 An application-oriented unified storage layer for Golang.
+
+![](/docs/go-storage/operations/operations.png)
 
 ## Goal
 
@@ -41,35 +43,29 @@ An application-oriented unified storage layer for Golang.
 
 Basic operations
 
-- Metadata: get storager's metadata
+- Metadata: get storager metadata
 - Read: read file content
 - Write: write content into file
 - Stat: get file's metadata
 - Delete: delete a file or directory
+- List: list file in prefix or dir styles
 
 Extended operations
 
 - Copy: copy a file inside storager
 - Move: move a file inside storager
 - Reach: generate a public accessible url
-- Statistical: get storage service's statistics
 
-Multiple list style support
+Multi object modes support
 
-- ListDir: list files and directories under a directory
-- ListPrefix: list files under a prefix
+- Multipart: allow doing multipart uploads
+- Append: allow appending to an object
+- Block: allow combining an object with block ids.
+- Page: allow doing random writes
 
-Segment/Multipart support
+### Object metadata support
 
-- ListPrefixSegment: list segments under a prefix
-- InitIndexSegment: initiate an index type segment
-- WriteIndexSegment: write content into an index type segment
-- CompleteSegment: complete a segment to create a file
-- AbortSegment: abort a segment
-
-### File metadata support
-
-Required metadata
+Common metadata
 
 - `id`: unique key in service
 - `name`: relative path towards service's work dir
@@ -78,35 +74,48 @@ Required metadata
 Optional metadata
 
 - `size`: object's content size.
-- `updated_at`: object's last updated time.
+- `updated-at`: object's last updated time.
 - `content-md5`: md5 digest as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.15)
 - `content-type`: media type as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.17)
 - `etag`: entity tag as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.19)
-- `storage-class`: object's storage class
 
 ## Quick Start
 
 ```go
-import (
-    "log"
+package main
 
-    "github.com/aos-dev/go-storage/v2"
-    "github.com/aos-dev/go-storage/v2/pairs"
-    "github.com/aos-dev/go-services-fs"
+import (
+	"bytes"
+	"log"
+
+	"github.com/aos-dev/go-storage/v3/pairs"
+	"github.com/aos-dev/go-service-fs/v2"
 )
 
-// Init a service.
-store, err := fs.NewStorager(pairs.WithWorkDir("/tmp"))
-if err != nil {
-    log.Fatalf("service init failed: %v", err)
-}
+func main() {
+	// Init a service.
+	store, err := fs.NewStorager(pairs.WithWorkDir("/tmp"))
+	if err != nil {
+		log.Fatalf("service init failed: %v", err)
+	}
 
-// Use Storager API to maintain data.
-var buf bytes.Buffer
+	content := []byte("Hello, world!")
+	length := int64(len(content))
+	r := bytes.NewReader(content)
 
-n, err := store.Read("path/to/file", &buf)
-if err != nil {
-    log.Printf("storager read: %v", err)
+	_, err = store.Write("hello", r, length)
+	if err != nil {
+		log.Fatalf("write failed: %v", err)
+	}
+
+	var buf bytes.Buffer
+
+	_, err = store.Read("hello", &buf)
+	if err != nil {
+		log.Fatalf("storager read: %v", err)
+	}
+
+	log.Printf("%s", buf.String())
 }
 ```
 

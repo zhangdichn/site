@@ -1,58 +1,59 @@
-Storager is the interface for storage service.
+---
+title: Storager
+---
 
-Everything in a storager is an Object with two types: File, Dir.
+Storager is the main interface for storage service.
 
-File is the smallest unit in service, it will have content and metadata. Dir is a container for File and Dir.
-In prefix-based storage service, Dir is usually an empty key end with "/" or with special content type.
-For directory-based service, Dir will be corresponded to the real directory on file system.
+## Basic Operations
 
-In the comments of every method, we will use following rules to standardize the Storager's behavior:
-
-- The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY",
-and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
-- Implementer is the provider of the service, while trying to implement Storager interface, you need to follow.
-- Caller is the user of the service, while trying to use the Storager interface, you need to follow.
-
-## Delete
+### Delete
 
 Delete will delete an Object from service.
 
-## Metadata
+### Metadata
 
 Metadata will return current storager's metadata.
 
-Implementer:
 
-- Metadata SHOULD only return static data without API call or with a cache.
+### Read
 
-Caller:
+Read will read the Object data.
 
-- Metadata SHOULD be cheap.
 
-## Read
-
-Read will read the file's data.
-
-Implementer:
-
-- MUST close reader while error happened or all data read.
-
-Caller:
-
-- MUST close input writer while error happened or all data written.
-
-## Stat
+### Stat
 
 Stat will stat a path to get info of an object.
 
-## Write
+### Write
 
-Write will write data into a file.
+Write will write data into an Object.
 
-Implementer:
+## Extended operations
 
-- MUST close writer while error happened or all data written.
+### Copy
 
-Caller:
+Copy will copy an Object in Storage.
 
-- MUST close input reader while error happened or all data read.
+### Move
+
+Move will move an Object in Storage.
+
+### Reach
+
+Reach will get a public url to reach the object.
+
+### Multipart
+
+Multipart will construct an Object via multiparts.
+
+### Append
+
+Append will construct an Object via append operations.
+
+### Block
+
+Block will construct an Object via blocks.
+
+### Page
+
+Page will construct an Object via pages.

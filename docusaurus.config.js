@@ -19,6 +19,7 @@ module.exports = {
             },
         },
     },
+    onBrokenLinks: 'warn',
     themeConfig: {
         algolia: {
             apiKey: 'f4ddbe3ff0762522d5a9a6a75fe0c00c',

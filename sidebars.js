@@ -17,11 +17,6 @@ module.exports = {
                         'go-storage/operations/index',
                         'go-storage/operations/servicer',
                         'go-storage/operations/storager',
-                        'go-storage/operations/prefix_lister',
-                        'go-storage/operations/prefix_segments_lister',
-                        'go-storage/operations/reacher',
-                        'go-storage/operations/segmenter',
-                        'go-storage/operations/statistician',
                     ],
                     'Services': [
                         'go-storage/services/index',

@@ -14,5 +14,9 @@
   "sidebar.docs.category.Services": {
     "message": "Services",
     "description": "The label for category Services in sidebar docs"
+  },
+  "sidebar.docs.category.go-storage": {
+    "message": "go-storage",
+    "description": "The label for category go-storage in sidebar docs"
   }
 }
