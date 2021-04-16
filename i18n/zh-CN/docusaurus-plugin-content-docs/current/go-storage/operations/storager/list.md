@@ -1,0 +1,1 @@
+`list` is used to list objects from storage.

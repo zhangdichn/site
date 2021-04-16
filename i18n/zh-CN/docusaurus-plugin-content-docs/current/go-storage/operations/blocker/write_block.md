@@ -1,0 +1,1 @@
+`write_block` is used to write blocks into object.

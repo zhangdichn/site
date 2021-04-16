@@ -4,17 +4,17 @@
 
 ### Servicer
 
-| Name         | Required | Comments                                                                                                                  |
-| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `credential` | Y        | support `base64` and `file` protocol: `base64` is the base64 of token content, `file` is the absolute path to token file. |
+| Name                                         | Required | Comments                                                                                                                  |
+| -------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [credential](go-storage/pairs/credential.md) | Y        | support `base64` and `file` protocol: `base64` is the base64 of token content, `file` is the absolute path to token file. |
 
 ### Storager
 
-| Name       | Required | Comments                |
-| ---------- | -------- | ----------------------- |
-| `name`     | Y        | bucket name             |
-| `work_dir` | N        | work dir                |
-| `project`  | Y        | google cloud project id |
+| Name                                     | Required | Comments                |
+| ---------------------------------------- | -------- | ----------------------- |
+| [name](go-storage/pairs/name.md)         | Y        | bucket name             |
+| [work_dir](go-storage/pairs/work_dir.md) | N        | work dir                |
+| `project`                                | Y        | google cloud project id |
 
 ## Example
 

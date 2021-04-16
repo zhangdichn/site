@@ -1,0 +1,1 @@
+`stat` is used to get object or check it existence.

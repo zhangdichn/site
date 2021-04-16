@@ -8,12 +8,12 @@ Operation means a single action that we can do on a storage service.
 
 ## Servicer
 
-[servicer](./servicer/) is used to maintain the storage service.
+[servicer](servicer/index.md) is used to maintain the storage service.
 
 We use `Servicer` to create/delete/get/list storages.
 
 ## Storager
 
-[storager](./storager/) is the interface for storage service.
+[storager](storager/index.md) is the interface for storage service.
 
 We use `Storager` to maintain objects.

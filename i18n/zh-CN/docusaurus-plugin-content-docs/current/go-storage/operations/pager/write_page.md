@@ -1,0 +1,1 @@
+`write_page` is used to do random write on page object.

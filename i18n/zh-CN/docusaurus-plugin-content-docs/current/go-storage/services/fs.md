@@ -4,9 +4,9 @@ Local file system
 
 ### Storager
 
-| Name       | Required | Comments |
-| ---------- | -------- | -------- |
-| `work_dir` | N        | work dir |
+| Name                                     | Required | Comments |
+| ---------------------------------------- | -------- | -------- |
+| [work_dir](go-storage/pairs/work_dir.md) | N        | work dir |
 
 ## Example
 

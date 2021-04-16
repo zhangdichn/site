@@ -6,12 +6,12 @@
 
 ### Storager
 
-| Name         | Required | Comments                                |
-| ------------ | -------- | --------------------------------------- |
-| `credential` | Y        | only support `hmac` protocol            |
-| `name`       | Y        | bucket name                             |
-| `work_dir`   | N        | work dir                                |
-| `endpoint`   | Y        | specific domain to access this storager |
+| Name                                         | Required | Comments                                |
+| -------------------------------------------- | -------- | --------------------------------------- |
+| [credential](go-storage/pairs/credential.md) | Y        | only support `hmac` protocol            |
+| [name](go-storage/pairs/name.md)             | Y        | bucket name                             |
+| [work_dir](go-storage/pairs/work_dir.md)     | N        | work dir                                |
+| [endpoint](go-storage/pairs/endpoint.md)     | Y        | specific domain to access this storager |
 
 ## Example
 
