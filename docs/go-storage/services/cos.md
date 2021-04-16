@@ -6,16 +6,16 @@
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| `credential` | Y | only support `hmac` protocol |
+| [credential](go-storage/pairs/credential.md) | Y | only support `hmac` protocol |
 
 
 ### Storager
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| `name` | Y | bucket name |
-| `work_dir` | N | work dir |
-| `location` | Y | location|
+| [name](go-storage/pairs/name.md) | Y | bucket name |
+| [work_dir](go-storage/pairs/work_dir.md) | N | work dir |
+| [location](go-storage/pairs/location.md) | Y | location|
 
 ## Example
 

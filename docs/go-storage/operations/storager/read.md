@@ -1,0 +1,1 @@
+`read` is used to read data from readable object.

@@ -1,0 +1,1 @@
+`write` is used to write data into object.

@@ -6,7 +6,7 @@ Local file system
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| `work_dir` | N | work dir |
+| [work_dir](go-storage/pairs/work_dir.md) | N | work dir |
 
 ## Example
 
