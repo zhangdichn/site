@@ -15,3 +15,12 @@ Init storager
 ```yaml
 work_dir: /<work_dir>
 ```
+
+## Implementation
+
+This service implement following interfaces:
+
+- [Storager](../operations/storager/index.md)
+- [Copier](../operations/copy.md)
+- [Mover](../operations/move.md)
+- [Appender](../operations/appender/index.md)
