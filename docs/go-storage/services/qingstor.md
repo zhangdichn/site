@@ -61,8 +61,8 @@ if err != nil {
 ##### Supported Operations
 
 - [Read](../operations/storager/read.md)
-- [Stat](../operations/storager/stat.md)
 - [Write](../operations/storager/write.md)
+- [Copy](../operations/copy.md)
 - [CreateMultipart](../operations/multiparter/create_multipart.md)
 - [WriteMultipart](../operations/multiparter/write_multipart.md)
 
