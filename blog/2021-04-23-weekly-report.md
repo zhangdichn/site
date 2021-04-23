@@ -50,5 +50,5 @@ So we start a new project called [go-storage-example](https://github.com/aos-dev
 
 ---
 
-[go-storage]: https://github.com/aos-debv/go-storage
+[go-storage]: https://github.com/aos-dev/go-storage
 [go-integration-test]: https://github.com/aos-dev/go-integration-test
