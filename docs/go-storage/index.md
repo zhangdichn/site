@@ -32,52 +32,17 @@ An application-oriented unified storage layer for Golang.
 - [s3](services/s3.md): [Amazon S3](https://aws.amazon.com/s3/)
 - [uss](services/uss.md): [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
 
-### Servicer operation support
+### Fully operation support
 
-- List: list all Storager in service
-- Get: get a Storager via name
-- Create: create a Storager
-- Delete: delete a Storager
-
-### Storager operation support
-
-Basic operations
-
-- Metadata: get storager metadata
-- Read: read file content
-- Write: write content into file
-- Stat: get file's metadata
-- Delete: delete a file or directory
-- List: list file in prefix or dir styles
-
-Extended operations
-
-- Copy: copy a file inside storager
-- Move: move a file inside storager
-- Reach: generate a public accessible url
-
-Multi object modes support
-
-- Multipart: allow doing multipart uploads
-- Append: allow appending to an object
-- Block: allow combining an object with block ids.
-- Page: allow doing random writes
-
-### Object metadata support
-
-Common metadata
-
-- `id`: unique key in service
-- `name`: relative path towards service's work dir
-- `type`: object type cloud be `file`, `dir`, `link` or `unknown`
-
-Optional metadata
-
-- `size`: object's content size.
-- `updated-at`: object's last updated time.
-- `content-md5`: md5 digest as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.15)
-- `content-type`: media type as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.17)
-- `etag`: entity tag as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.19)
+- [Servicer](operations/servicer/index.md): Service Level Management.
+- [Storager](operations/storager/index.md): Support all read/write/stat/delete/list/... basic object operations.
+  - [Copier](operations/copy.md): copy an object inside storager
+  - [Mover](operations/move.md):  move an object inside storager 
+  - [Reach](operations/reach.md): generate a public accessible url to the object 
+  - [Multiparter](operations/multiparter): allow doing multipart uploads 
+  - [Appender](operations/appender): allow appending to an object 
+  - [Block](operations/blocker): allow combining an object with block ids 
+  - [Page](operations/pager): allow doing random writes
 
 ## Quick Start
 
@@ -118,6 +83,10 @@ func main() {
 	log.Printf("%s", buf.String())
 }
 ```
+
+## Examples
+
+All examples are maintained in <https://github.com/aos-dev/go-storage-example>.
 
 ## Sponsor
 
