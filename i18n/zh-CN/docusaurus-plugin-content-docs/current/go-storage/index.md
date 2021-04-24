@@ -2,81 +2,46 @@
 title: 介绍
 ---
 
-[![Build Status](https://github.com/aos-dev/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/aos-dev/go-storage/actions?query=workflow%3AUnittest) [![Go dev](https://godoc.org/github.com/aos-dev/go-storage?status.svg)](https://godoc.org/github.com/aos-dev/go-storage) [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE) [![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
+[![Build Status](https://github.com/aos-dev/go-storage/workflows/Unittst/badge.svg?branch=master)](https://github.com/aos-dev/go-storage/actions?query=workflow%3AUnittest) [![Go dev](https://godoc.org/github.com/aos-dev/go-storage?status.svg)](https://godoc.org/github.com/aos-dev/go-storage) [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE) [![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
 
-An application-oriented unified storage layer for Golang.
+面向应用的 Golang 统一存储层。
 
 ![](/docs/go-storage/operations/operations.png)
 
-## Goal
+## 目标
 
-- Production ready
-- High performance
-- Vendor agnostic
+- 生产就绪
+- 高性能
+- 无供应商锁定
 
-## Features
+## 特性
 
-### Widely services support
+### 广泛的服务支持
 
 - [azblob](services/azblob.md): [Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/)
-- [cos](services/cos.md): [Tencent Cloud Object Storage](https://cloud.tencent.com/product/cos)
+- [cos](services/cos.md): [腾讯云对象存储服务](https://cloud.tencent.com/product/cos)
 - [dropbox](services/dropbox.md): [Dropbox](https://www.dropbox.com)
-- [fs](services/fs.md): Local file system
+- [fs](services/fs.md): 本地文件系统
 - [gcs](services/gcs.md): [Google Cloud Storage](https://cloud.google.com/storage/)
-- [kodo](services/kodo.md): [qiniu kodo](https://www.qiniu.com/products/kodo)
-- [oss](services/oss.md): [Aliyun Object Storage](https://www.aliyun.com/product/oss)
-- [qingstor](services/qingstor.md): [QingStor Object Storage](https://www.qingcloud.com/products/qingstor/)
+- [kodo](services/kodo.md): [七牛 kodo 对象存储服务](https://www.qiniu.com/products/kodo)
+- [oss](services/oss.md): [阿里云对象存储服务](https://www.aliyun.com/product/oss)
+- [qingstor](services/qingstor.md): [青云 QingStor 对象存储服务](https://www.qingcloud.com/products/qingstor/)
 - [s3](services/s3.md): [Amazon S3](https://aws.amazon.com/s3/)
-- [uss](services/uss.md): [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
+- [uss](services/uss.md): [又拍云对象存储服务](https://www.upyun.com/products/file-storage)
 
-### Servicer operation support
+### 全面的操作支持
 
-- List: list all Storager in service
-- Get: get a Storager via name
-- Create: create a Storager
-- Delete: delete a Storager
+- [Servicer](operations/servicer/index.md): 服务级别的管理
+- [Storager](operations/storager/index.md): 支持读取/写入/获取信息/删除/列取等所有基础对象操作
+  - [Copier](operations/copy.md): 在 Storager 中复制一个对象
+  - [Mover](operations/move.md):  在 Storager 中移动一个对象
+  - [Reach](operations/reach.md): 给对象生成一个可公开访问的 url
+  - [Multiparter](operations/multiparter): 允许进行分段上传
+  - [Appender](operations/appender): 允许追加写入到对象 （Append）
+  - [Block](operations/blocker): 允许使用 Block 来组合一个对象
+  - [Page](operations/pager): 允许随机写入操作
 
-### Storager operation support
-
-Basic operations
-
-- Metadata: get storager metadata
-- Read: read file content
-- Write: write content into file
-- Stat: get file's metadata
-- Delete: delete a file or directory
-- List: list file in prefix or dir styles
-
-Extended operations
-
-- Copy: copy a file inside storager
-- Move: move a file inside storager
-- Reach: generate a public accessible url
-
-Multi object modes support
-
-- Multipart: allow doing multipart uploads
-- Append: allow appending to an object
-- Block: allow combining an object with block ids.
-- Page: allow doing random writes
-
-### Object metadata support
-
-Common metadata
-
-- `id`: unique key in service
-- `name`: relative path towards service's work dir
-- `type`: object type cloud be `file`, `dir`, `link` or `unknown`
-
-Optional metadata
-
-- `size`: object's content size.
-- `updated-at`: object's last updated time.
-- `content-md5`: md5 digest as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.15)
-- `content-type`: media type as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.17)
-- `etag`: entity tag as defined in [rfc2616](https://tools.ietf.org/html/rfc2616#section-14.19)
-
-## Quick Start
+## 快速开始
 
 ```go
 package main
@@ -90,7 +55,7 @@ import (
 )
 
 func main() {
-    // Init a service.
+    // 初始化服务
     store, err := fs.NewStorager(pairs.WithWorkDir("/tmp"))
     if err != nil {
         log.Fatalf("service init failed: %v", err)
@@ -116,7 +81,11 @@ func main() {
 }
 ```
 
-## Sponsor
+## 示例
+
+所有示例都在 <https://github.com/aos-dev/go-storage-example> 中维护。
+
+## 赞助者
 
 <a href="https://vercel.com?utm_source=aos-dev&utm_campaign=oss">
     <img src="/img/vercel_logo_dark.svg" />

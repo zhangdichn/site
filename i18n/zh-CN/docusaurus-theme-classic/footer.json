@@ -1,6 +1,6 @@
 {
   "copyright": {
-    "message": "Copyright © 2021 aos-dev. Built with Docusaurus. Powered by <a href=\"https://vercel.com/?utm_source=aos-dev&utm_campaign=oss\"><img height=\"14px\" src=\"/img/vercel_logo.svg\"></a>",
+    "message": "版权 © 2021 aos-dev. 使用 Docusaurus 构建。由 <a href=\"https://vercel.com/?utm_source=aos-dev&utm_campaign=oss\"><img height=\"14px\" src=\"/img/vercel_logo.svg\"></a> 支持。",
     "description": "The footer copyright"
   }
 }

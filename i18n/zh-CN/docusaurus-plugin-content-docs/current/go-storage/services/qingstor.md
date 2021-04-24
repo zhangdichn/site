@@ -1,35 +1,79 @@
 [QingStor Object Storage](https://www.qingcloud.com/products/qingstor/)
 
-## Config
+## Configure
 
 ### Servicer
+
+#### Available Pairs
 
 | Name                                         | Required | Comments                     |
 | -------------------------------------------- | -------- | ---------------------------- |
 | [credential](go-storage/pairs/credential.md) | Y        | only support `hmac` protocol |
 | [endpoint](go-storage/pairs/endpoint.md)     | Y        |                              |
 
+#### Examples
+
+```go
+service, err := qingstor.NewServicer(
+    pairs.WithCredential("hmac:access_key_id:secret_access_key"),
+    pairs.WithEndpoint("https:qingstor.com"),
+)
+if err != nil {
+    log.Fatalf("qingstor new service: %v", err)
+}
+```
+
 ### Storager
+
+#### Available Pairs
 
 | Name                                     | Required | Comments    |
 | ---------------------------------------- | -------- | ----------- |
 | [name](go-storage/pairs/name.md)         | Y        | bucket name |
 | [work_dir](go-storage/pairs/work_dir.md) | N        | work dir    |
 
-## Example
+#### Examples
 
-Init servicer
-
-```yaml
-credential: hmac:<account_name>:<account_key>
-endpoint: https:<account_name>.<endpoint_suffix>
+```go
+service, err := qingstor.NewStorager(
+    pairs.WithCredential("hmac:access_key_id:secret_access_key"),
+    pairs.WithEndpoint("https:qingstor.com"),
+    pairs.WithName("bucket_name"),
+    pairs.WithWorkDir("/path/to/workdir"),
+)
+if err != nil {
+    log.Fatalf("qingstor new service: %v", err)
+}
 ```
 
-Init storager
+## Pairs
 
-```yaml
-credential: hmac:<account_name>:<account_key>
-endpoint: https:<account_name>.<endpoint_suffix>
-name: <container_name>
-work_dir: /<work_dir>
-```
+### Server-Side Encryption (SSE)
+
+#### Encrypt Object
+
+| Name                     | Comments                                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| sse_customer_algorithm | the encryption algorithm. Only AES256 is supported now.                                                                     |
+| sse_customer_key       | the customer-provided encryption key. For AES256 keys, the plaintext must be 32 bytes long. The key must be Base64 encoded. |
+| sse_customer_key_md5   | the MD5 of the customer-provided key. The key MD5 must be Base64 encoded.                                                   |
+
+##### Supported Operations
+
+- [Read](../operations/storager/read.md)
+- [Write](../operations/storager/write.md)
+- [Copy](../operations/copy.md)
+- [CreateMultipart](../operations/multiparter/create_multipart.md)
+- [WriteMultipart](../operations/multiparter/write_multipart.md)
+
+#### Copy Encrypted Object
+
+| Name                                   | Comments                                                                                                                                          |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sse_copy_source_customer_algorithm | the encryption algorithm for the source object. Only AES256 is supported now.                                                                     |
+| sse_copy_source_customer_key       | the customer-provided encryption key for the source object. For AES256 keys, the plaintext must be 32 bytes long. The key must be Base64 encoded. |
+| sse_copy_source_customer_key_md5   | the MD5 of the customer-provided key for the source object. The key MD5 must be Base64 encoded.                                                   |
+
+##### Supported Operations
+
+- [Copy](../operations/copy.md)

@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "下一页",
     "description": "The label for version current"
   },
   "sidebar.docs.category.Golang": {
@@ -8,11 +8,11 @@
     "description": "The label for category Golang in sidebar docs"
   },
   "sidebar.docs.category.Operations": {
-    "message": "Operations",
+    "message": "操作",
     "description": "The label for category Operations in sidebar docs"
   },
   "sidebar.docs.category.Services": {
-    "message": "Services",
+    "message": "服务",
     "description": "The label for category Services in sidebar docs"
   },
   "sidebar.docs.category.go-storage": {
