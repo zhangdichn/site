@@ -50,13 +50,15 @@ if err != nil {
 
 ### Server-Side Encryption (SSE)
 
+Qingstor support server-side encryption with customer-provided encryption keys.
+
+Refer to https://docs.qingcloud.com/qingstor/api/common/encryption.html for more details.
 #### Encrypt Object
 
-| Name                     | Comments                                                                                                                    |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| sse_customer_algorithm | the encryption algorithm. Only AES256 is supported now.                                                                     |
-| sse_customer_key       | the customer-provided encryption key. For AES256 keys, the plaintext must be 32 bytes long. The key must be Base64 encoded. |
-| sse_customer_key_md5   | the MD5 of the customer-provided key. The key MD5 must be Base64 encoded.                                                   |
+| Name                            | Comments                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------------------- |
+| `encryption_customer_algorithm` | the encryption algorithm. Only AES256 is supported now.                                     |
+| `encryption_customer_key`       | the customer-provided encryption key. For AES256 keys, the plaintext must be 32 bytes long. |
 
 ##### Supported Operations
 
@@ -68,11 +70,11 @@ if err != nil {
 
 #### Copy Encrypted Object
 
-| Name                                   | Comments                                                                                                                                          |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sse_copy_source_customer_algorithm | the encryption algorithm for the source object. Only AES256 is supported now.                                                                     |
-| sse_copy_source_customer_key       | the customer-provided encryption key for the source object. For AES256 keys, the plaintext must be 32 bytes long. The key must be Base64 encoded. |
-| sse_copy_source_customer_key_md5   | the MD5 of the customer-provided key for the source object. The key MD5 must be Base64 encoded.                                                   |
+| Name                                        | Comments                                                                                                          |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `copy_source_encryption_customer_algorithm` | the encryption algorithm for the source object. Only AES256 is supported now.                                     |
+| `copy_source_encryption_customer_key`       | the customer-provided encryption key for the source object. For AES256 keys, the plaintext must be 32 bytes long. |
+| `copy_source_encryption_customer_key_md5`   | the MD5 of the customer-provided key for the source object.                                                       |
 
 ##### Supported Operations
 
