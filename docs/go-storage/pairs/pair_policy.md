@@ -4,7 +4,7 @@
 
 `pair_policy` looks like:
 
-```golang
+```go
 type PairPolicy struct {
 	...
 	

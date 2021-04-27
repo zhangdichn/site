@@ -36,7 +36,7 @@ We will document all global pair here and leave service pairs in service's docum
 
 Any service that supports this mechanism will generate service pairs called  `DefaultServicePairs` and `DefaultStoragePairs`:
 
-```golang
+```go
 type DefaultStoragePairs struct {
 	CompleteMultipart []Pair
 	Create            []Pair
@@ -61,7 +61,7 @@ func WithDefaultStoragePairs(v DefaultStoragePairs) Pair {
 
 User can use pass default pairs like this:
 
-```golang
+```go
 store, err := s3.NewStorager(
     s3.WithDefaultStoragePairs(s3.DefaultStoragePairs{
         Write: []types.Pair{
