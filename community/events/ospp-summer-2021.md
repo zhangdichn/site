@@ -46,7 +46,7 @@ Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
 
 ### Storj for go-storage
 
-Storj 是一个去中心化的云存储框架网络平台，这个项目将会为 Storj 实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 Storj 服务上的数据。
+Storj is a decentralized cloud storage framework web platform, and this project will implement go-storage's Storager interface for Storj, enabling users to manipulate data on the Storj service through a unified interface.
 
 Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
 
