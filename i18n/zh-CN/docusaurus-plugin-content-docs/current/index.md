@@ -3,7 +3,7 @@ slug: /
 title: 介绍
 ---
 
-`AOS` 是 ` Application Oriented Storage `的缩写，我们计划构建一个面向应用程序的存储抽象层。
+`AOS` is an abbreviation of `Application Oriented Storage`, we plan to build an application-oriented storage abstraction layer.
 
 我们目前正在维护以下项目：
 

@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "下一页",
+    "description": "The label for version current"
+  },
+  "sidebar.community.category.Events": {
+    "message": "活动",
+    "description": "The label for category Events in sidebar community"
+  }
+}
