@@ -4,7 +4,7 @@ files:
       /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
   - source: /blog/**/*
     translation: >-
-      /i18n/%locale%/docusaurus-plugin-content-blog/current/**/%original_file_name%
+      /i18n/%locale%/docusaurus-plugin-content-blog/**/%original_file_name%
   - source: /community/**/*
     translation: >-
       /i18n/%locale%/docusaurus-plugin-content-docs-community/current/**/%original_file_name%
