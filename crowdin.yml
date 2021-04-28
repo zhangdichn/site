@@ -5,5 +5,8 @@ files:
   - source: /blog/**/*
     translation: >-
       /i18n/%locale%/docusaurus-plugin-content-blog/current/**/%original_file_name%
+  - source: /community/**/*
+    translation: >-
+      /i18n/%locale%/docusaurus-plugin-content-docs-community/current/**/%original_file_name%
   - source: /i18n/en-US/**/*
     translation: /i18n/%locale%/**/%original_file_name%
