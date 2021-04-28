@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.community.category.Events": {
+    "message": "Events",
+    "description": "The label for category Events in sidebar community"
+  }
+}

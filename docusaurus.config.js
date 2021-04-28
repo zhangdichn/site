@@ -38,6 +38,7 @@ module.exports = {
             },
             items: [
                 {to: 'docs', label: 'Docs', position: 'left'},
+                {to: 'community', label: 'Community', position: 'left'},
                 {to: 'blog', label: 'Blog', position: 'left'},
                 {
                     type: 'localeDropdown',
@@ -68,9 +69,14 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
+                    id: 'docs',
+                    sidebarPath: require.resolve('./docs_sidebars.js'),
+                    path: 'docs',
+                    routeBasePath: 'docs',
                     editUrl:
                         'https://github.com/aos-dev/site/edit/master/',
+                    showLastUpdateAuthor: true,
+                    showLastUpdateTime: true,
                 },
                 blog: {
                     path: 'blog',
@@ -90,4 +96,19 @@ module.exports = {
             },
         ],
     ],
+    plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'community',
+                sidebarPath: require.resolve('./community_sidebars.js'),
+                path: 'community',
+                routeBasePath: 'community',
+                editUrl:
+                    'https://github.com/aos-dev/site/edit/master/',
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            }
+        ]
+    ]
 };

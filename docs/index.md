@@ -3,7 +3,7 @@ slug: /
 title: Introduction
 ---
 
-`AOS` a is an abbreviation of `Application Oriented Storage`, we plan to build an application-oriented storage abstraction layer.
+`AOS` is an abbreviation of `Application Oriented Storage`, we plan to build an application-oriented storage abstraction layer.
 
 We currently maintain the following projects:
 
