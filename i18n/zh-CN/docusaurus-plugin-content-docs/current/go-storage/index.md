@@ -40,6 +40,7 @@ title: 介绍
   - [Appender](operations/appender): 允许追加写入到对象 （Append）
   - [Block](operations/blocker): 允许使用 Block 来组合一个对象
   - [Page](operations/pager): 允许随机写入操作
+  - [Fetcher](operations/fetch.md): fetch from a given url to path
 
 ## 快速开始
 

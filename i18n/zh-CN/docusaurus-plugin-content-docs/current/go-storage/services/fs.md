@@ -18,7 +18,7 @@ work_dir: /<work_dir>
 
 ## Implementation
 
-This service implement following interfaces:
+This service implements following interfaces:
 
 - [Storager](../operations/storager/index.md)
 - [Copier](../operations/copy.md)

@@ -33,3 +33,10 @@ work_dir: /<work_dir>
 endpoint: http:<domain>
 ```
 
+## Implementation
+
+This service implements following interfaces:
+
+- [Servicer](../operations/servicer/index.md)
+
+- [Storager](../operations/storager/index.md)
