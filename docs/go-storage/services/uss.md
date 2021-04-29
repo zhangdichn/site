@@ -23,3 +23,9 @@ name: <bucket_name>
 work_dir: /<work_dir>
 endpoint: https:<domain>
 ```
+
+## Implementation
+
+This service implements following interfaces:
+
+- [Storager](../operations/storager/index.md)

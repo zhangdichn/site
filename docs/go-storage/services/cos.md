@@ -34,6 +34,13 @@ work_dir: /<work_dir>
 location: <bucket_location>
 ```
 
+## Implementation
+
+This service implements following interfaces:
+
+- [Servicer](../operations/servicer/index.md)
+
+- [Storager](../operations/storager/index.md)
 
 ## Pairs
 

@@ -35,6 +35,16 @@ work_dir: /<work_dir>
 location: <bucket_location>
 ```
 
+## Implementation
+
+This service implements following interfaces:
+
+- [Servicer](../operations/servicer/index.md)
+
+- [Storager](../operations/storager/index.md)
+
+- [Appender](../operations/appender/index.md)
+
 ## Pairs
 
 ### Server-Side Encryption (SSE)
@@ -61,6 +71,7 @@ For global users, refer to https://www.alibabacloud.com/help/doc-detail/31871.ht
 ##### Supported Operations
 
 - [Write](../operations/storager/write.md)
+- [CreateAppend](../operations/appender/create_append.md)
 
 #### SSE-OSS
 
@@ -71,3 +82,4 @@ For global users, refer to https://www.alibabacloud.com/help/doc-detail/31871.ht
 ##### Supported Operations
 
 - [Write](../operations/storager/write.md)
+- [CreateAppend](../operations/appender/create_append.md)

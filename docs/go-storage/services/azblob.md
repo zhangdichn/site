@@ -34,6 +34,16 @@ name: <container_name>
 work_dir: /<work_dir>
 ```
 
+## Implementation
+
+This service implements following interfaces:
+
+- [Servicer](../operations/servicer/index.md)
+
+- [Storager](../operations/storager/index.md)
+
+- [Appender](../operations/appender/index.md)
+
 ## Pairs
 
 ### Server-Side Encryption (SSE)
@@ -58,3 +68,5 @@ Refer to https://docs.microsoft.com/en-us/azure/storage/common/storage-service-e
 - [Read](../operations/storager/read.md)
 - [Stat](../operations/storager/stat.md)
 - [Write](../operations/storager/write.md)
+- [CreateAppend](../operations/appender/create_append.md)
+- [WriteAppend](../operations/appender/write_append.md)

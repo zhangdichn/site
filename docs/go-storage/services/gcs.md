@@ -33,6 +33,14 @@ work_dir: /<work_dir>
 project: <google_cloud_project_id>
 ```
 
+## Implementation
+
+This service implements following interfaces:
+
+- [Servicer](../operations/servicer/index.md)
+
+- [Storager](../operations/storager/index.md)
+
 ## Pairs
 
 ### Server-Side Encryption (SSE)

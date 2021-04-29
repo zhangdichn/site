@@ -46,6 +46,26 @@ if err != nil {
 }
 ```
 
+## Implementation
+
+This service implements following interfaces:
+
+- [Servicer](../operations/servicer/index.md)
+
+- [Storager](../operations/storager/index.md)
+
+- [Appender](../operations/appender/index.md)
+
+- [Copier](../operations/copy.md)
+
+- [Fetcher](../operations/fetch.md)
+
+- [Mover](../operations/move.md)
+
+- [Multiparter](../operations/multiparter/index.md)
+
+- [Reacher](../operations/reach.md)
+
 ## Pairs
 
 ### Server-Side Encryption (SSE)

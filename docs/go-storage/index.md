@@ -43,6 +43,7 @@ An application-oriented unified storage layer for Golang.
   - [Appender](operations/appender): allow appending to an object 
   - [Block](operations/blocker): allow combining an object with block ids 
   - [Page](operations/pager): allow doing random writes
+  - [Fetcher](operations/fetch.md): fetch from a given url to path
 
 ## Quick Start
 
