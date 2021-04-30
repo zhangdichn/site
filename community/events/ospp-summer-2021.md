@@ -10,7 +10,7 @@ Chatroom: <https://matrix.to/#/#event-ospp-summer-2021:aos.dev>
 
 - Join our chatroom [#event-ospp-summer-2021](https://matrix.to/#/#event-ospp-summer-2021:aos.dev) to communicate with mentors and other mentees.
 - Introduce your self in the room.
-- Choose a project from following and send you resume to the mentors.
+- Choose a project from following and send you CV to the mentors.
 - Visit [here](https://github.com/orgs/aos-dev/projects/1?card_filter_query=label%3A%22help+wanted%22) to finish some issues to know more about AOS.
 
 Visit <https://summer.iscas.ac.cn/help/timeline/> to get full timeline.
