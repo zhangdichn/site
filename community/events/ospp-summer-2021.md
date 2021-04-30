@@ -23,8 +23,8 @@ In this event, we provide following projects.
 
 WebDAV is an extension to the HTTP/1.1 protocol that allows clients to perform remote Web content operations. This project will implement the go-storage Storager interface for WebDAV, enabling users to manipulate data on WebDAV servers using a unified interface.
 
-Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
-Issue: <https://github.com/aos-dev/go-service-webdav/issues/1>
+- Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
+- Issue: <https://github.com/aos-dev/go-service-webdav/issues/1>
 
 ### FTP for go-storage
 
