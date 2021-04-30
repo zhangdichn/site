@@ -32,37 +32,43 @@ WebDAV is an extension to the HTTP/1.1 protocol that allows clients to perform r
 
 FTP is the oldest network tool in the history of the Internet and is still widely used in many areas. This project will implement go-storage's Storager interface for FTP, enabling users to use a unified interface to manipulate data on FTP servers.
 
-Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
+- Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
+- Issue: <https://github.com/aos-dev/go-service-ftp/issues/3>
 
 ### minio for go-storage
 
 minio is an open source cloud-native high-performance object storage service. This project will use minio's native SDK to implement go-storage's Storager interface, enabling users to manipulate data on minio servers through a unified interface.
 
-Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
+- Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
+- Issue: <https://github.com/aos-dev/go-service-minio/issues/2>
 
 ### HDFS for go-storage
 
 Hadoop Distributed File System (HDFS) is a distributed file system developed for applications on large datasets. This project will implement the go-storage Storager interface for HDFS, enabling users to manipulate data on HDFS services through a unified interface.
 
-Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
+- Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
+- Issue: <https://github.com/aos-dev/go-service-hdfs/issues/1>
 
 ### ipfs for go-storage
 
 The InterPlanetary File System (IPFS) is a content-based addressing, versioning, peer-to-peer hypermedia transfer protocol that combines P2P network technology, BitTorrent transfer technology, Git version control, self-proving file systems, and other technologies, and is a new generation of HTTP-based This project will implement the go This project will implement the go-storage Storager interface for IPFS, enabling users to manipulate data on ipfs nodes through a unified interface.
 
-Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
+- Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
+- Issue: <https://github.com/aos-dev/go-service-ipfs/issues/1>
 
 ### Storj for go-storage
 
 Storj is a decentralized cloud storage framework web platform, and this project will implement go-storage's Storager interface for Storj, enabling users to manipulate data on the Storj service through a unified interface.
 
-Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
+- Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
+- Issue: <https://github.com/aos-dev/go-service-storj/issues/1>
 
 ### FTP Server based on go-storage
 
 FTP is the oldest network tool in the history of the Internet and is still widely used in many areas. This project will develop an FTP server based on go-storage.
 
-Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
+- Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
+- Issue: <https://github.com/aos-dev/go-ftp-server/issues/1>
 
 ## About
 
