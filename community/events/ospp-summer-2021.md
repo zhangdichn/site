@@ -6,9 +6,14 @@ title: Summer 2021 of Open Source Promotion Plan
 
 Chatroom: <https://matrix.to/#/#event-ospp-summer-2021:aos.dev>
 
-## Timeline
+## Roadmap
 
-Please visit timeline <https://summer.iscas.ac.cn/help/timeline/>
+- Join our chatroom [#event-ospp-summer-2021](https://matrix.to/#/#event-ospp-summer-2021:aos.dev) to communicate with mentors and other mentees.
+- Introduce your self in the room.
+- Choose a project from following and send you resume to the mentors.
+- Visit [here](https://github.com/orgs/aos-dev/projects/1?card_filter_query=label%3A%22help+wanted%22) to finish some issues to know more about AOS.
+
+Visit <https://summer.iscas.ac.cn/help/timeline/> to get full timeline.
 
 ## Projects
 
@@ -19,6 +24,7 @@ In this event, we provide following projects.
 WebDAV is an extension to the HTTP/1.1 protocol that allows clients to perform remote Web content operations. This project will implement the go-storage Storager interface for WebDAV, enabling users to manipulate data on WebDAV servers using a unified interface.
 
 Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
+Issue: <https://github.com/aos-dev/go-service-webdav/issues/1>
 
 ### FTP for go-storage
 
