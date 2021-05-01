@@ -82,4 +82,4 @@ FTP 是互联网历史上最悠久的网络工具，至今仍在多个领域被�
 
 ## AOS
 
-`AOS` 是 ` Application Oriented Storage `的缩写，我们计划构建一个面向应用程序的存储抽象层。 现在，我们正聚焦于 Golang 的实现： [go-sorage](https://github.com/aos-dev/go-storage)
+`AOS` 是 ` Application Oriented Storage `的缩写，我们计划构建一个面向应用程序的存储抽象层。 现在，我们正聚焦于 Golang 的实现： [go-storage](https://github.com/aos-dev/go-storage)
