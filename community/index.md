@@ -5,11 +5,19 @@ title: Introduction
 
 Here is community related pages for `AOS`.
 
+## Tips
+
+- Be **open**, please don't try to connect or ask questions privately.
+- Be **nice**, please try to understand others from the perspective of kindness.
+- Be **async**, please respect each other's time and try to complete the communication through asynchronous way.
+
 ## Discussions
 
 ### Async Discussion
 
 We host our async discussion on forums: <https://forum.aos.dev>.
+
+Our formal announcement will be on our forums.
 
 ### Realtime Discussion
 
