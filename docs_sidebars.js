@@ -7,6 +7,7 @@ module.exports = {
         {
             'go-storage': [
                 'go-storage/index',
+                'go-storage/handling-errors',
                 {
                     'Operations': [
                         'go-storage/operations/index',
@@ -32,6 +33,7 @@ module.exports = {
                         'go-storage/operations/copy',
                         'go-storage/operations/move',
                         'go-storage/operations/reach',
+                        'go-storage/operations/fetch',
                         {
                             'Appender': [
                                 'go-storage/operations/appender/index',
