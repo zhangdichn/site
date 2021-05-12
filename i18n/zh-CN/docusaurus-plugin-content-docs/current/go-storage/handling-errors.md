@@ -37,8 +37,8 @@ In `errors.As(originErr, &targetErr)`, the type of `targetErr` should be the `st
 ```go 
 import (
     s3 "github.com/aos-dev/go-service-s3"
+    "github.com/aos-dev/go-storage/v3/pairs"
     "github.com/aos-dev/go-storage/v3/services"
-    "github.com/aos-dev/go-storage/v3/types"
 )
 
 // ...
@@ -84,7 +84,7 @@ if err != nil {
 }
 ```
 
-### List of Error Codes
+### List of Global Error Codes
 
 There's a `ErrUnexpected` for uncovered cases.
 
