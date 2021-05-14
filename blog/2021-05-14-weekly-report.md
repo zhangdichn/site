@@ -42,7 +42,7 @@ to [Implement AOS-46: Idempotent Storager Delete Operation](https://github.com/a
 [@xxchan] has designed the new error handling proposal: 
 [AOS-47: Additional Error Specification](https://github.com/aos-dev/specs/blob/master/rfcs/47-additional-error-specification.md) last week.
 
-In this week, to distinguish our errors more convenient, [@xxchan] also make the proposal:
+In this week, to distinguish our errors more convenient, [@xxchan] also made the proposal:
 [AOS-51: Distinguish Errors by IsAosError](https://github.com/aos-dev/specs/pull/51), which introduces the interface `AosError`:
 
 ```go
@@ -55,7 +55,7 @@ type AosError interface {
 ```
 
 For now, he has finished the implementation for both proposals above in different services, 
-and the [Error Handling Doc](../docs/go-storage/handling-errors.md) is also added for reference. Nicely done!
+and the [Error Handling Doc](/docs/go-storage/handling-errors) is also added for reference. Nicely done!
 
 For more details, please refer
 to [Implement AOS-47: Additional Error Specification](https://github.com/aos-dev/go-storage/issues/558).
@@ -112,7 +112,7 @@ So [@JinnyYi] made a proposal: [AOS-62: WriteMultipart Returns Part](https://git
 which introduced a **break change**: return `*Part` in `WriteMultipart`, which should be held and passed into `CompleteMultipart` as a param.
 
 This proposal's implementation has been finished by [@JinnyYi] in services implemented `Multiparter`, and the [go-integration-tests](https://github.com/aos-dev/go-integration-test) 
-is also updated. Good Job!
+and [multiparter docs](/docs/go-storage/operations/multiparter/index) are also updated. Good Job!
 
 For more details, please refer
 to [Implement AOS-62: WriteMultipart returns Part](https://github.com/aos-dev/go-storage/issues/571).
@@ -132,7 +132,6 @@ This PR is still a draft now, and working in progress. Anyway, let's welcome [@x
 - proposal: Integrate mediaapi with go-storage to allow store files on various storage service <https://github.com/matrix-org/dendrite/issues/1857>
 - Integrate with go-storage to allow using various storage service as storing location <https://github.com/filecoin-project/lotus/discussions/6218>
 - Working with dropbox to fix their SDK
-  - Working with dropbox to fix their SDK
   - issue: [Is there any plan to release a new version?](https://github.com/dropbox/dropbox-sdk-go-unofficial/issues/77)
   - Fixed, and [sdk v6.0.1](https://github.com/dropbox/dropbox-sdk-go-unofficial/releases/tag/v6.0.1) was released
   
