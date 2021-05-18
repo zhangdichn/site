@@ -70,6 +70,25 @@ FTP is the oldest network tool in the history of the Internet and is still widel
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/aos-dev/go-ftp-server/issues/1>
 
+### Google Drive for go-storage
+
+Google Drive is a file storage and synchronization service developed by Google. 
+This project will implement go-storage's Storager interface,
+enabling users to manipulate data in Google Drive through a unified interface.
+
+- Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
+- Issue: <https://github.com/beyondstorage/go-service-gdrive/issues/2>
+
+### OneDrive for go-storage
+
+Microsoft OneDrive (formerly SkyDrive) is a file hosting service and synchronization service operated
+by Microsoft as part of its web version of Office.
+This project will implement go-storage's Storager interface,
+enabling users to manipulate data in OneDrive through a unified interface.
+
+- Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
+- Issue: <https://github.com/beyondstorage/go-service-onedrive/issues/2>
+
 ## About
 
 ## Open Source Promotion Plan
