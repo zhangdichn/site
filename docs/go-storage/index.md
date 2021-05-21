@@ -2,12 +2,12 @@
 title: Introduction
 ---
 
-[![Build Status](https://github.com/aos-dev/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/aos-dev/go-storage/actions?query=workflow%3AUnittest)
-[![Go dev](https://godoc.org/github.com/aos-dev/go-storage?status.svg)](https://godoc.org/github.com/aos-dev/go-storage)
+[![Build Status](https://github.com/beyondstorage/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/beyondstorage/go-storage/actions?query=workflow%3AUnittest)
+[![Go dev](https://pkg.go.dev/badge/github.com/beyondstorage/go-storage?utm_source=godoc)](https://godoc.org/github.com/beyondstorage/go-storage)
 [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE)
 [![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
 
-An application-oriented unified storage layer for Golang.
+A storage abstraction beyond the existing storage services.
 
 ![](/docs/go-storage/operations/operations.png)
 
@@ -54,8 +54,8 @@ import (
 	"bytes"
 	"log"
 
-	"github.com/aos-dev/go-storage/v3/pairs"
-	"github.com/aos-dev/go-service-fs/v2"
+	"github.com/beyondstorage/go-storage/v4/pairs"
+	"github.com/beyondstorage/go-service-fs/v2"
 )
 
 func main() {
@@ -87,11 +87,11 @@ func main() {
 
 ## Examples
 
-All examples are maintained in <https://github.com/aos-dev/go-storage-example>.
+All examples are maintained in <https://github.com/beyondstorage/go-storage-example>.
 
 ## Sponsor
 
-<a href="https://vercel.com?utm_source=aos-dev&utm_campaign=oss">
+<a href="https://vercel.com?utm_source=beyondstorage&utm_campaign=oss">
     <img src="/img/vercel_logo_dark.svg" />
 </a>
 

@@ -1,11 +1,11 @@
 module.exports = {
-    title: 'AOS',
-    tagline: 'The Application Oriented Storage ',
-    url: 'https://aos.dev',
+    title: 'BeyondStorage',
+    tagline: 'Beyond Storage ',
+    url: 'https://beyondstorage.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     favicon: 'img/favicon.ico',
-    organizationName: 'aos-dev',
+    organizationName: 'BeyondStorage',
     projectName: 'site',
     i18n: {
         defaultLocale: 'en-US',
@@ -23,7 +23,7 @@ module.exports = {
     themeConfig: {
         algolia: {
             apiKey: 'f4ddbe3ff0762522d5a9a6a75fe0c00c',
-            indexName: 'aos',
+            indexName: 'beyondstorage',
             contextualSearch: true,
             searchParameters: {},
         },
@@ -31,7 +31,7 @@ module.exports = {
             trackingID: 'G-EKQWL4FN09',
         },
         navbar: {
-            title: 'aos',
+            title: 'beyondstorage',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/logo.svg',
@@ -61,7 +61,7 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [],
-            copyright: `Copyright © ${new Date().getFullYear()} aos-dev. Built with Docusaurus. Powered by <a href="https://vercel.com/?utm_source=aos-dev&utm_campaign=oss"><img height="14px" src="/img/vercel_logo.svg"></a>`,
+            copyright: `Copyright © ${new Date().getFullYear()} Beyond Storage. Built with Docusaurus. Powered by <a href="https://vercel.com/?utm_source=beyondstorage&utm_campaign=oss"><img height="14px" src="/img/vercel_logo.svg"></a>`,
         },
     },
     presets: [
@@ -73,20 +73,20 @@ module.exports = {
                     path: 'docs',
                     routeBasePath: 'docs',
                     editUrl:
-                        'https://github.com/aos-dev/site/edit/master/',
+                        'https://github.com/beyondstorage/site/settings',
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
                 },
                 blog: {
                     path: 'blog',
                     editUrl:
-                        'https://github.com/aos-dev/site/edit/master/',
+                        'https://github.com/beyondstorage/site/settings',
                     routeBasePath: 'blog',
                     include: ['*.md', '*.mdx'],
                     showReadingTime: true,
                     feedOptions: {
                         type: 'all',
-                        copyright: `Copyright © ${new Date().getFullYear()} aos-dev.`,
+                        copyright: `Copyright © ${new Date().getFullYear()} BeyondStorage.`,
                     },
                 },
                 theme: {
@@ -104,7 +104,7 @@ module.exports = {
                 path: 'community',
                 routeBasePath: 'community',
                 editUrl:
-                    'https://github.com/aos-dev/site/edit/master/',
+                    'https://github.com/beyondstorage/site/settings',
                 showLastUpdateAuthor: true,
                 showLastUpdateTime: true,
             }

@@ -6,7 +6,7 @@ title: Introduction
 
 There are two kinds of `Pair`:
 
-- Global Pair: Defined in [specs](https://github.com/aos-dev/specs/blob/master/definitions/pairs.toml), shared across all services.
+- Global Pair: Defined in [specs](https://github.com/beyondstorage/specs/blob/master/definitions/pairs.toml), shared across all services.
 - Service Pair: Defined in service's `service.toml` pairs section, only available in current service.
 
 ## Available Pairs

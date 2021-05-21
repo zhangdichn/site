@@ -5,7 +5,7 @@ author_url: "https://github.com/Prnyself"
 tags: [updates, weekly-report]
 ---
 
-Hello everyone, here is the weekly report for [AOS](https://aos.dev), range from 2021-05-10 to 2021-05-14.
+Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstorage.io), range from 2021-05-10 to 2021-05-14.
 
 ## Library
 
@@ -18,32 +18,32 @@ Hello everyone, here is the weekly report for [AOS](https://aos.dev), range from
 
 For some reason, dns is not available for vhost, so we need to use path style to detect bucket location.
 
-[@bokket] made his first commit to solve this by [Use path style instead of vhost](https://github.com/aos-dev/go-service-qingstor/pull/43) 
-and [service: Fix location not detected correctly](https://github.com/aos-dev/go-service-qingstor/pull/45). Great job!  
+[@bokket] made his first commit to solve this by [Use path style instead of vhost](https://github.com/beyondstorage/go-service-qingstor/pull/43) 
+and [service: Fix location not detected correctly](https://github.com/beyondstorage/go-service-qingstor/pull/45). Great job!  
 
 For more details, please refer
-to [QingStor detect use path style instead of vhost](https://github.com/aos-dev/go-service-qingstor/issues/1).
+to [QingStor detect use path style instead of vhost](https://github.com/beyondstorage/go-service-qingstor/issues/1).
 
 ### Idempotent Storager Delete Operation
 
 We use `Delete` to handle all object delete operations, but their behavior is not unified and well-defined.
 
 After [@Xuanwo] made this
-proposal: [AOS-46: Idempotent Storager Delete Operation](https://github.com/aos-dev/specs/blob/master/rfcs/46-idempotent-delete.md), 
+proposal: [GSP-46: Idempotent Storager Delete Operation](https://github.com/beyondstorage/specs/blob/master/rfcs/46-idempotent-delete.md), 
 [@JinnyYi] is now finished all the implementation in different services except `USS`, which can not pass our integration tests,
 because `USS` requires a short interval between PUT and DELETE, or we will get this error:
 `DELETE 429 {"msg":"concurrent put or delete","code":42900007,"id":"xxx"}`.
 
 For more details, please refer
-to [Implement AOS-46: Idempotent Storager Delete Operation](https://github.com/aos-dev/go-storage/issues/554).
+to [Implement GSP-46: Idempotent Storager Delete Operation](https://github.com/beyondstorage/go-storage/issues/554).
 
-### AOS Error Handling
+### BeyondStorage Error Handling
 
 [@xxchan] has designed the new error handling proposal: 
-[AOS-47: Additional Error Specification](https://github.com/aos-dev/specs/blob/master/rfcs/47-additional-error-specification.md) last week.
+[GSP-47: Additional Error Specification](https://github.com/beyondstorage/specs/blob/master/rfcs/47-additional-error-specification.md) last week.
 
 In this week, to distinguish our errors more convenient, [@xxchan] also made the proposal:
-[AOS-51: Distinguish Errors by IsAosError](https://github.com/aos-dev/specs/pull/51), which introduces the interface `AosError`:
+[GSP-51: Distinguish Errors by IsAosError](https://github.com/beyondstorage/specs/pull/51), which introduces the interface `AosError`:
 
 ```go
 type AosError interface {
@@ -58,11 +58,11 @@ For now, he has finished the implementation for both proposals above in differen
 and the [Error Handling Doc](/docs/go-storage/handling-errors) is also added for reference. Nicely done!
 
 For more details, please refer
-to [Implement AOS-47: Additional Error Specification](https://github.com/aos-dev/go-storage/issues/558).
+to [Implement GSP-47: Additional Error Specification](https://github.com/beyondstorage/go-storage/issues/558).
 
 ### Add object mode check for operations
 
-In [AOS-25](https://github.com/aos-dev/specs/blob/master/rfcs/25-object-mode.md), 
+In [GSP-25](https://github.com/beyondstorage/specs/blob/master/rfcs/25-object-mode.md), 
 we added support for object modes by bit map. All available object modes are listed below:
 
 ```go
@@ -89,13 +89,13 @@ const (
 It is intended to check object mode at the start of specific operation. For instance, both `WritePart`
 and `WriteAppend` got a pointer to `Object` as an input, we need to ensure this `Object` is available
 for certain operation, so we should add object mode check and 
-return `ObjectModeInvalidError`(introduced in [AOS-47](https://github.com/aos-dev/specs/blob/master/rfcs/47-additional-error-specification.md)) asap if `Object` not fit.
+return `ObjectModeInvalidError`(introduced in [GSP-47](https://github.com/beyondstorage/specs/blob/master/rfcs/47-additional-error-specification.md)) asap if `Object` not fit.
 
-So [@Prnyself] made a proposal: [AOS-61: Add object mode check for operations](https://github.com/aos-dev/specs/blob/master/rfcs/61-add-object-mode-check-for-operations.md) 
+So [@Prnyself] made a proposal: [GSP-61: Add object mode check for operations](https://github.com/beyondstorage/specs/blob/master/rfcs/61-add-object-mode-check-for-operations.md) 
 to generate mode check, instead of user implementation in specific actions. All the implementation for different services are finished now.
 
 For more details, please refer
-to [Implement AOS-61 Add object mode check for operations](https://github.com/aos-dev/go-storage/issues/557).
+to [Implement GSP-61 Add object mode check for operations](https://github.com/beyondstorage/go-storage/issues/557).
 
 ### WriteMultipart returns Part
 
@@ -108,19 +108,19 @@ to [Implement AOS-61 Add object mode check for operations](https://github.com/ao
 `CompleteMultipart` request must include the upload ID and a list of both part numbers and corresponding ETag values returned after those parts were uploaded in some services. 
 The ETag uniquely identifies the combined object data, not necessarily an MD5 hash of the object data. We need return ETag that we got from services to make it possible.
 
-So [@JinnyYi] made a proposal: [AOS-62: WriteMultipart Returns Part](https://github.com/aos-dev/specs/blob/master/rfcs/62-writemultipart-returns-part.md), 
+So [@JinnyYi] made a proposal: [GSP-62: WriteMultipart Returns Part](https://github.com/beyondstorage/specs/blob/master/rfcs/62-writemultipart-returns-part.md), 
 which introduced a **break change**: return `*Part` in `WriteMultipart`, which should be held and passed into `CompleteMultipart` as a param.
 
-This proposal's implementation has been finished by [@JinnyYi] in services implemented `Multiparter`, and the [go-integration-tests](https://github.com/aos-dev/go-integration-test) 
+This proposal's implementation has been finished by [@JinnyYi] in services implemented `Multiparter`, and the [go-integration-tests](https://github.com/beyondstorage/go-integration-test) 
 and [multiparter docs](/docs/go-storage/operations/multiparter/index) are also updated. Good Job!
 
 For more details, please refer
-to [Implement AOS-62: WriteMultipart returns Part](https://github.com/aos-dev/go-storage/issues/571).
+to [Implement GSP-62: WriteMultipart returns Part](https://github.com/beyondstorage/go-storage/issues/571).
 
 ### Multipart upload part number check in go-service-qingstor
 
 This week, we have a new contributor [@xiongjiwei], who made his first PR in `go-service-qingstor`: 
-[storage: Check if part number is valid when multipart upload](https://github.com/aos-dev/go-service-qingstor/pull/48).
+[storage: Check if part number is valid when multipart upload](https://github.com/beyondstorage/go-service-qingstor/pull/48).
 
 This PR is still a draft now, and working in progress. Anyway, let's welcome [@xiongjiwei] !
 
@@ -138,15 +138,15 @@ This PR is still a draft now, and working in progress. Anyway, let's welcome [@x
 ### Summer 2021 of Open Source Promotion Plan
 
 This week, we got more new hands join in, and the discussion group is getting more and more active. 
-You are welcome to keep an eye on our forum: <https://forum.aos.dev/>, where all event-related announcements will be posted.
+You are welcome to keep an eye on our forum: <https://forum.beyondstorage.io/>, where all event-related announcements will be posted.
 
-For more details, please refer to <https://aos.dev/community/events/ospp-summer-2021>.
+For more details, please refer to <https://beyondstorage.io/community/events/ospp-summer-2021>.
 
 ---
 
-[go-storage]: https://github.com/aos-dev/go-storage
+[go-storage]: https://github.com/beyondstorage/go-storage
 
-[go-integration-test]: https://github.com/aos-dev/go-integration-test
+[go-integration-test]: https://github.com/beyondstorage/go-integration-test
 
 [@bokket]: https://github.com/bokket
 

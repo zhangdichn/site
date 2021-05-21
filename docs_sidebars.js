@@ -39,6 +39,7 @@ module.exports = {
                                 'go-storage/operations/appender/index',
                                 'go-storage/operations/appender/create_append',
                                 'go-storage/operations/appender/write_append',
+                                'go-storage/operations/appender/commit_append',
                             ]
                         },
                         {

@@ -13,7 +13,7 @@ title: Summer 2021 of Open Source Promotion Plan
 - Join any of our chatroom [#event-ospp-summer-2021](https://matrix.to/#/#event-ospp-summer-2021:aos.dev) to communicate with mentors and other mentees.
 - Introduce your self in the room.
 - Choose a project from following and send you CV to the mentors.
-- Visit [here](https://github.com/orgs/aos-dev/projects/1?card_filter_query=label%3A%22help+wanted%22) to finish some issues to know more about AOS.
+- Visit [here](https://github.com/orgs/beyondstorage/projects/1?card_filter_query=label%3A%22help+wanted%22) to finish some issues to know more about Beyond Storage.
 
 Visit <https://summer.iscas.ac.cn/help/timeline/> to get full timeline.
 
@@ -26,49 +26,49 @@ In this event, we provide following projects.
 WebDAV is an extension to the HTTP/1.1 protocol that allows clients to perform remote Web content operations. This project will implement the go-storage Storager interface for WebDAV, enabling users to manipulate data on WebDAV servers using a unified interface.
 
 - Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
-- Issue: <https://github.com/aos-dev/go-service-webdav/issues/1>
+- Issue: <https://github.com/beyondstorage/go-service-webdav/issues/1>
 
 ### FTP for go-storage
 
 FTP is the oldest network tool in the history of the Internet and is still widely used in many areas. This project will implement go-storage's Storager interface for FTP, enabling users to use a unified interface to manipulate data on FTP servers.
 
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
-- Issue: <https://github.com/aos-dev/go-service-ftp/issues/3>
+- Issue: <https://github.com/beyondstorage/go-service-ftp/issues/3>
 
 ### minio for go-storage
 
 minio is an open source cloud-native high-performance object storage service. This project will use minio's native SDK to implement go-storage's Storager interface, enabling users to manipulate data on minio servers through a unified interface.
 
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
-- Issue: <https://github.com/aos-dev/go-service-minio/issues/2>
+- Issue: <https://github.com/beyondstorage/go-service-minio/issues/2>
 
 ### HDFS for go-storage
 
 Hadoop Distributed File System (HDFS) is a distributed file system developed for applications on large datasets. This project will implement the go-storage Storager interface for HDFS, enabling users to manipulate data on HDFS services through a unified interface.
 
 - Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
-- Issue: <https://github.com/aos-dev/go-service-hdfs/issues/1>
+- Issue: <https://github.com/beyondstorage/go-service-hdfs/issues/1>
 
 ### ipfs for go-storage
 
 The InterPlanetary File System (IPFS) is a content-based addressing, versioning, peer-to-peer hypermedia transfer protocol that combines P2P network technology, BitTorrent transfer technology, Git version control, self-proving file systems, and other technologies, and is a new generation of HTTP-based This project will implement the go This project will implement the go-storage Storager interface for IPFS, enabling users to manipulate data on ipfs nodes through a unified interface.
 
 - Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
-- Issue: <https://github.com/aos-dev/go-service-ipfs/issues/1>
+- Issue: <https://github.com/beyondstorage/go-service-ipfs/issues/1>
 
 ### Storj for go-storage
 
 Storj is a decentralized cloud storage framework web platform, and this project will implement go-storage's Storager interface for Storj, enabling users to manipulate data on the Storj service through a unified interface.
 
 - Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
-- Issue: <https://github.com/aos-dev/go-service-storj/issues/1>
+- Issue: <https://github.com/beyondstorage/go-service-storj/issues/1>
 
 ### FTP Server based on go-storage
 
 FTP is the oldest network tool in the history of the Internet and is still widely used in many areas. This project will develop an FTP server based on go-storage.
 
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
-- Issue: <https://github.com/aos-dev/go-ftp-server/issues/1>
+- Issue: <https://github.com/beyondstorage/go-ftp-server/issues/1>
 
 ### Google Drive for go-storage
 
@@ -99,6 +99,6 @@ Open Source Promotion Plan encourages everyone to pay close attention to open so
 
 Link: <https://summer.iscas.ac.cn/>
 
-## AOS
+## Beyond Storage
 
-`AOS` is an abbreviation of `Application Oriented Storage`, we plan to build an application-oriented storage abstraction layer. For now, we are focusing our golang implementations: [go-storage](https://github.com/aos-dev/go-storage)
+`Beyond Storage` is a storage abstraction beyond the existing storage services. For now, we are focusing our golang implementations: [go-storage](https://github.com/beyondstorage/go-storage)

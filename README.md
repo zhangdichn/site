@@ -30,6 +30,6 @@ This command generates static content into the `build` directory and can be serv
 
 ## Sponsor
 
-<a href="https://vercel.com?utm_source=aos-dev&utm_campaign=oss">
+<a href="https://vercel.com?utm_source=beyondstorage&utm_campaign=oss">
     <img src="./static/img/vercel_logo_dark.svg">
 </a>
