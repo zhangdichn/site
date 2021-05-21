@@ -13,6 +13,13 @@
 - `host` is the host that service used, like `qingstor.com` and `192.168.0.1`
 - `port` is the port that services used, like `433` and `80`.
 
+## Valid Examples
+
+- `http:example.com:80`
+- `https:example.com:433`
+- `http:example.com`
+- `https:example.com`
+
 ## Tips
 
 - Port could be emit in following states
