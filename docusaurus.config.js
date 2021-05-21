@@ -51,7 +51,7 @@ module.exports = {
                     ],
                 },
                 {
-                    href: 'https://github.com/aos-dev',
+                    href: 'https://github.com/beyondstorage',
                     position: 'right',
                     className: 'header-github-link',
                     'aria-label': 'GitHub repository',
