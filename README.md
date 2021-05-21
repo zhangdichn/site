@@ -4,6 +4,10 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 
 ## Installation
 
+Please follow [these](https://yarn.bootcss.com/docs/install/#debian-stable) instructions. 
+
+After installation, execute
+
 ```console
 yarn install
 ```
