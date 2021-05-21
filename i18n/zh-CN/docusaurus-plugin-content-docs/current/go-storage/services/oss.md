@@ -45,6 +45,8 @@ This service implements following interfaces:
 
 - [Appender](../operations/appender/index.md)
 
+- [Multiparter](../operations/multiparter/index.md)
+
 ## Pairs
 
 ### Server-Side Encryption (SSE)
@@ -70,8 +72,9 @@ For global users, refer to https://www.alibabacloud.com/help/doc-detail/31871.ht
 
 ##### Supported Operations
 
-- [Write](../operations/storager/write.md)
 - [CreateAppend](../operations/appender/create_append.md)
+- [CreateMultipart](../operations/multiparter/create_multipart.md)
+- [Write](../operations/storager/write.md)
 
 #### SSE-OSS
 
@@ -81,5 +84,6 @@ For global users, refer to https://www.alibabacloud.com/help/doc-detail/31871.ht
 
 ##### Supported Operations
 
-- [Write](../operations/storager/write.md)
 - [CreateAppend](../operations/appender/create_append.md)
+- [CreateMultipart](../operations/multiparter/create_multipart.md)
+- [Write](../operations/storager/write.md)

@@ -42,6 +42,8 @@ This service implements following interfaces:
 
 - [Storager](../operations/storager/index.md)
 
+- [Multiparter](../operations/multiparter/index.md)
+
 ## Pairs
 
 ### Server-Side Encryption (SSE)
@@ -62,6 +64,7 @@ Refer to https://cloud.tencent.com/document/product/436/18145 for more details.
 
 ##### Supported Operations
 
+- [CreateMultipart](../operations/multiparter/create_multipart.md)
 - [Write](../operations/storager/write.md)
 
 #### SSE-KMS
@@ -74,6 +77,7 @@ Refer to https://cloud.tencent.com/document/product/436/18145 for more details.
 
 ##### Supported Operations
 
+- [CreateMultipart](../operations/multiparter/create_multipart.md)
 - [Write](../operations/storager/write.md)
 
 #### SSE-C
@@ -87,6 +91,7 @@ Server-Side Encryption with Customer-Provided Keys
 
 ##### Supported Operations
 
+- [CreateMultipart](../operations/multiparter/create_multipart.md)
 - [Read](../operations/storager/read.md)
 - [Stat](../operations/storager/stat.md)
 - [Write](../operations/storager/write.md)

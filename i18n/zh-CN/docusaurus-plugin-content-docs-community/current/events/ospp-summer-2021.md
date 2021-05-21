@@ -70,6 +70,20 @@ FTP 是互联网历史上最悠久的网络工具，至今仍在多个领域被�
 - 导师: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/aos-dev/go-ftp-server/issues/1>
 
+### Google Drive for go-storage
+
+Google Drive is a file storage and synchronization service developed by Google. This project will implement go-storage's Storager interface, enabling users to manipulate data in Google Drive through a unified interface.
+
+- 导师: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
+- Issue: <https://github.com/beyondstorage/go-service-gdrive/issues/2>
+
+### OneDrive for go-storage
+
+Microsoft OneDrive (formerly SkyDrive) is a file hosting service and synchronization service operated by Microsoft as part of its web version of Office. This project will implement go-storage's Storager interface, enabling users to manipulate data in OneDrive through a unified interface.
+
+- 导师： [xxchan](https://matrix.to/#/@xxchan:matrix.org)
+- Issue: <https://github.com/beyondstorage/go-service-onedrive/issues/2>
+
 ## 关于
 
 ## 开源软件供应链点亮计划
@@ -82,4 +96,4 @@ FTP 是互联网历史上最悠久的网络工具，至今仍在多个领域被�
 
 ## AOS
 
-`AOS` 是 ` Application Oriented Storage `的缩写，我们计划构建一个面向应用程序的存储抽象层。 现在，我们正聚焦于 Golang 的实现： [go-storage](https://github.com/aos-dev/go-storage)
+`AOS` 是 ` Application Oriented Storage `的缩写，我们计划构建一个面向应用程序的存储抽象层。 现在，我们正聚焦于 Golang 的实现： [go-sorage](https://github.com/aos-dev/go-storage)
