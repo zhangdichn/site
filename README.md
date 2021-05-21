@@ -4,7 +4,7 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 
 ## Installation
 
-Please follow [these](https://yarnpkg.com/lang/en/docs/install/) instructions. 
+Please follow [these](https://yarnpkg.com/getting-started/install) instructions. 
 
 After installation, execute
 
