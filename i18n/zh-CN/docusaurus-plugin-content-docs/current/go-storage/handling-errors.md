@@ -22,7 +22,7 @@ Of course, we can do more. Our goal is:
 
 Simply put, we defined a finite set of error codes and all errors returned by the public APIs of `go-storage` will have an error code. You can use [errors.Is](https://golang.org/pkg/errors/#Is) to check the error code and handle the error correspondingly.
 
-The error codes can be either globally shared by all services (defined in [go-storage/services/error.go](https://github.com/aos-dev/go-storage/blob/master/services/error.go)), or service-specific (defined in `go-service-*/error.go`).
+The error codes can be either globally shared by all services (defined in [go-storage/services/error.go](https://github.com/beyondstorage/go-storage/blob/master/services/error.go)), or service-specific (defined in `go-service-*/error.go`).
 
 An error code can have a more fine-grained internal classification: it can have 0, 1 or more related error `struct` types, which have fields carrying contextual information. And you can use [errors.As](https://golang.org/pkg/errors/#As) to handle them specially.
 
@@ -36,9 +36,9 @@ In `errors.As(originErr, &targetErr)`, the type of `targetErr` should be the `st
 
 ```go 
 import (
-    s3 "github.com/aos-dev/go-service-s3"
-    "github.com/aos-dev/go-storage/v3/pairs"
-    "github.com/aos-dev/go-storage/v3/services"
+    s3 "github.com/beyondstorage/go-service-s3"
+    "github.com/beyondstorage/go-storage/v4/pairs"
+    "github.com/beyondstorage/go-storage/v4/services"
 )
 
 // ...
@@ -115,7 +115,7 @@ Note: Usually using error codes and fine-grained error `struct`s is enough and y
 
 Actually there's some top-level errors wrapping the error codes and fine-grained error types, and they are the actual error types returned in `go-storage`. The figure below shows the structure:
 
-![](https://raw.githubusercontent.com/aos-dev/specs/master/rfcs/47/new.png)
+![](https://raw.githubusercontent.com/beyondstorage/specs/master/rfcs/47/new.png)
 
 - `InitError`: returned by `NewServicer` and `NewStorager`
 - `ServiceError`: returned by the methods of `Servicer`

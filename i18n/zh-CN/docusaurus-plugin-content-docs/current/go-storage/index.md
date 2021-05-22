@@ -2,9 +2,9 @@
 title: 介绍
 ---
 
-[![Build Status](https://github.com/aos-dev/go-storage/workflows/Unittst/badge.svg?branch=master)](https://github.com/aos-dev/go-storage/actions?query=workflow%3AUnittest) [![Go dev](https://godoc.org/github.com/aos-dev/go-storage?status.svg)](https://godoc.org/github.com/aos-dev/go-storage) [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE) [![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
+[![Build Status](https://github.com/beyondstorage/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/beyondstorage/go-storage/actions?query=workflow%3AUnittest) [![Go dev](https://pkg.go.dev/badge/github.com/beyondstorage/go-storage?utm_source=godoc)](https://godoc.org/github.com/beyondstorage/go-storage) [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE) [![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
 
-面向应用的 Golang 统一存储层。
+A storage abstraction beyond the existing storage services.
 
 ![](/docs/go-storage/operations/operations.png)
 
@@ -51,12 +51,12 @@ import (
     "bytes"
     "log"
 
-    "github.com/aos-dev/go-storage/v3/pairs"
-    "github.com/aos-dev/go-service-fs/v2"
+    "github.com/beyondstorage/go-storage/v4/pairs"
+    "github.com/beyondstorage/go-service-fs/v2"
 )
 
 func main() {
-    // 初始化服务
+    // Init a service.
     store, err := fs.NewStorager(pairs.WithWorkDir("/tmp"))
     if err != nil {
         log.Fatalf("service init failed: %v", err)
@@ -84,11 +84,11 @@ func main() {
 
 ## 示例
 
-所有示例都在 <https://github.com/aos-dev/go-storage-example> 中维护。
+All examples are maintained in <https://github.com/beyondstorage/go-storage-example>.
 
 ## 赞助者
 
-<a href="https://vercel.com?utm_source=aos-dev&utm_campaign=oss">
+<a href="https://vercel.com?utm_source=beyondstorage&utm_campaign=oss">
     <img src="/img/vercel_logo_dark.svg" />
 </a>
 

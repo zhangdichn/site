@@ -3,7 +3,7 @@ slug: /
 title: 介绍
 ---
 
-Here is community related pages for `AOS`.
+Here is community related pages for `Beyond Storage`.
 
 ## Tips
 
@@ -15,7 +15,7 @@ Here is community related pages for `AOS`.
 
 ### Async Discussion
 
-We host our async discussion on forums: <https://forum.aos.dev>.
+We host our async discussion on forums: <https://forum.beyondstorage.io/>.
 
 Our formal announcement will be on our forums.
 
@@ -23,16 +23,16 @@ Our formal announcement will be on our forums.
 
 #### Matrix
 
-The main method to communicate with AOS developers.
+The main method to communicate with Beyond Storage developers.
 
 We host our matrix server on `https://chat.aos.dev`.
 
-- For english speaking: join in [#campfire:aos.dev](https://matrix.to/#/#campfire:aos.dev)
-- For chinese speaking: join in [#campfire-zh:aos.dev](https://matrix.to/#/#campfire-zh:aos.dev)
+- For english speaking: join in [#campfire:aos.dev](https://matrix.to/#/#campfire:aos.dev)  <!-- Need Update. -->
+- For chinese speaking: join in [#campfire-zh:aos.dev](https://matrix.to/#/#campfire-zh:aos.dev) <!-- Need Update. -->
 
 #### Slack
 
-We have linked our matrix room to slack, please join our slack via <https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg>
+We have linked our matrix room to slack, please join our slack via <https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg> <!-- Need Update. -->
 
 #### Discord
 
