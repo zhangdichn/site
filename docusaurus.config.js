@@ -73,14 +73,14 @@ module.exports = {
                     path: 'docs',
                     routeBasePath: 'docs',
                     editUrl:
-                        'https://github.com/beyondstorage/site/settings',
+                        'https://github.com/beyondstorage/site/edit/master/',
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
                 },
                 blog: {
                     path: 'blog',
                     editUrl:
-                        'https://github.com/beyondstorage/site/settings',
+                        'https://github.com/beyondstorage/site/edit/master/',
                     routeBasePath: 'blog',
                     include: ['*.md', '*.mdx'],
                     showReadingTime: true,
@@ -104,7 +104,7 @@ module.exports = {
                 path: 'community',
                 routeBasePath: 'community',
                 editUrl:
-                    'https://github.com/beyondstorage/site/settings',
+                    'https://github.com/beyondstorage/site/edit/master/',
                 showLastUpdateAuthor: true,
                 showLastUpdateTime: true,
             }
