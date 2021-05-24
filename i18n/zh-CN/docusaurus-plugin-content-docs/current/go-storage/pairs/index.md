@@ -1,5 +1,6 @@
 ---
 title: 介绍
+sidebar_position: 1
 ---
 
 `Pair` is a core idea in `go-storage`, which used to carry optional arguments.

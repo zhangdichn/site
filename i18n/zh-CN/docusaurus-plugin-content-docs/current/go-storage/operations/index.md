@@ -1,5 +1,6 @@
 ---
 title: Introduction
+sidebar_position: 1
 ---
 
 Operation means a single action that we can do on a storage service.

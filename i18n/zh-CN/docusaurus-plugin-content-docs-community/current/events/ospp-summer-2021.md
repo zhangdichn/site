@@ -11,11 +11,10 @@ title: 开源软件供应链点亮计划 - 暑期2021
 ## 路线图
 
 - 加入我们的聊天室 [#event-ospp-2021](https://matrix.to/#/#event-ospp-summer-2021:aos.dev) 来与导师和其他学员进行沟通。
-- 在房间里介绍你自己。
-- 从下列项目中选择一个项目，然后将简历发送给对应导师。
-- Visit [here](https://github.com/orgs/beyondstorage/projects/1?card_filter_query=label%3A%22help+wanted%22) to finish some issues to know more about Beyond Storage.
+- 从下面选择一个项目。
+- 用 [模板](https://forum.beyondstorage.io/t/ospp-2021-summer-student-application-template/41) 将您的申请发送到 [论坛](https://forum.beyondstorage.io/)。
 
-访问 [https://summer.iscas.ac.cn/help/timeine/](https://summer.iscas.ac.cn/help/timeline/) 获取完整的时间线。
+> 访问 [https://summer.iscas.ac.cn/help/timeine/](https://summer.iscas.ac.cn/help/timeline/) 获取完整的时间线。
 
 ## 项目
 
@@ -70,16 +69,16 @@ FTP 是互联网历史上最悠久的网络工具，至今仍在多个领域被�
 - 导师: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-ftp-server/issues/1>
 
-### Google Drive for go-storage
+### go-storage 的 Google Drive 实现
 
-Google Drive is a file storage and synchronization service developed by Google. This project will implement go-storage's Storager interface, enabling users to manipulate data in Google Drive through a unified interface.
+Google Drive 是谷歌开发的文件存储和同步服务。 这个项目将会为 Google Drive 实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 Google Drive 服务上的数据。
 
 - 导师: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-gdrive/issues/2>
 
-### OneDrive for go-storage
+### go-storage 的 OneDrive 实现
 
-Microsoft OneDrive (formerly SkyDrive) is a file hosting service and synchronization service operated by Microsoft as part of its web version of Office. This project will implement go-storage's Storager interface, enabling users to manipulate data in OneDrive through a unified interface.
+Microsoft OneDrive(原为 SkyDrive) 是一个文件托管服务和同步服务，由 Microsoft 运行 ，作为其网络版的 Office 的一部分。 这个项目将会为 OneDrive 实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 OneDrive 服务上的数据。
 
 - 导师： [xxchan](https://matrix.to/#/@xxchan:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-onedrive/issues/2>
