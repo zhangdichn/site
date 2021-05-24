@@ -11,11 +11,10 @@ title: Summer 2021 of Open Source Promotion Plan
 ## Roadmap
 
 - Join any of our chatroom [#event-ospp-summer-2021](https://matrix.to/#/#event-ospp-summer-2021:aos.dev) to communicate with mentors and other mentees.
-- Introduce your self in the room.
-- Choose a project from following and send you CV to the mentors.
-- Visit [here](https://github.com/orgs/beyondstorage/projects/1?card_filter_query=label%3A%22help+wanted%22) to finish some issues to know more about Beyond Storage.
+- Choose a project from following.
+- Send your application to [forum](https://forum.beyondstorage.io/) with the [template](https://forum.beyondstorage.io/t/ospp-2021-summer-student-application-template/41)
 
-Visit <https://summer.iscas.ac.cn/help/timeline/> to get full timeline.
+> Visit <https://summer.iscas.ac.cn/help/timeline/> to get full timeline.
 
 ## Projects
 
