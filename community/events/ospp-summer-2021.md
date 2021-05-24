@@ -90,7 +90,7 @@ enabling users to manipulate data in OneDrive through a unified interface.
 
 ## About
 
-## Open Source Promotion Plan
+### Open Source Promotion Plan
 
 Open Source Promotion Plan encourages everyone to pay close attention to open source software and open source community, aiming to cultivate and explore more outstanding developers.
 
@@ -98,6 +98,6 @@ Open Source Promotion Plan encourages everyone to pay close attention to open so
 
 Link: <https://summer.iscas.ac.cn/>
 
-## Beyond Storage
+### Beyond Storage
 
 `Beyond Storage` is a storage abstraction beyond the existing storage services. For now, we are focusing our golang implementations: [go-storage](https://github.com/beyondstorage/go-storage)
