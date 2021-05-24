@@ -1,6 +1,5 @@
 ---
-title: Handling Errors in go-storage
-sidebar_label: Handling Errors
+title: Handling Errors
 ---
 
 `go-storage` returns errors that satisfy the Go `error` interface type. The most basic form of error handling looks similar to the following example:

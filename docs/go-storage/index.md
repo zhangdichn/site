@@ -1,5 +1,6 @@
 ---
 title: Introduction
+sidebar_position: 1
 ---
 
 [![Build Status](https://github.com/beyondstorage/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/beyondstorage/go-storage/actions?query=workflow%3AUnittest)

@@ -1,5 +1,6 @@
 ---
 title: Introduction
+sidebar_position: 1
 ---
 
 Storager is the main interface for storage service.
