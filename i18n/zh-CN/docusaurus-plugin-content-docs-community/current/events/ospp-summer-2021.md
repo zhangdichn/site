@@ -85,7 +85,7 @@ Microsoft OneDrive(原为 SkyDrive) 是一个文件托管服务和同步服务�
 
 ## 关于
 
-## 开源软件供应链点亮计划
+### 开源软件供应链点亮计划
 
 开源软件供应链点亮计划鼓励大家关注开源软件和开源社区，致力于培养和发掘更多优秀的开发者。
 
@@ -93,6 +93,6 @@ Microsoft OneDrive(原为 SkyDrive) 是一个文件托管服务和同步服务�
 
 链接： [https://summer.iscas.cn/](https://summer.iscas.ac.cn/)
 
-## Beyond Storage
+### Beyond Storage
 
 `Beyond Storage` is a storage abstraction beyond the existing storage services. For now, we are focusing our golang implementations: [go-storage](https://github.com/beyondstorage/go-storage)
