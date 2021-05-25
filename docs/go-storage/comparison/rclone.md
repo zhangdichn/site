@@ -1,4 +1,4 @@
-[Rclone](https://github.com/rclone/rclone) is a command line program to sync files and directories to and from different cloud storage providers. rclone is built upon [rclone/fs.Fs](https://github.com/rclone/rclone/blob/master/fs/fs.go) interface, and has upto 38 backend support.
+[Rclone](https://github.com/rclone/rclone) is a command-line program to sync files and directories to and from different cloud storage providers. rclone is built upon [rclone/fs.Fs](https://github.com/rclone/rclone/blob/master/fs/fs.go) interface, and has up to 38 backend support.
 
 rclone has following features:
 
@@ -17,16 +17,16 @@ rclone has following features:
 - Multi-threaded downloads to local disk
 - Can [serve](https://rclone.org/commands/rclone_serve/) local or remote files over HTTP/WebDav/FTP/SFTP/dlna
 
-rclone intends to be "rsync for cloud storage", but [go-storage] wants to build a storage abstraction beyond the existing storage services. It's a library instead an application.
+rclone intends to be "rsync for cloud storage", but [go-storage] wants to build a storage abstraction beyond the existing storage services. It's a library instead of an application.
 
 That means [go-storage] will focus on different features that rclone have:
 
 - Multipart support (S3 alike multipart support)
 - Append support (append content to file tail)
 - Page support (random write)
-- Different ListMode support, both Prefix and Dir
+- Both Prefix and Dir ListMode support
 - ...
 
-With [go-storage], developers can build applications like rclone without implement all those backends by hands.
+With [go-storage], developers can build applications like rclone without implementing all those backends by hand.
 
 [go-storage]: https://github.com/beyondstorage/go-storage
