@@ -26,6 +26,10 @@ WebDAV is an extension to the HTTP/1.1 protocol that allows clients to perform r
 
 - Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-webdav/issues/1>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-webdav/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/webdav) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ### FTP for go-storage
 
@@ -33,6 +37,11 @@ FTP is the oldest network tool in the history of the Internet and is still widel
 
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-ftp/issues/3>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-ftp/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/ftp) and [examples](https://github.com/beyondstorage/go-storage-example).
+
 
 ### minio for go-storage
 
@@ -40,6 +49,10 @@ minio is an open source cloud-native high-performance object storage service. Th
 
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-minio/issues/2>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-minio/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/minio) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ### HDFS for go-storage
 
@@ -47,6 +60,10 @@ Hadoop Distributed File System (HDFS) is a distributed file system developed for
 
 - Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-hdfs/issues/1>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-hdfs/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/hdfs) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ### ipfs for go-storage
 
@@ -54,6 +71,10 @@ The InterPlanetary File System (IPFS) is a content-based addressing, versioning,
 
 - Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-ipfs/issues/1>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-ipfs/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/ipfs) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ### Storj for go-storage
 
@@ -61,6 +82,10 @@ Storj is a decentralized cloud storage framework web platform, and this project 
 
 - Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-storj/issues/1>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-storj/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/storj) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ### FTP Server based on go-storage
 
@@ -68,6 +93,10 @@ FTP is the oldest network tool in the history of the Internet and is still widel
 
 - Mentor: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-ftp-server/issues/1>
+- Expect Output:
+  - Implement an FTP server at [go-ftp-server](https://github.com/beyondstorage/go-ftp-server).
+  - Implement integration tests.
+  - Update [documents](/docs/go-ftp-server/index)
 
 ### Google Drive for go-storage
 
@@ -77,6 +106,10 @@ enabling users to manipulate data in Google Drive through a unified interface.
 
 - Mentor: [xuanwo](https://matrix.to/#/@xuanwo:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-gdrive/issues/2>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-gdrive/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/gdrive) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ### OneDrive for go-storage
 
@@ -87,6 +120,10 @@ enabling users to manipulate data in OneDrive through a unified interface.
 
 - Mentor: [xxchan](https://matrix.to/#/@xxchan:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-onedrive/issues/2>
+- Expect Output:
+  - Implement all functions in [storage.go](https://github.com/beyondstorage/go-service-onedrive/blob/master/storage.go).
+  - Setup [integration tests](/docs/go-storage/internal/integration-tests) as described.
+  - Update [documents](/docs/go-storage/services/onedrive) and [examples](https://github.com/beyondstorage/go-storage-example).
 
 ## About
 
