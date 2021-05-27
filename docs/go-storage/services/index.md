@@ -3,26 +3,35 @@ title: Introduction
 sidebar_position: 1
 ---
 
-## Available services
+## Stable
 
-### Tire 1 support services
+Stable services have passed all integration tests.
 
-Tire 1 services should pass all integration tests, any failure will block release.
+- [Azure Blob Storage](./azblob.md)
+- [Tencent Cloud Object Storage(COS)](./cos.md)
+- [Dropbox](./dropbox.md)
+- [POSIX File System](./fs.md)
+- [Google Cloud Storage(GCS)](./gcs.md)
+- [qiniu kodo](./kodo.md)
+- [Aliyun Object Storage Service(OSS)](./oss.md)
+- [QingStor Object Storage](./qingstor.md)
+- [Amazon S3](./s3.md)
+  
+## Beta
 
-- [azblob](./azblob/)
-- [cos](./cos/)
-- [fs](./fs/)
-- [gcs](./gcs/)
-- [kodo](./kodo/)
-- [oss](./oss/)
-- [qingstor](./qingstor/)
-- [s3](./s3/)
+Beta services have implemented required functions, but not passed integration tests.
 
-### Tire 2 support services
+- [UPYUN Storage Service](./uss.md)
 
-Tire 2 services allow to fail one or more integration tests.
+## Alpha
 
-- [dropbox](./dropbox/)
-  - community contributed services
-- [uss](./uss/)
-  - uss have limitations for concurrent put/delete: delete a file shortly after put will make server returning an error
+Alpha services are in heavy development.
+
+- [FTP](./ftp.md)
+- [Google Drive](./gdrive.md)
+- [Hadoop Distributed File System(HDFS)](./hdfs.md)
+- [InterPlanetary File System(IPFS)](./ipfs.md)
+- [MinIO](./minio.md)
+- [Microsoft OneDrive](./onedrive.md)
+- [Storj](./storj.md)
+- [WebDAV](./webdav.md)

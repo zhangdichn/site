@@ -1,5 +1,9 @@
 [Tencent Cloud Object Storage](https://cloud.tencent.com/product/cos)
 
+## Project
+
+<https://github.com/beyondstorage/go-service-cos>
+
 ## Config
 
 ### Servicer

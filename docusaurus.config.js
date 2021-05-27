@@ -30,6 +30,9 @@ module.exports = {
         gtag: {
             trackingID: 'G-EKQWL4FN09',
         },
+        prism: {
+            additionalLanguages: ['toml'],
+        },
         navbar: {
             title: 'beyondstorage',
             logo: {
