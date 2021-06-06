@@ -2,6 +2,12 @@
 title: Summer 2021 of Open Source Promotion Plan
 ---
 
+```mdx-code-block
+import TOCInline from '@theme/TOCInline';
+
+<TOCInline toc={[toc[3]]} />
+```
+
 ## Communication
 
 - Matrix: <https://matrix.to/#/#event-ospp-summer-2021:aos.dev>
@@ -127,10 +133,10 @@ enabling users to manipulate data in OneDrive through a unified interface.
 ## Q&A 
 
 ```mdx-code-block
-import TOCInline from '@theme/TOCInline';
-
 <TOCInline toc={[toc[3]]} />
 ```
+
+If you have more questions, discuss in these [channels](#communication).
 
 ### How to apply?
 
@@ -154,24 +160,26 @@ You can apply for more than one projects (up to three among all the projects in 
 
 ### What's the requirements/selection criteria?
 
-We will mainly look at your resume, Github account and your project schedule. Please tell why you are interested in the project and establish a feasible schedule.
+We will mainly look at your resume, Github account and your project schedule. Please tell us why you are interested in the project and establish a feasible schedule.
 
-There are no hard and fast requirements. It will be better that you know a little golang, but it will be definitely okay if you don't know golang. No advanced techniques will be used.
+There are no hard and fast requirements. It will be better if you know a little golang, but it will be definitely okay if you don't know golang. No advanced techniques will be used.
 
 Actually the original purpose of this event is to attract new students to participate in open source projects and lower the threshold. If you are an experienced open source contributor, e.g., the committer of some well-known open source project, perhaps you are over-qualified and should be a mentor instead of a mentee :)
 
 ### What can I get from the project?
 
-- The experience of participating in a complete project development process: given the requirements, how to plan, how to review, how to test
+- The experience of participating in a complete project development process: 
+  
+  given the requirements, how to plan, how to review, how to test
 - The experience of open source collaborative development
-- Basic knowledge of golang and a golang project experience.
+- Basic knowledge of golang and a golang project experience
 - The award money
 
 ### What is this project going to do?
 
 The idea of `go-service-*` related projects is the same: to implement a `go-storage` interface for a storage service.
 
-[go-storage](https://github.com/beyondstorage/go-storage) is a storage abstraction layer we built, with various `go-services-*` to provide storage service support downwards and expose a unified interface upwards. In this way, user applications, such as FTP, FUSE, Webdav, data migration, backup, management, etc., can run on all storage services without additional modifications, by simply use the interface of `go-storage`. Write once, run on every storage services!
+[go-storage](https://github.com/beyondstorage/go-storage) is a storage abstraction layer we built. It expose a unified interface upwards, and various `go-services-*` provide storage service support downwards. In this way, user applications, such as FTP, FUSE, Webdav, data migration, backup, management, etc., can run on all storage services without additional modifications, by simply use the interface of `go-storage`. Write once, run on every storage services!
 
 So the background knowledge you will need to know is the interface defined by `go-storage` and how to implement the interface for corresponding storage service.
 
@@ -183,9 +191,11 @@ For example, it is enough to know hot to deploy a hadoop cluster via docker (htt
 
 ### What's the expected outcome? 
 
-In this project, you will only need to implement `Storager`. Take `go-service-hdfs` as an example, you will need to implement the functions [here](https://github.com/beyondstorage/go-service-hdfs/blob/master/storage.go)
+In this project, you will only need to implement `Storager`. Take `go-service-hdfs` as an example, you will need to implement the functions [here](https://github.com/beyondstorage/go-service-hdfs/blob/master/storage.go).
 
-The implementation won't be very hard, but you should set up and pass the integration tests. This will be relatively harder. You will perhaps need to deploy a cluster and handle some corner cases.
+The implementation won't be very hard, but you should set up and pass the integration tests. This will be relatively harder. You will perhaps need to deploy a server or cluster and handle some corner cases.
+
+You only need to use our [integration test framework](https://github.com/beyondstorage/go-integration-test). Further testing is not required.
 
 ### Do we have to use an official SDK?
 
