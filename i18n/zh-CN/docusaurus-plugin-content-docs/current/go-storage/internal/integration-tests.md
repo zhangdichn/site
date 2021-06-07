@@ -157,4 +157,4 @@ jobs:
 
 Secrets should be set by the project maintainer, please contact them in the public matrix rooms.
 
-[go-integration-test]: https://github.com/beyondstorage/go-integration-tes
+[go-integration-test]: https://github.com/beyondstorage/go-integration-test

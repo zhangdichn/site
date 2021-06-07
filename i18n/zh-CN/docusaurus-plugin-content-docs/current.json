@@ -42,5 +42,17 @@
   "sidebar.docs.category.Services": {
     "message": "服务",
     "description": "The label for category Services in sidebar docs"
+  },
+  "sidebar.docs.category.Internal": {
+    "message": "Internal",
+    "description": "The label for category Internal in sidebar docs"
+  },
+  "sidebar.docs.category.Comparison": {
+    "message": "Comparison",
+    "description": "The label for category Comparison in sidebar docs"
+  },
+  "sidebar.docs.category.go-ftp-server": {
+    "message": "go-ftp-server",
+    "description": "The label for category go-ftp-server in sidebar docs"
   }
 }
