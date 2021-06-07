@@ -3,13 +3,13 @@ slug: /
 title: Introduction
 ---
 
-Here is community related pages for `Beyond Storage`.
+Here are community-related pages for `Beyond Storage`.
 
 ## Tips
 
-- Be **open**, please don't try to connect or ask questions privately.
-- Be **nice**, please try to understand others from the perspective of kindness.
-- Be **async**, please respect each other's time and try to complete the communication through asynchronous way.
+- Be **open**. Please don't try to connect or ask questions privately.
+- Be **nice**. Please try to understand others from the perspective of kindness.
+- Be **async**. Please respect each other's time and try to complete the communication asynchronously.
 
 ## Discussions
 
@@ -23,7 +23,7 @@ Our formal announcement will be on our forums.
 
 #### Matrix
 
-The main method to communicate with Beyond Storage developers.
+This is the main method to communicate with Beyond Storage developers.
 
 We host our matrix server on `https://chat.aos.dev`.
 
@@ -32,7 +32,7 @@ We host our matrix server on `https://chat.aos.dev`.
 
 #### Slack
 
-We have linked our matrix room to slack, please join our slack via <https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg> <!-- Need Update. -->
+We have linked our matrix room to slack. Please join our slack via <https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg> <!-- Need Update. -->
 
 #### Discord
 
