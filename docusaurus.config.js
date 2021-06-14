@@ -91,6 +91,8 @@ module.exports = {
                         type: 'all',
                         copyright: `Copyright © ${new Date().getFullYear()} BeyondStorage.`,
                     },
+                    blogSidebarCount: 'ALL',
+                    blogSidebarTitle: 'All our posts',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

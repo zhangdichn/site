@@ -7,6 +7,8 @@ tags: [updates, weekly-report]
 
 Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstorage.io), range from 2021-05-10 to 2021-05-14.
 
+<!--truncate-->
+
 ## Library
 
 ### Path Style Support for go-service-qingstor

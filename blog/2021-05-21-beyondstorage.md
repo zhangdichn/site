@@ -13,6 +13,8 @@ We plan to build a storage abstraction beyond the existing storage services whic
 - Cross storage service through uniform interface.
 - Cross cloud application upon our library.
 
+<!--truncate-->
+
 ## What's Beyond Storage
 
 `Beyond Storage` is a storage abstraction beyond the existing storage services.

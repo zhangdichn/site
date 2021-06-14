@@ -9,6 +9,8 @@ Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstor
 
 Firstly, let's welcome the new hands: [xxchan](https://github.com/xxchan/). He joined in our team since 2021-04-19 and have made many improvements of our core library [go-storage].
 
+<!--truncate-->
+
 ## Library
 
 ### fs.FS and http.FileSystem Support

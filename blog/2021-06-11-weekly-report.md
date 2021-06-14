@@ -7,6 +7,8 @@ tags: [updates, weekly-report]
 
 Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstorage.io), range from 2021-06-07 to 2021-06-11.
 
+<!--truncate-->
+
 ## Application
 
 ### New UI Design
