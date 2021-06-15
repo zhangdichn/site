@@ -11,6 +11,8 @@ Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstor
 
 Due to the [International Workers' Day](https://en.wikipedia.org/wiki/International_Workers%27_Day), we only have three workdays this week. However, we still made lots of effort and managed to get some results.
 
+<!--truncate-->
+
 ## 库
 
 ### Appender 支持

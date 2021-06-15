@@ -9,6 +9,8 @@ tags:
 
 Hello everyone, here is the weekly report for [BeyondStorage][], range from 2021-05-17 to 2021-05-21.
 
+<!--truncate-->
+
 ## 应用
 
 ### dm

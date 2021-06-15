@@ -9,6 +9,8 @@ tags:
 
 Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstorage.io), range from 2021-04-25 to 2021-04-30.
 
+<!--truncate-->
+
 ## 库
 
 ### Appender 支持
