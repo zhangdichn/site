@@ -8,11 +8,11 @@ sidebar_position: 1
 There are two kinds of `Pair`:
 
 - Global Pair: Defined in [specs](https://github.com/beyondstorage/specs/blob/master/definitions/pairs.toml), shared across all services.
-- Service Pair: Defined in service's `service.toml` pairs section, only available in current service.
+- System Pair: Defined in service's `service.toml` pairs section, only available in current service.
 
 ## Available Pairs
 
-We will document all global pair here and leave service pairs in service's documents.
+We will document all global pair here and leave system pairs in service's documents.
 
 - [content_md5](./content_md5/)
 - [content_type](./content_type/)
@@ -35,7 +35,7 @@ We will document all global pair here and leave service pairs in service's docum
 
 `go-storage` provides a mechanism to allow user pass default pairs for every operation during `NewServicer` and `NewStorager`.
 
-Any service that supports this mechanism will generate service pairs called  `DefaultServicePairs` and `DefaultStoragePairs`:
+Any service that supports this mechanism will generate system pairs called  `DefaultServicePairs` and `DefaultStoragePairs`:
 
 ```go
 type DefaultStoragePairs struct {

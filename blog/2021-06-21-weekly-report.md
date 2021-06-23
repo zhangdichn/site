@@ -52,7 +52,7 @@ So users can get the storage's restrictions before really call the API.
 
 This week we approved and merged this GSP. The implementations could be tracked at [Tracking issue for GSP-97: Add Restrictions In Storage Metadata](https://github.com/beyondstorage/go-storage/issues/599).
 
-### Add Service Metadata In Storage Metadata
+### Add System Metadata In Storage Metadata
 
 [GSP-111](https://github.com/beyondstorage/specs/pull/111) is still under discussion.
 
