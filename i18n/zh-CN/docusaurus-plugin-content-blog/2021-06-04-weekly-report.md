@@ -25,7 +25,7 @@ We had config strings like `s3://bucket_name?access_key=xxxx&secret_key=xxxx` be
 
 Passing string config is indeed more convenient, if not much. So [@xxchan](https://github.com/xxchan) proposed [GSP-90: Parse Pairs from String](https://github.com/beyondstorage/specs/pull/90) to use a registry mechanism for parsing pairs.
 
-To illustrate its feasibility, [@xxchan](https://github.com/xxchan) implemented it in [go-storage](https://github.com/beyondstorage/go-storage) and [go-service-qingstor]. In addition, he provided an alternative way which use a deserializer instead of implementing parse functions ourselves. You can track [here](https://github.com/beyondstorage/specs/pull/90#issuecomment-852415718) for details.
+To illustrate its feasibility, [@xxchan](https://github.com/xxchan) implemented it in [go-storage](https://github.com/beyondstorage/go-storage) and [go-service-qingstor](https://github.com/beyondstorage/go-service-qingstor). In addition, he provided an alternative way which use a deserializer instead of implementing parse functions ourselves. You can track [here](https://github.com/beyondstorage/specs/pull/90#issuecomment-852415718) for details.
 
 This proposal is still in discussion, for more details, please refer to [GSP-90: Parse Pairs from String](https://github.com/beyondstorage/specs/pull/90).
 

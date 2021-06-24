@@ -73,7 +73,7 @@ func WithContentType(v string) Pair {
 We have two kind of pairs:
 
 - `Global Pair`: defined in [specs](https://github.com/beyondstorage/specs/blob/master/definitions/pairs.toml), could be used in all services.
-- `Service Pair`: defined in `service.toml`, could only be used in current service.
+- `System Pair`: defined in `service.toml`, could only be used in current service.
 
 All supported fields are following:
 
@@ -88,7 +88,7 @@ type = "int64"
 description = "specify size for this request, storage will only read limited content data"
 ```
 
-Example of adding service pair:
+Example of adding system pair:
 
 ```toml
 [pairs.force_path_style]
@@ -114,7 +114,7 @@ func (o *Object) MustGetContentLength() int64 {}
 We have two kind of info:
 
 - `Global Info`: defined in [specs](https://github.com/beyondstorage/specs/blob/master/definitions), could be used in all services.
-- `Service Info`: defined in `service.toml`, could only be used in current service.
+- `System Info`: defined in `service.toml`, could only be used in current service.
 
 All supported fields are following:
 
@@ -130,7 +130,7 @@ type = "string"
 export = true
 ```
 
-Example of adding service pair for object metadata:
+Example of adding system pair for object metadata:
 
 ```toml
 [infos.object.meta.storage-class]
@@ -231,7 +231,7 @@ func (s *Storage) convertWriteStorageClass(v string) (string, bool) {
 type = "bool"
 description = "see http://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html for Amazon S3: Virtual Hosting of Buckets"
 ```
-Service pairs, name should be `snack_case`
+System pairs, name should be `snack_case`
 
 ### `infos`
 
@@ -240,7 +240,7 @@ Service pairs, name should be `snack_case`
 type = "string"
 ```
 
-Service infos, name should be `kebab-case`
+System infos, name should be `kebab-case`
 
 [specs]: https://github.com/beyondstorage/specs
 [go-storage]: https://github.com/beyondstorage/go-storage
