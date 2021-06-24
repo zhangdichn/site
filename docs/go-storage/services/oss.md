@@ -8,35 +8,52 @@
 
 ### Servicer
 
+#### Available Pairs
+
 | Name | Required | Comments |
 | ---- | -------- | -------- |
 | [credential](go-storage/pairs/credential.md) | Y | only support `hmac` protocol |
 | [endpoint](go-storage/pairs/endpoint.md) | Y | |
 
+#### Examples
+
+Init servicer (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+
+```go
+import (
+	_ "github.com/beyondstorage/go-service-oss/v3"
+	"github.com/beyondstorage/go-storage/v4/services"
+)
+
+srv, err := services.NewServicerFromString("oss://?credential=hmac:<account_name>:<account_key>&endpoint=https:<location>.aliyuncs.com")
+if err != nil {
+    log.Fatalf("oss new service: %v", err)
+}
+```
+
 ### Storager
+
+#### Available Pairs
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
 | [name](go-storage/pairs/name.md) | Y | bucket name |
 | [work_dir](go-storage/pairs/work_dir.md) | N | work dir |
 
-## Example
+#### Examples
 
-Init servicer
+Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
-```yaml
-credential: hmac:<access_key>:<secret_key>
-endpoint: https:<location>.aliyuncs.com
-```
+```go
+import (
+	_ "github.com/beyondstorage/go-service-oss/v3"
+	"github.com/beyondstorage/go-storage/v4/services"
+)
 
-Init storager
-
-```yaml
-credential: hmac:<access_key>:<secret_key>
-endpoint: https:<location>.aliyuncs.com
-name: <bucket_name>
-work_dir: /<work_dir>
-location: <bucket_location>
+store, err := services.NewStoragerFromString("oss://<container_name>/<work_dir>?credential=hmac:<account_name>:<account_key>&endpoint=https:<location>.aliyuncs.com")
+if err != nil {
+    log.Fatalf("oss new service: %v", err)
+}
 ```
 
 ## Implementation

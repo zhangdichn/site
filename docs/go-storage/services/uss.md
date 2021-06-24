@@ -17,13 +17,15 @@
 
 ## Example
 
-Init storager
+Init storager (see [this page](go-storage/operations/index.md) for details)
 
-```yaml
-credential: hmac:<operator_name>:<operator_key>
-name: <bucket_name>
-work_dir: /<work_dir>
-endpoint: https:<domain>
+```go
+import (
+	_ "github.com/beyondstorage/go-service-uss/v3"
+	"github.com/beyondstorage/go-storage/v4/services"
+)
+
+store, err := services.NewStoragerFromString("uss://<bucket_name>/<work_dir>?credential=hmac:<account_name>:<account_key>&endpoint=https:<domain>")
 ```
 
 ## Implementation

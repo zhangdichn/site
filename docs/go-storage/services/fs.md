@@ -8,16 +8,26 @@ Local file system
 
 ### Storager
 
+#### Available Pairs
+
 | Name | Required | Comments |
 | ---- | -------- | -------- |
 | [work_dir](go-storage/pairs/work_dir.md) | N | work dir |
 
-## Example
+#### Examples
 
-Init storager
+Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
-```yaml
-work_dir: /<work_dir>
+```go
+import (
+	_ "github.com/beyondstorage/go-service-fs/v3"
+	"github.com/beyondstorage/go-storage/v4/services"
+)
+
+store, err := services.NewStoragerFromString("fs:///<work_dir>")
+if err != nil {
+    log.Fatalf("fs new service: %v", err)
+}
 ```
 
 ## Implementation
