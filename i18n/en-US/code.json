@@ -190,5 +190,49 @@
   "theme.SearchBar.label": {
     "message": "Search",
     "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Sidebar navigation",
+    "description": "The ARIA label for documentation menu"
+  },
+  "BeyondStorage Open source community": {
+    "message": "BeyondStorage Open source community"
+  },
+  "The BeyondStorage": {
+    "message": "The BeyondStorage"
+  },
+  "Focus On Provide Cross-Cloud Data Services": {
+    "message": "Focus On Provide Cross-Cloud Data Services"
+  },
+  "Why BeyondStorage?": {
+    "message": "Why BeyondStorage?"
+  },
+  "Open": {
+    "message": "Open"
+  },
+  "Neutral": {
+    "message": "Neutral"
+  },
+  "User Centrality": {
+    "message": "User Centrality"
+  },
+  "Open source, open discussion, open governance, built and improved by the community": {
+    "message": "Open source, open discussion, open governance, built and improved by the community"
+  },
+  "Completely vendor-neutral, avoiding vendor lock-in": {
+    "message": "Completely vendor-neutral, avoiding vendor lock-in"
+  },
+  "Always user-centered, designing and optimizing services from the user's perspective": {
+    "message": "Always user-centered, designing and optimizing services from the user's perspective"
+  },
+  "Read More": {
+    "message": "Read More"
+  },
+  "Community News": {
+    "message": "Community News"
   }
 }

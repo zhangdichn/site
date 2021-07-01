@@ -5,33 +5,100 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.banner {
   position: relative;
+  padding: 50px 0 var(--main-modules-gap);
   overflow: hidden;
+
+  text-align: center;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+.banner h1 {
+  line-height: 1.4;
+
+  font-size: 2.625rem;
+}
+
+.banner p {
+  line-height: 1.5rem;
+  margin-top: 2rem;
+
+  font-size: 1.125rem;
+}
+
+
+/* introduction */
+.introduction {
+  width: var(--main-modules-width);
+  margin: 0 auto var(--main-modules-gap);
+}
+
+.introduction > h2 {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 12px;
+  height: 44px;
+
+  background: #F1E759;
+  border-radius: 2px;
+
+  font-weight: normal;
+}
+
+.introductionContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.introductionContent div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 280px;
+  padding: 40px 20px;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+}
+
+.introductionContent div h2 {
+  margin: 20px 0;
+}
+
+.introductionContent div p {
+  text-align: center;
+}
+
+.introductionOpen {
+  background-color: #457DF6;
+}
+
+.introductionNeutral {
+  background-color: #63CC8B;
+}
+
+.introductionUserCentrality {
+  background-color: #916BF6;
+}
+
+/* architecture */
+
+.architecture {
+  display: block;
+  width: var(--main-modules-width);
+  margin: 0px auto var(--main-modules-gap);
+  text-align: center;
+}
+
+@media (max-width: 996px) {
+  .introductionContent {
+    display: block;
   }
-}
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.featureImage {
-  height: 200px;
-  width: 200px;
+  .introductionContent > div {
+    margin-bottom: 1rem;
+  }
 }
