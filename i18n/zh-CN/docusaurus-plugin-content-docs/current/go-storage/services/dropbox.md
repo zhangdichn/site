@@ -8,10 +8,28 @@
 
 ### Storager
 
+#### Available Pairs
+
 | Name                                         | Required | Comments                        |
 | -------------------------------------------- | -------- | ------------------------------- |
 | [credential](go-storage/pairs/credential.md) | Y        | only support `api_key` protocol |
 | [work_dir](go-storage/pairs/work_dir.md)     | N        | work dir                        |
+
+#### 示例
+
+Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+
+```go
+import (
+    _ "github.com/beyondstorage/go-service-dropbox/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
+)
+
+store, err := services.NewStoragerFromString("dropbox:///<work_dir>?credential=hmac:<account_name>:<account_key>")
+if err != nil {
+    log.Fatalf("dropbox new service: %v", err)
+}
+```
 
 ## Implementation
 

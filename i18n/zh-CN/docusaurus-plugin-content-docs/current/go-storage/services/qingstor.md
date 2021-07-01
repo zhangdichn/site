@@ -17,11 +17,15 @@
 
 #### Examples
 
+Init servicer (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+
 ```go
-service, err := qingstor.NewServicer(
-    pairs.WithCredential("hmac:access_key_id:secret_access_key"),
-    pairs.WithEndpoint("https:qingstor.com"),
+import (
+    _ "github.com/beyondstorage/go-service-qingstor/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
 )
+
+srv, err := services.NewServicerFromString("qingstor://?credential=hmac:access_key_id:secret_access_key&endpoint=https:qingstor.com")
 if err != nil {
     log.Fatalf("qingstor new service: %v", err)
 }
@@ -38,13 +42,15 @@ if err != nil {
 
 #### Examples
 
+Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+
 ```go
-service, err := qingstor.NewStorager(
-    pairs.WithCredential("hmac:access_key_id:secret_access_key"),
-    pairs.WithEndpoint("https:qingstor.com"),
-    pairs.WithName("bucket_name"),
-    pairs.WithWorkDir("/path/to/workdir"),
+import (
+    _ "github.com/beyondstorage/go-service-qingstor/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
 )
+
+store, err := services.NewStoragerFromString("qingstor://<bucket_name>/path/to/workdir?credential=hmac:access_key_id:secret_access_key&endpoint=https:qingstor.com")
 if err != nil {
     log.Fatalf("qingstor new service: %v", err)
 }

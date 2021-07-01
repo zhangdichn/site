@@ -8,34 +8,52 @@
 
 ### Servicer
 
+#### Available Pairs
+
 | Name                                         | Required | Comments                     |
 | -------------------------------------------- | -------- | ---------------------------- |
 | [credential](go-storage/pairs/credential.md) | Y        | only support `hmac` protocol |
 | [endpoint](go-storage/pairs/endpoint.md)     | Y        | endpoint provided by azure   |
 
+#### 示例
+
+Init servicer (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+
+```go
+import (
+    _ "github.com/beyondstorage/go-service-azblob/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
+)
+
+srv, err := services.NewServicerFromString("azblob://?credential=hmac:<account_name>:<account_key>&endpoint=https:<account_name>.<endpoint_suffix>")
+if err != nil {
+    log.Fatalf("azblob new service: %v", err)
+}
+```
+
 ### Storager
+
+#### Available Pairs
 
 | Name                                     | Required | Comments    |
 | ---------------------------------------- | -------- | ----------- |
 | [name](go-storage/pairs/name.md)         | Y        | bucket name |
 | [work_dir](go-storage/pairs/work_dir.md) | N        | work dir    |
 
-## Example
+#### 示例
 
-Init servicer
+Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
-```yaml
-credential: hmac:<account_name>:<account_key>
-endpoint: https:<account_name>.<endpoint_suffix>
-```
+```go
+import (
+    _ "github.com/beyondstorage/go-service-azblob/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
+)
 
-Init storager
-
-```yaml
-credential: hmac:<account_name>:<account_key>
-endpoint: https:<account_name>.<endpoint_suffix>
-name: <container_name>
-work_dir: /<work_dir>
+store, err := services.NewStoragerFromString("azblob://<container_name>/<work_dir>?credential=hmac:<account_name>:<account_key>&endpoint=https:<account_name>.<endpoint_suffix>")
+if err != nil {
+    log.Fatalf("azblob new service: %v", err)
+}
 ```
 
 ## Implementation

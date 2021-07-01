@@ -1,11 +1,7 @@
 {
   "title": {
-    "message": "beyondstorage",
+    "message": "BeyondStorage",
     "description": "The title in the navbar"
-  },
-  "item.label.Docs": {
-    "message": "文档",
-    "description": "Navbar item with label Docs"
   },
   "item.label.Community": {
     "message": "社区",
@@ -14,5 +10,33 @@
   "item.label.Blog": {
     "message": "博客",
     "description": "Navbar item with label Blog"
+  },
+  "item.label.Projects": {
+    "message": "项目",
+    "description": "Navbar item with label Projects"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.go-storage": {
+    "message": "go-storage",
+    "description": "Navbar item with label go-storage"
+  },
+  "item.label.go-ftp-server": {
+    "message": "go-ftp-server",
+    "description": "Navbar item with label go-ftp-server"
+  },
+  "item.label.Data migration": {
+    "message": "Data migration",
+    "description": "Navbar item with label Data migration"
+  },
+  "item.label.Activity": {
+    "message": "Activity",
+    "description": "Navbar item with label Activity"
+  },
+  "item.label.Forum": {
+    "message": "Forum",
+    "description": "Navbar item with label Forum"
   }
 }

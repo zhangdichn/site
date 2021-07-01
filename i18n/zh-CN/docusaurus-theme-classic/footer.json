@@ -1,6 +1,50 @@
 {
+  "link.title.BeyondStorage": {
+    "message": "BeyondStorage",
+    "description": "The title of the footer links column with title=BeyondStorage in the footer"
+  },
+  "link.title.Projects": {
+    "message": "项目",
+    "description": "The title of the footer links column with title=Projects in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Resources",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.go-storage": {
+    "message": "go-storage",
+    "description": "The label of footer link with label=go-storage linking to https://github.com/beyondstorage/go-storage"
+  },
+  "link.item.label.go-ftp-server": {
+    "message": "go-ftp-server",
+    "description": "The label of footer link with label=go-ftp-server linking to https://github.com/beyondstorage/go-ftp-server"
+  },
+  "link.item.label.Data migration": {
+    "message": "Data migration",
+    "description": "The label of footer link with label=Data migration linking to https://github.com/beyondstorage/dm"
+  },
+  "link.item.label.Documentation": {
+    "message": "Documentation",
+    "description": "The label of footer link with label=Documentation linking to docs"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "The label of footer link with label=Blog linking to blog"
+  },
+  "link.item.label.Activity": {
+    "message": "Activity",
+    "description": "The label of footer link with label=Activity linking to community"
+  },
+  "link.item.label.Forum": {
+    "message": "Forum",
+    "description": "The label of footer link with label=Forum linking to https://forum.beyondstorage.io"
+  },
   "copyright": {
-    "message": "Copyright © 2021 Beyond Storage. Built with Docusaurus. Powered by <a href=\"https://vercel.com/?utm_source=beyondstorage&utm_campaign=oss\"><img height=\"14px\" src=\"/img/vercel_logo.svg\"></a>",
+    "message": "Copyright © 2021 Beyond Storage.",
     "description": "The footer copyright"
   }
 }

@@ -53,12 +53,12 @@ import (
     "log"
 
     "github.com/beyondstorage/go-storage/v4/pairs"
-    "github.com/beyondstorage/go-service-fs/v2"
+    "github.com/beyondstorage/go-service-fs/v3"
 )
 
 func main() {
     // Init a service.
-    store, err := fs.NewStorager(pairs.WithWorkDir("/tmp"))
+    store, err := services.NewStoragerFromString("fs:///tmp")
     if err != nil {
         log.Fatalf("service init failed: %v", err)
     }

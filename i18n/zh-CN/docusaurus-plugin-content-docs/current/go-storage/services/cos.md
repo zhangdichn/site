@@ -8,12 +8,31 @@
 
 ### Servicer
 
+#### Available Pairs
+
 | Name                                         | Required | Comments                     |
 | -------------------------------------------- | -------- | ---------------------------- |
 | [credential](go-storage/pairs/credential.md) | Y        | only support `hmac` protocol |
 
+#### 示例
+
+Init servicer (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+
+```go
+import (
+    _ "github.com/beyondstorage/go-service-cos/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
+)
+
+srv, err := services.NewServicerFromString("cos://?credential=hmac:<account_name>:<account_key>")
+if err != nil {
+    log.Fatalf("cos new service: %v", err)
+}
+```
 
 ### Storager
+
+#### Available Pairs
 
 | Name                                     | Required | Comments    |
 | ---------------------------------------- | -------- | ----------- |
@@ -21,21 +40,20 @@
 | [work_dir](go-storage/pairs/work_dir.md) | N        | work dir    |
 | [location](go-storage/pairs/location.md) | Y        | location    |
 
-## Example
+#### 示例
 
-Init servicer
+Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
-```yaml
-credential: hmac:<access_key>:<secret_key>
-```
+```go
+import (
+    _ "github.com/beyondstorage/go-service-cos/v3"
+    "github.com/beyondstorage/go-storage/v4/services"
+)
 
-Init storager
-
-```yaml
-credential: hmac:<access_key>:<secret_key>
-name: <bucket_name>
-work_dir: /<work_dir>
-location: <bucket_location>
+store, err := services.NewStoragerFromString("cos://<container_name>/<work_dir>?credential=hmac:<account_name>:<account_key>&location=<bucket_location>")
+if err != nil {
+    log.Fatalf("cos new service: %v", err)
+}
 ```
 
 ## Implementation
