@@ -58,6 +58,16 @@ if err != nil {
 
 n, err := store.Read(path, &buf)
 if err != nil {
+	if errors.Is(err, services.ErrServiceInternal) {
+		// handle ErrServiceInternal
+		// (global error)
+		return
+	}
+	if errors.Is(err, services.ErrRequestThrottled) {
+		// handle ErrRequestThrottled
+		// (global error)
+		return
+	}
 	if errors.Is(err, services.ErrObjectNotExist) {
 		// handle ErrObjectNotExist 
 		// (global error)
@@ -103,6 +113,8 @@ Error Code|Fine-grained Error Type
 -----|-----
 `ErrObjectNotExist`|N/A
 `ErrPermissionDenied`|N/A
+`ErrServiceInternal` |N/A
+`ErrRequestThrottled` |N/A
 
 ## Top-level Errors 
 
