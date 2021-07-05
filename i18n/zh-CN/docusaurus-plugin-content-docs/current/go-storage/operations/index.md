@@ -47,7 +47,7 @@ For more details, take a look at [GSP-90](https://github.com/beyondstorage/specs
 
 :::caution
 
-To use a service, do not remember to import the corresponding `go-service-*` package so that the service can be registered in the `init` function.
+To use a service, do not forget to import the corresponding `go-service-*` package so that the service can be registered in the `init` function.
 
 :::
 
