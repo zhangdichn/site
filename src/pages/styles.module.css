@@ -5,6 +5,15 @@
  * and scoped locally.
  */
 
+.projectName {
+  display: inline-block;
+  margin-bottom: 0;
+
+  background-image: url('/img/underline.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
 .banner {
   position: relative;
   padding: 50px 0 var(--main-modules-gap);
@@ -26,6 +35,10 @@
   font-size: 1.125rem;
 }
 
+.banner img {
+  min-width: var(--main-modules-width);
+}
+
 
 /* introduction */
 .introduction {
@@ -33,7 +46,7 @@
   margin: 0 auto var(--main-modules-gap);
 }
 
-.introduction > h2 {
+.introduction > h3 {
   display: inline-flex;
   align-items: center;
   margin-bottom: 30px;
@@ -73,28 +86,89 @@
 }
 
 .introductionOpen {
-  background-color: #457DF6;
+  background-color: #2B99FF;
 }
 
 .introductionNeutral {
-  background-color: #63CC8B;
+  background-color: #2DD482;
 }
 
 .introductionUserCentrality {
-  background-color: #916BF6;
+  background-color: #8D67FD;
 }
 
 /* architecture */
 
-.architecture {
+.architecture, .projects {
   display: block;
   width: var(--main-modules-width);
   margin: 0px auto var(--main-modules-gap);
   text-align: center;
 }
 
+.architecture img {
+  min-width: var(--main-modules-width);
+}
+
+/* projects */
+
+.projects h1 {
+  display: inline-block;
+
+  margin-bottom: 60px;
+  font-size: 2.25rem;
+
+  background-image: url('/img/underline1.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.projectsContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projectsContent > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.projectsContent > div > img, .projects > div > p {
+  margin-bottom: 32px;
+}
+
+.projectsContent h2 {
+  margin-bottom: 20px;
+}
+
+.projectsContent ul {
+  flex-grow: 1;
+
+  display: inline-block;
+  text-align: left;
+}
+
+.projectsContent ul li {
+  margin-bottom: 24px;
+}
+
+.projectsContent a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+
+  height: 32px;
+
+  color: #ffffff;
+
+  background: #31383E;
+  border-radius: 4px;
+}
+
 @media (max-width: 996px) {
-  .introductionContent {
+  .introductionContent, .projects {
     display: block;
   }
 

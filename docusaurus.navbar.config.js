@@ -9,6 +9,7 @@ module.exports = {
             label: 'Projects',
             position: 'left',
             items: [
+                {label: 'go-storage', href: 'https://github.com/beyondstorage/go-storage'},
                 {label: 'Data migration', href: 'https://github.com/beyondstorage/dm'},
             ],
         },

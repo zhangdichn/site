@@ -25,6 +25,19 @@
   border-color: var(--ifm-color-primary);
 }
 
+.DocSearch-Button-Keys {
+  display: none;
+}
+
 .DocSearch-Container {
   z-index: calc(var(--ifm-z-index-fixed) + 1);
+}
+
+.DocSearch-Search-Icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 0.875rem;
 }

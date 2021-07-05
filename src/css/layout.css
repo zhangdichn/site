@@ -152,3 +152,8 @@
     display: block;
   }
 }
+
+/* docs-wrapper doc-page */
+.docs-wrapper {
+  padding: 40px var(--ifm-navbar-padding-horizontal);
+}

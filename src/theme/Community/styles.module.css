@@ -1,17 +1,24 @@
 .communities {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 28px;
   min-height: 400px;
   margin-bottom: var(--main-modules-gap);
   padding: 40px var(--ifm-navbar-padding-horizontal);
 
-  background-color: #916BF6;
+  background-color: #8D67FD;
+}
+
+.communitiesContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 7.625rem;
+  width: var(--main-modules-width);
+  margin: 0px auto;
 }
 
 .communityNews {
   color: #FFFFFF;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .communityNews li {
@@ -37,7 +44,7 @@
   flex-direction: column;
   padding: 40px;
 
-  background: #F1E759;
+  background: #FEEE60;
   border-radius: 8px;
 }
 
