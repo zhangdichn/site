@@ -19,7 +19,9 @@ const Community = () => {
                     {
                         items.slice(0, 3).map((item) => (
                             <li key={item.permalink}>
-                            <Link to={item.permalink}>{item.title}</Link>
+                                <Link to={item.permalink}>
+                                    <h3>{item.title}</h3>
+                                </Link>
                             </li>
                         ))
                     }
@@ -31,16 +33,22 @@ const Community = () => {
                     </li>
                 </ul>
                 <div className={styles.communitiesContext}>
-                    <h1><Translate>Community News</Translate></h1>
+                    <div>
+                        <h1><Translate>Community News</Translate></h1>
+                    </div>
                     {
                         lastItem ? (
-                            <Link to={lastItem.permalink}>{lastItem.title}</Link>
+                            <div>
+                                <Link to={lastItem.permalink}>{lastItem.title}</Link>
+                            </div>
                         ) : null
                     }
-                    <Link to="blog">
-                        <Translate>Read More</Translate>
-                        <img src={useBaseUrl('/img/arrow_rotate.svg')} />
-                    </Link>
+                    <div>
+                        <Link to="blog">
+                            <Translate>Read More</Translate>
+                            <img src={useBaseUrl('/img/arrow_rotate.svg')} />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

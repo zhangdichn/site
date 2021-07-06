@@ -10,7 +10,7 @@ module.exports = {
             position: 'left',
             items: [
                 {label: 'go-storage', href: 'https://github.com/beyondstorage/go-storage'},
-                {label: 'Data migration', href: 'https://github.com/beyondstorage/dm'},
+                {label: 'BeyondTP', href: 'https://github.com/beyondstorage/beyond-tp'},
             ],
         },
         {
@@ -35,16 +35,16 @@ module.exports = {
             ],
         },
         {
-            to: 'community/#discussions',
+            href: 'https://matrix.to/#/#campfire:aos.dev',
             position: 'right',
             className: 'navbar__link--matrix',
             'aria-label': 'Matrix',
         },
         {
-            href: 'https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg',
+            href: 'https://twitter.com/beyond_storage',
             position: 'right',
-            className: 'navbar__link--slack',
-            'aria-label': 'GitHub repository',
+            className: 'navbar__link--twitter',
+            'aria-label': 'Twitter',
         },
         {
             href: 'https://github.com/beyondstorage',

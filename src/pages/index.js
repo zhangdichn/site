@@ -101,9 +101,9 @@ function Home() {
                         ]}
                     />
                     <Project
-                        title="DM"
+                        title="BeyondTP"
                         logo="/img/dm.svg"
-                        url="https://github.com/beyondstorage/dm"
+                        url="https://github.com/beyondstorage/beyond-tp"
                         description={<Translate>dm description</Translate>}
                         articles={[
                             <Translate>dm article one</Translate>,
