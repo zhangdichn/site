@@ -88,7 +88,12 @@
 }
 
 @media (max-width: 996px) {
-  .communities {
+  .communities, .communitiesContent {
     display: block;
+    padding: 0;
+  }
+
+  .communities {
+    padding-bottom: 1rem;
   }
 }
