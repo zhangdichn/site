@@ -38,6 +38,7 @@
   :root {
     --main-modules-width: calc(100vw - 2rem);
     --main-modules-gap: 60px;
+    --ifm-navbar-padding-horizontal: 16px;
   }
 }
 

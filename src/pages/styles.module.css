@@ -181,7 +181,7 @@
 }
 
 @media (max-width: 996px) {
-  .introductionContent, .projects {
+  .introductionContent, .projects, .projectsContent {
     display: block;
   }
 
