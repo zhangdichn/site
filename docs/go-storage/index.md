@@ -55,8 +55,8 @@ import (
 	"bytes"
 	"log"
 
-	"github.com/beyondstorage/go-storage/v4/pairs"
-	"github.com/beyondstorage/go-service-fs/v3"
+	_ "github.com/beyondstorage/go-service-fs/v3"
+	"github.com/beyondstorage/go-storage/v4/services"
 )
 
 func main() {
