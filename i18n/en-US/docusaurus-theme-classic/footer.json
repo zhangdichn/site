@@ -19,14 +19,6 @@
     "message": "go-storage",
     "description": "The label of footer link with label=go-storage linking to https://github.com/beyondstorage/go-storage"
   },
-  "link.item.label.go-ftp-server": {
-    "message": "go-ftp-server",
-    "description": "The label of footer link with label=go-ftp-server linking to https://github.com/beyondstorage/go-ftp-server"
-  },
-  "link.item.label.Data migration": {
-    "message": "Data migration",
-    "description": "The label of footer link with label=Data migration linking to https://github.com/beyondstorage/dm"
-  },
   "link.item.label.Documentation": {
     "message": "Documentation",
     "description": "The label of footer link with label=Documentation linking to docs"
@@ -49,6 +41,6 @@
   },
   "link.item.label.BeyondTP": {
     "message": "BeyondTP",
-    "description": "The label of footer link with label=BeyondTP linking to https://github.com/beyondstorage/dm"
+    "description": "The label of footer link with label=BeyondTP linking to https://github.com/beyondstorage/beyond-tp"
   }
 }

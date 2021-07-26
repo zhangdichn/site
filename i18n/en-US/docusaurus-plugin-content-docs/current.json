@@ -51,8 +51,16 @@
     "message": "Comparison",
     "description": "The label for category Comparison in sidebar docs"
   },
-  "sidebar.docs.category.go-ftp-server": {
-    "message": "go-ftp-server",
-    "description": "The label for category go-ftp-server in sidebar docs"
+  "sidebar.docs.category.BeyondTP": {
+    "message": "BeyondTP",
+    "description": "The label for category BeyondTP in sidebar docs"
+  },
+  "sidebar.docs.category.BeyondFS": {
+    "message": "BeyondFS",
+    "description": "The label for category BeyondFS in sidebar docs"
+  },
+  "sidebar.docs.category.BeyondFTP": {
+    "message": "BeyondFTP",
+    "description": "The label for category BeyondFTP in sidebar docs"
   }
 }

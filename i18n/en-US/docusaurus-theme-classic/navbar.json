@@ -23,14 +23,6 @@
     "message": "go-storage",
     "description": "Navbar item with label go-storage"
   },
-  "item.label.go-ftp-server": {
-    "message": "go-ftp-server",
-    "description": "Navbar item with label go-ftp-server"
-  },
-  "item.label.Data migration": {
-    "message": "Data migration",
-    "description": "Navbar item with label Data migration"
-  },
   "item.label.Activity": {
     "message": "Activity",
     "description": "Navbar item with label Activity"
