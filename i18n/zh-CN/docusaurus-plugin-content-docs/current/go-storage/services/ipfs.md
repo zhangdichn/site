@@ -10,10 +10,10 @@
 
 #### Available Pairs
 
-| Name                                     | Required | Comments |
-| ---------------------------------------- | -------- | -------- |
-| [endpoint](go-storage/pairs/endpoint.md) | Y        | endpoint |
-| [work_dir](go-storage/pairs/work_dir.md) | N        | work dir |
+| Name                             | Required | Comments |
+| -------------------------------- | -------- | -------- |
+| [endpoint](../pairs/endpoint.md) | Y        | endpoint |
+| [work_dir](../pairs/work_dir.md) | N        | work dir |
 
 #### 示例
 

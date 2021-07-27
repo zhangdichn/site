@@ -101,7 +101,7 @@ FTP 是互联网历史上最悠久的网络工具，至今仍在多个领域被�
 - 预期输出：
   - 在 [go-ftp-server](https://github.com/beyondstorage/go-ftp-server) 上实现一个 FTP 服务器。
   - 实现集成测试。
-  - Update [documents](/docs/BeyondFTP/index)
+  - Update [documents](/docs/beyond-ftp/index)
 
 ### go-storage 的 Google Drive 实现
 

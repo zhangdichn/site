@@ -10,10 +10,10 @@
 
 #### Available Pairs
 
-| Name                                         | Required | Comments                     |
-| -------------------------------------------- | -------- | ---------------------------- |
-| [credential](go-storage/pairs/credential.md) | Y        | only support `hmac` protocol |
-| [endpoint](go-storage/pairs/endpoint.md)     | Y        |                              |
+| Name                                 | Required | Comments                     |
+| ------------------------------------ | -------- | ---------------------------- |
+| [credential](../pairs/credential.md) | Y        | only support `hmac` protocol |
+| [endpoint](../pairs/endpoint.md)     | Y        |                              |
 
 #### Examples
 
@@ -35,10 +35,10 @@ if err != nil {
 
 #### Available Pairs
 
-| Name                                     | Required | Comments    |
-| ---------------------------------------- | -------- | ----------- |
-| [name](go-storage/pairs/name.md)         | Y        | bucket name |
-| [work_dir](go-storage/pairs/work_dir.md) | N        | work dir    |
+| Name                             | Required | Comments    |
+| -------------------------------- | -------- | ----------- |
+| [name](../pairs/name.md)         | Y        | bucket name |
+| [work_dir](../pairs/work_dir.md) | N        | work dir    |
 
 #### Examples
 

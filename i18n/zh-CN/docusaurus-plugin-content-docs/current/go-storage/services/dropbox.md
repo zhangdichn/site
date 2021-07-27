@@ -10,10 +10,10 @@
 
 #### Available Pairs
 
-| Name                                         | Required | Comments                        |
-| -------------------------------------------- | -------- | ------------------------------- |
-| [credential](go-storage/pairs/credential.md) | Y        | only support `api_key` protocol |
-| [work_dir](go-storage/pairs/work_dir.md)     | N        | work dir                        |
+| Name                                 | Required | Comments                        |
+| ------------------------------------ | -------- | ------------------------------- |
+| [credential](../pairs/credential.md) | Y        | only support `api_key` protocol |
+| [work_dir](../pairs/work_dir.md)     | N        | work dir                        |
 
 #### 示例
 
