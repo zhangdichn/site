@@ -2,4 +2,5 @@
 
 ## Behavior
 
-- `create` SHOULD NOT do any API call.
+- Create SHOULD NOT send any API call.
+- Create SHOULD accept ObjectMode pair as object mode.
