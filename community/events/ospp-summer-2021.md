@@ -101,7 +101,7 @@ FTP is the oldest network tool in the history of the Internet and is still widel
 - Expect Output:
   - Implement an FTP server at [go-ftp-server](https://github.com/beyondstorage/go-ftp-server).
   - Implement integration tests.
-  - Update [documents](/docs/BeyondFTP/index)
+  - Update [documents](/docs/beyond-ftp/index)
 
 ### Google Drive for go-storage
 

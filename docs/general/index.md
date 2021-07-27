@@ -1,6 +1,6 @@
 ---
-slug: /
 title: Introduction
+sidebar_position: 1
 ---
 
 `Beyond Storage` is a storage abstraction beyond the existing storage services. 

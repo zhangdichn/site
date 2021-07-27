@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "BeyondStorage",
+    "message": "beyondstorage",
     "description": "The title in the navbar"
   },
   "item.label.Community": {
@@ -34,5 +34,17 @@
   "item.label.BeyondTP": {
     "message": "BeyondTP",
     "description": "Navbar item with label BeyondTP"
+  },
+  "item.label.General": {
+    "message": "General",
+    "description": "Navbar item with label General"
+  },
+  "item.label.BeyondFS": {
+    "message": "BeyondFS",
+    "description": "Navbar item with label BeyondFS"
+  },
+  "item.label.BeyondFTP": {
+    "message": "BeyondFTP",
+    "description": "Navbar item with label BeyondFTP"
   }
 }

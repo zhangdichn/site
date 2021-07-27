@@ -46,9 +46,9 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    sidebarPath: require.resolve('./docs_sidebars.js'),
-                    path: 'docs',
-                    routeBasePath: 'docs',
+                    sidebarPath: require.resolve('./docs/general/sidebars.js'),
+                    path: 'docs/general',
+                    routeBasePath: 'docs/general',
                     editUrl:
                         'https://github.com/beyondstorage/site/edit/master/',
                     showLastUpdateAuthor: true,
@@ -79,9 +79,57 @@ module.exports = {
             '@docusaurus/plugin-content-docs',
             {
                 id: 'community',
-                sidebarPath: require.resolve('./community_sidebars.js'),
+                sidebarPath: require.resolve('./community/sidebars.js'),
                 path: 'community',
                 routeBasePath: 'community',
+                editUrl: 'https://github.com/beyondstorage/site/edit/master/',
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'go-storage',
+                sidebarPath: require.resolve('./docs/go-storage/sidebars.js'),
+                path: 'docs/go-storage',
+                routeBasePath: 'docs/go-storage',
+                editUrl: 'https://github.com/beyondstorage/site/edit/master/',
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'beyond-tp',
+                sidebarPath: require.resolve('./docs/beyond-tp/sidebars.js'),
+                path: 'docs/beyond-tp',
+                routeBasePath: 'docs/beyond-tp',
+                editUrl: 'https://github.com/beyondstorage/site/edit/master/',
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'beyond-fs',
+                sidebarPath: require.resolve('./docs/beyond-fs/sidebars.js'),
+                path: 'docs/beyond-fs',
+                routeBasePath: 'docs/beyond-fs',
+                editUrl: 'https://github.com/beyondstorage/site/edit/master/',
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'beyond-ftp',
+                sidebarPath: require.resolve('./docs/beyond-ftp/sidebars.js'),
+                path: 'docs/beyond-ftp',
+                routeBasePath: 'docs/beyond-ftp',
                 editUrl: 'https://github.com/beyondstorage/site/edit/master/',
                 showLastUpdateAuthor: true,
                 showLastUpdateTime: true,

@@ -12,7 +12,7 @@
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| [credential](go-storage/pairs/credential.md) | Y | support `base64` and `file` protocol: `base64` is the base64 of token content, `file` is the absolute path to token file. |
+| [credential](../pairs/credential.md) | Y | support `base64` and `file` protocol: `base64` is the base64 of token content, `file` is the absolute path to token file. |
 
 #### Examples
 
@@ -36,8 +36,8 @@ if err != nil {
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| [name](go-storage/pairs/name.md) | Y | bucket name |
-| [work_dir](go-storage/pairs/work_dir.md) | N | work dir |
+| [name](../pairs/name.md) | Y | bucket name |
+| [work_dir](../pairs/work_dir.md) | N | work dir |
 | `project` | Y | google cloud project id |
 
 #### Examples

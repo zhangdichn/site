@@ -12,7 +12,7 @@
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| [credential](go-storage/pairs/credential.md) | Y | only support `hmac` protocol |
+| [credential](../pairs/credential.md) | Y | only support `hmac` protocol |
 
 #### Examples
 
@@ -36,9 +36,9 @@ if err != nil {
 
 | Name | Required | Comments |
 | ---- | -------- | -------- |
-| [name](go-storage/pairs/name.md) | Y | bucket name |
-| [work_dir](go-storage/pairs/work_dir.md) | N | work dir |
-| [endpoint](go-storage/pairs/endpoint.md) | Y | specific domain to access this storager |
+| [name](../pairs/name.md) | Y | bucket name |
+| [work_dir](../pairs/work_dir.md) | N | work dir |
+| [endpoint](../pairs/endpoint.md) | Y | specific domain to access this storager |
 
 #### Examples
 

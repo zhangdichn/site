@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Operations": {
+    "message": "Operations",
+    "description": "The label for category Operations in sidebar docs"
+  },
+  "sidebar.docs.category.Servicer": {
+    "message": "Servicer",
+    "description": "The label for category Servicer in sidebar docs"
+  },
+  "sidebar.docs.category.Storager": {
+    "message": "Storager",
+    "description": "The label for category Storager in sidebar docs"
+  },
+  "sidebar.docs.category.Appender": {
+    "message": "Appender",
+    "description": "The label for category Appender in sidebar docs"
+  },
+  "sidebar.docs.category.Blocker": {
+    "message": "Blocker",
+    "description": "The label for category Blocker in sidebar docs"
+  },
+  "sidebar.docs.category.Multiparter": {
+    "message": "Multiparter",
+    "description": "The label for category Multiparter in sidebar docs"
+  },
+  "sidebar.docs.category.Pager": {
+    "message": "Pager",
+    "description": "The label for category Pager in sidebar docs"
+  },
+  "sidebar.docs.category.Pairs": {
+    "message": "Pairs",
+    "description": "The label for category Pairs in sidebar docs"
+  },
+  "sidebar.docs.category.Services": {
+    "message": "Services",
+    "description": "The label for category Services in sidebar docs"
+  },
+  "sidebar.docs.category.Internal": {
+    "message": "Internal",
+    "description": "The label for category Internal in sidebar docs"
+  },
+  "sidebar.docs.category.Comparison": {
+    "message": "Comparison",
+    "description": "The label for category Comparison in sidebar docs"
+  }
+}
