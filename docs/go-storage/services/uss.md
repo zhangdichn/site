@@ -17,7 +17,7 @@
 
 ## Example
 
-Init storager (see [this page](go-storage/operations/index.md) for details)
+Init storager (see [this page](../operations/index.md) for details)
 
 ```go
 import (

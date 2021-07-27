@@ -22,6 +22,30 @@ module.exports = {
         },
     },
     onBrokenLinks: 'warn',
+    customFields: {
+        docs: [
+            {
+                name: "General",
+                url: "/docs/general/index"
+            },
+            {
+                name: "go-storage",
+                url: "/docs/go-storage/index"
+            },
+            {
+                name: "BeyondTP",
+                url: "/docs/beyond-tp/index"
+            },
+            {
+                name: "BeyondFS",
+                url: "/docs/beyond-fs/index"
+            },
+            {
+                name: "BeyondFTP",
+                url: "/docs/beyond-ftp/index"
+            },
+        ]
+    },
     themeConfig: {
         algolia: {
             apiKey: 'f4ddbe3ff0762522d5a9a6a75fe0c00c',
@@ -134,6 +158,6 @@ module.exports = {
                 showLastUpdateAuthor: true,
                 showLastUpdateTime: true,
             },
-        ]
+        ],
     ]
 };

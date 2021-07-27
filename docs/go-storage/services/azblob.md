@@ -17,7 +17,7 @@
 
 #### Examples
 
-Init servicer (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+Init servicer (see [this page](../operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
 ```go
 import (
@@ -42,7 +42,7 @@ if err != nil {
 
 #### Examples
 
-Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+Init storager (see [this page](../operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
 ```go
 import (

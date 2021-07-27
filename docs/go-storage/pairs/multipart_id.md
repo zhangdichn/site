@@ -2,6 +2,6 @@
 
 ## Supported Operations
 
-- [Create](go-storage/operations/storager/create.md)
-- [Stat](go-storage/operations/storager/stat.md)
-- [Delete](go-storage/operations/storager/delete.md)
+- [Create](../operations/storager/create.md)
+- [Stat](../operations/storager/stat.md)
+- [Delete](../operations/storager/delete.md)
