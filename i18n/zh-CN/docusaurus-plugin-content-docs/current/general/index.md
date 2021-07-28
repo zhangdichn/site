@@ -3,7 +3,7 @@ title: 介绍
 sidebar_position: 1
 ---
 
-`Beyond Storage` is a storage abstraction beyond the existing storage services.
+`BeyondStorage` is an open source community that focus on providing cross-cloud data services.
 
 We currently maintain the following projects:
 

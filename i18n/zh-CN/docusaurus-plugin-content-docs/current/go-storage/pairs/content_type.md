@@ -2,4 +2,4 @@
 
 ## Supported Operations
 
-- [Write](go-storage/operations/storager/write.md)
+- [Write](../operations/storager/write.md)

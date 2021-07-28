@@ -2,4 +2,4 @@
 
 ## Supported Operations
 
-- [Read](go-storage/operations/storager/read.md)
+- [Read](../operations/storager/read.md)

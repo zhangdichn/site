@@ -3,11 +3,11 @@ title: 介绍
 sidebar_position: 1
 ---
 
-[![Build Status](https://github.com/beyondstorage/go-storage/workflows/Unittest/badge.svg?branch=master)](https://github.com/beyondstorage/go-storage/actions?query=workflow%3AUnittest) [![Go dev](https://pkg.go.dev/badge/github.com/beyondstorage/go-storage?utm_source=godoc)](https://godoc.org/github.com/beyondstorage/go-storage) [![License](https://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/Xuanwo/storage/blob/master/LICENSE) [![go storage dev](https://img.shields.io/matrix/go-storage:aos.dev.svg?server_fqdn=chat.aos.dev&label=%23go-storage%3Aaos.dev&logo=matrix)](https://matrix.to/#/#go-storage:aos.dev)
+A **vendor-neutral** storage library for Golang.
 
-A storage abstraction beyond the existing storage services.
+## Vision
 
-![](/docs/go-storage/operations/operations.png)
+**Write once, run on every storage service.**
 
 ## 目标
 
@@ -15,71 +15,53 @@ A storage abstraction beyond the existing storage services.
 - 高性能
 - 无供应商锁定
 
-## 特性
-
-### 广泛的服务支持
-
-- [azblob](services/azblob.md): [Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/)
-- [cos](services/cos.md): [腾讯云对象存储服务](https://cloud.tencent.com/product/cos)
-- [dropbox](services/dropbox.md): [Dropbox](https://www.dropbox.com)
-- [fs](services/fs.md): 本地文件系统
-- [gcs](services/gcs.md): [Google Cloud Storage](https://cloud.google.com/storage/)
-- [kodo](services/kodo.md): [七牛 kodo 对象存储服务](https://www.qiniu.com/products/kodo)
-- [oss](services/oss.md): [阿里云对象存储服务](https://www.aliyun.com/product/oss)
-- [qingstor](services/qingstor.md): [青云 QingStor 对象存储服务](https://www.qingcloud.com/products/qingstor/)
-- [s3](services/s3.md): [Amazon S3](https://aws.amazon.com/s3/)
-- [uss](services/uss.md): [又拍云对象存储服务](https://www.upyun.com/products/file-storage)
-
-### 全面的操作支持
-
-- [Servicer](operations/servicer/index.md): 服务级别的管理
-- [Storager](operations/storager/index.md): 支持读取/写入/获取信息/删除/列取等所有基础对象操作
-  - [Copier](operations/copy.md): 在 Storager 中复制一个对象
-  - [Mover](operations/move.md):  在 Storager 中移动一个对象
-  - [Reach](operations/reach.md): 给对象生成一个可公开访问的 url
-  - [Multiparter](operations/multiparter): 允许进行分段上传
-  - [Appender](operations/appender): 允许追加写入到对象 （Append）
-  - [Block](operations/blocker): 允许使用 Block 来组合一个对象
-  - [Page](operations/pager): 允许随机写入操作
-  - [Fetcher](operations/fetch.md): fetch from a given url to path
-
 ## 快速开始
 
 ```go
 package main
 
 import (
-    "bytes"
     "log"
 
-    _ "github.com/beyondstorage/go-service-fs/v3"
     "github.com/beyondstorage/go-storage/v4/services"
+    "github.com/beyondstorage/go-storage/v4/types"
+
+    // Add s3 support
+    _ "github.com/beyondstorage/go-service-s3/v2"
 )
 
 func main() {
-    // Init a service.
-    store, err := services.NewStoragerFromString("fs:///tmp")
+    // Init a Storager from connection string. 
+    store, err := services.NewStoragerFromString("s3://bucket_name/path/to/workdir")
     if err != nil {
         log.Fatalf("service init failed: %v", err)
     }
 
-    content := []byte("Hello, world!")
-    length := int64(len(content))
-    r := bytes.NewReader(content)
+    // Write data from io.Reader into hello.txt
+    n, err := store.Write("hello.txt", r, length)
 
-    _, err = store.Write("hello", r, length)
-    if err != nil {
-        log.Fatalf("write failed: %v", err)
+    // Read data from hello.txt to io.Writer
+    n, err := store.Read("hello.txt", w)
+
+    // Stat hello.txt to check existence or get its metadata
+    o, err := store.Stat("hello.txt")
+
+    // Use object's functions to get metadata
+    length, ok := o.GetContentLength()
+
+    // List will create an iterator of object under path.
+    it, err := store.List("path")
+
+    for {
+        // Use iterator.Next to retrieve next object until we meet IteratorDone.
+        o, err := it.Next()
+        if errors.Is(err, types.IteraoorDone) {
+            break
+        }
     }
 
-    var buf bytes.Buffer
-
-    _, err = store.Read("hello", &buf)
-    if err != nil {
-        log.Fatalf("storager read: %v", err)
-    }
-
-    log.Printf("%s", buf.String())
+    // Delete hello.txt
+    err = store.Delete("hello.txt")
 }
 ```
 

@@ -17,7 +17,7 @@
 
 #### 示例
 
-Init storager (see [this page](go-storage/operations/index.md#how-to-initialize-a-servicerstorager) for details)
+Init storager (see [this page](../operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
 ```go
 import (
