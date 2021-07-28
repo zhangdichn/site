@@ -6,12 +6,12 @@ permissions:
   contents: write
 
 jobs:
-  dependabot:
+  crowdin_auto_merge:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'BeyondRobot' }}
     steps:
       - name: Enable auto-merge for Crowdin PRs
-        run: gh pr merge --auto --squash --merge "$PR_URL"
+        run: gh pr merge --auto --squash "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
