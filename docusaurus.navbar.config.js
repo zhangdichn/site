@@ -1,7 +1,7 @@
 module.exports = {
     title: 'beyondstorage',
     logo: {
-        alt: 'My Site Logo',
+        alt: 'Beyond Storage',
         src: 'img/logo.svg',
     },
     items: [

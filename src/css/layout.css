@@ -27,11 +27,8 @@
   margin-right: 2.75rem;
 }
 
-.navbar__brand img {
-  display: none !important;
-}
-
 .navbar__title {
+  display: none;
   font-size: 1.75rem;
 }
 
