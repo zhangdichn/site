@@ -23,6 +23,16 @@
   }
 }
 
+@media (max-width: 1076px) {
+  .menu--responsive .menu__button, .navbar__toggle {
+    display: inherit;
+  }
+
+  .navbar__item {
+    display: none;
+  }
+}
+
 .navbar__brand {
   margin-right: 2.75rem;
 }
