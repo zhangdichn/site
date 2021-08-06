@@ -4,7 +4,7 @@ title: Implement Services
 
 ## Step-by-Step guide
 
-Firstly, click [Use this template](https://github.com/aos-dev/go-service-example/generate) to generate a new project.
+Firstly, click [Use this template](https://github.com/beyondstorage/go-service-example/generate) to generate a new project.
 
 Secondly, change `name` in `service.toml`, also update package names in the same directory.
 

@@ -46,7 +46,7 @@ module.exports = {
             ],
         },
         {
-            href: 'https://matrix.to/#/#campfire:aos.dev',
+            href: 'https://matrix.to/#/#beyondstorage@campfire:matrix.org',
             position: 'right',
             className: 'navbar__link--matrix',
             'aria-label': 'Matrix',

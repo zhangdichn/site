@@ -25,10 +25,10 @@ Our formal announcement will be on our forums.
 
 This is the main method to communicate with Beyond Storage developers.
 
-We host our matrix server on `https://chat.aos.dev`.
+We host our matrix server on `https://matrix.org`.
 
-- For english speaking: join in [#campfire:aos.dev](https://matrix.to/#/#campfire:aos.dev)  <!-- Need Update. -->
-- For chinese speaking: join in [#campfire-zh:aos.dev](https://matrix.to/#/#campfire-zh:aos.dev) <!-- Need Update. -->
+- For english speaking: join in [#campfire](https://matrix.to/#/#beyondstorage@campfire:matrix.org)
+- For chinese speaking: join in [#campfire-zh](https://matrix.to/#/#beyondstorage@campfire-zh:matrix.org)
 
 #### Slack
 
