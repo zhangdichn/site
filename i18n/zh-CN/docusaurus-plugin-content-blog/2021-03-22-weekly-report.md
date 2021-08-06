@@ -11,13 +11,13 @@ This is the weekly report for [BeyondStorage](https://beyondstorage.io), range f
 
 <!--truncate-->
 
-## Application
+## 应用
 
 ### dm
 
 This week we implemented the data flow related logic and next week we plan to implement the upper level business logic so that users can create and run a migration task.
 
-## Library
+## 库
 
 ### go-storage
 
@@ -31,7 +31,7 @@ In this release we implement multipart related fields like:
 
 So we can get service restrictions on multipart.
 
-## Community
+## 社区
 
 We set up following sites:
 

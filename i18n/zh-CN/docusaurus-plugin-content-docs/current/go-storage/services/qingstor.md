@@ -15,7 +15,7 @@
 | [credential](../pairs/credential.md) | Y        | only support `hmac` protocol |
 | [endpoint](../pairs/endpoint.md)     | Y        |                              |
 
-#### Examples
+#### 示例
 
 Init servicer (see [this page](../operations/index.md#how-to-initialize-a-servicerstorager) for details)
 
@@ -40,7 +40,7 @@ if err != nil {
 | [name](../pairs/name.md)         | Y        | bucket name |
 | [work_dir](../pairs/work_dir.md) | N        | work dir    |
 
-#### Examples
+#### 示例
 
 Init storager (see [this page](../operations/index.md#how-to-initialize-a-servicerstorager) for details)
 

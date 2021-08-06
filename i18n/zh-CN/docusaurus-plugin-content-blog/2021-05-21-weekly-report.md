@@ -67,10 +67,10 @@ As we mentioned in [last week's report](/blog/2021/05/14/weekly-report#multipart
 
 This week, we added two more projects:
 
-- [Google Drive for go-storage](https://github.com/beyondstorage/go-service-gdrive)
+- [go-storage 的 Google Drive 实现](https://github.com/beyondstorage/go-service-gdrive)
   - Mentor: [@xuanwo][]
   - Issue: <https://github.com/beyondstorage/go-service-gdrive/issues/2>
-- [OneDrive for go-storage](https://github.com/beyondstorage/go-service-onedrive)
+- [go-storage 的 OneDrive 实现](https://github.com/beyondstorage/go-service-onedrive)
   - Mentor: [@xxchan][]
   - Issue: <https://github.com/beyondstorage/go-service-onedrive/issues/2>
 
