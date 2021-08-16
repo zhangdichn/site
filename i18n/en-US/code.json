@@ -242,27 +242,27 @@
     "message": "Current Working On"
   },
   "go storage description": {
-    "message": "go storage description"
+    "message": "A Golang storage abstraction which beyond the existing storage services."
   },
   "go storage article one": {
-    "message": "go storage article one"
+    "message": "Production ready: well designed strong typed API, continuously increasing testing"
   },
   "go storage article two": {
-    "message": "go storage article two"
+    "message": "High performance: zero-cost abstraction, highly generated code"
   },
   "go storage article three": {
-    "message": "go storage article three"
+    "message": "Vendor agnostic: support services ranging from s3, gcs, azblob to onedrive, ipfs"
   },
   "dm description": {
-    "message": "dm description"
+    "message": "Neutral data migration services."
   },
   "dm article one": {
-    "message": "dm article one"
+    "message": "BeyondStorage's go-storage powered high performance backend"
   },
   "dm article two": {
-    "message": "dm article two"
+    "message": "Simple and easy-to-use cross-platform GUI based on Flutter"
   },
   "dm article three": {
-    "message": "dm article three"
+    "message": "Provide private deployment, SaaS services and other delivery forms"
   }
 }
