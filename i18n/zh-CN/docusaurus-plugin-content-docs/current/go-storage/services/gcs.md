@@ -38,7 +38,7 @@ if err != nil {
 | -------------------------------- | -------- | ----------------------- |
 | [name](../pairs/name.md)         | Y        | bucket name             |
 | [work_dir](../pairs/work_dir.md) | N        | work dir                |
-| `project`                        | Y        | google cloud project id |
+| `project_id`                     | Y        | google cloud project id |
 
 #### 示例
 
@@ -50,7 +50,7 @@ import (
     "github.com/beyondstorage/go-storage/v4/services"
 )
 
-store, err := services.NewStoragerFromString("gcs://<bucket_name>/<work_dir>?credential=file:<absolute_path_to_token_file>&project=<google_cloud_project_id>")
+store, err := services.NewStoragerFromString("gcs://<bucket_name>/<work_dir>?credential=file:<absolute_path_to_token_file>&project_id=<google_cloud_project_id>")
 if err != nil {
     log.Fatalf("gcs new service: %v", err)
 }
