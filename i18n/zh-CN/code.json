@@ -242,7 +242,7 @@
     "message": "Current Working On"
   },
   "go storage description": {
-    "message": "A Golang storage abstraction which beyond the existing storage services.\n"
+    "message": "A Golang storage abstraction which beyond the existing storage services."
   },
   "go storage article one": {
     "message": "Production ready: well designed strong typed API, continuously increasing testing"
