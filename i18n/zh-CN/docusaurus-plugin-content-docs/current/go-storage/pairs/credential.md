@@ -42,3 +42,9 @@ format: `env` example: `env`
 `base64` has one value: `base64`, storage service like gcs will take token files as input, we provide base64 protocol so that user can pass token binary data directly.
 
 format: `base64:<base64_content>` example: `base64:exmaple_base64_content`
+
+### basic
+
+`basic` has two values: `user` and `password`
+
+format: `basic:<user>:<password>` example: `basic:example_user:example_password`
