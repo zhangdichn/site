@@ -8,7 +8,7 @@
     "description": "The title of the footer links column with title=Projects in the footer"
   },
   "link.title.Resources": {
-    "message": "Resources",
+    "message": "资源",
     "description": "The title of the footer links column with title=Resources in the footer"
   },
   "link.title.Community": {
@@ -20,7 +20,7 @@
     "description": "The label of footer link with label=go-storage linking to https://github.com/beyondstorage/go-storage"
   },
   "link.item.label.Documentation": {
-    "message": "Documentation",
+    "message": "文档",
     "description": "The label of footer link with label=Documentation linking to docs"
   },
   "link.item.label.Blog": {
@@ -28,11 +28,11 @@
     "description": "The label of footer link with label=Blog linking to blog"
   },
   "link.item.label.Activity": {
-    "message": "Activity",
+    "message": "动态",
     "description": "The label of footer link with label=Activity linking to community"
   },
   "link.item.label.Forum": {
-    "message": "Forum",
+    "message": "论坛",
     "description": "The label of footer link with label=Forum linking to https://forum.beyondstorage.io"
   },
   "copyright": {
