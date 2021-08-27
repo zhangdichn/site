@@ -9,6 +9,12 @@ NAME:
 USAGE:
    beyondctl profile command [command options] [arguments...]
 
+NAME:
+   beyondctl profile - manage profile in config file
+
+USAGE:
+   beyondctl profile command [command options] [arguments...]
+
 COMMANDS:
    add      add profile [name] [connection_string]
    list     list profiles

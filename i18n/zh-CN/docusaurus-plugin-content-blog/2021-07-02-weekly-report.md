@@ -15,9 +15,9 @@ Hello everyone, here is the weekly report for [BeyondStorage][], range from 2021
 
 ### dm
 
-When a job is done, we may need get result from the action. So we need to find somewhere to store the result. To enable access common results from different nodes, we decide to store it into leader's db as job's metadata.
+When a job is done, we may need get result from the action. So we need to find somewhere to store the result. When a job is done, we may need get result from the action. So we need to find somewhere to store the result. To enable access common results from different nodes, we decide to store it into leader's db as job's metadata.
 
-So [@Prnyself][] made a proposal [DMP-99: Add job metadata](https://github.com/beyondstorage/dm/pull/99), to add job metadata mechanism. So job-related intermediate result can be accessed.
+So [@Prnyself][] made a proposal [DMP-99: Add job metadata](https://github.com/beyondstorage/dm/pull/99), to add job metadata mechanism. So job-related intermediate result can be accessed. So job-related intermediate result can be accessed.
 
 This proposal has already been implemented, for more details, please refer to [Implement DMP-99: Add job metadata](https://github.com/beyondstorage/dm/pull/104).
 
@@ -25,7 +25,7 @@ This proposal has already been implemented, for more details, please refer to [I
 
 ### Notification / CDC
 
-Our Storage Service may support sending notifications to let users get the changes of storage. This feature likes CDC(Change Data Capture) for DBMS.
+Our Storage Service may support sending notifications to let users get the changes of storage. This feature likes CDC(Change Data Capture) for DBMS. This feature likes CDC(Change Data Capture) for DBMS.
 
 This is an important feature which will greatly broaden the use of go-storage and can be even used by applications that are not introduced to go-storage to unify event handling in the storage layer.
 
@@ -35,7 +35,7 @@ To track this feature, please refer to this issue: [Idea: Notification (CDC) Sup
 
 ### 服务
 
-Last week, we had released [go-storage v4.2.0](https://github.com/beyondstorage/go-storage/releases/tag/v4.2.0). So [@JinnyYi][] bumped [go-storage][] in every go-service-*.
+Last week, we had released [go-storage v4.2.0](https://github.com/beyondstorage/go-storage/releases/tag/v4.2.0). Last week, we had released [go-storage v4.2.0](https://github.com/beyondstorage/go-storage/releases/tag/v4.2.0). So [@JinnyYi][] bumped [go-storage][] in every go-service-*.
 
 What's more, [GSP-97: Add Restrictions In Storage Metadata](https://github.com/beyondstorage/specs/pull/97), [GSP-109: Redesign Features](https://github.com/beyondstorage/specs/pull/109) and [GSP-117: Rename Service to System as the Opposite to Global](https://github.com/beyondstorage/specs/pull/117) are also implement into go-service-* by [@JinnyYi][].
 
@@ -47,7 +47,7 @@ For more details, please refer to [Tracking issue for GSP-97: Add Restrictions I
 
 With the development of new features in [go-storage][] and go-service-*, the integration test cases should be completed.
 
-This week, [@JinnyYi][] commits test cases for `Copier` and `Mover`, which enriched our test cases. Nicely done!
+This week, [@JinnyYi][] commits test cases for `Copier` and `Mover`, which enriched our test cases. Nicely done! Nicely done!
 
 For more details, please refer to [issue: Add Copier and Mover tests](https://github.com/beyondstorage/go-integration-test/issues/26).
 
@@ -55,7 +55,7 @@ For more details, please refer to [issue: Add Copier and Mover tests](https://gi
 
 ### Website
 
-Our new website is now deployed and online! Please check <https://beyondstorage.io> to take a glance, and we are now keeping adding more information into the website. Please feel free to make suggestion by contacting us. Or you can also [submit an issue](https://github.com/beyondstorage/site/issues) for us, both ways are welcome.
+Our new website is now deployed and online! Our new website is now deployed and online! Please check <https://beyondstorage.io> to take a glance, and we are now keeping adding more information into the website. Please feel free to make suggestion by contacting us. Or you can also [submit an issue](https://github.com/beyondstorage/site/issues) for us, both ways are welcome. Please feel free to make suggestion by contacting us. Or you can also [submit an issue](https://github.com/beyondstorage/site/issues) for us, both ways are welcome.
 
 ### Community Organization
 
@@ -87,7 +87,7 @@ This week, the list of drafted students is confirmed, here are the OSPP 2021 app
 | [go-service-gdrive](https://github.com/beyondstorage/go-service-gdrive)     | [@junaire](https://github.com/junaire)       |
 | [go-ftp-server](https://github.com/beyondstorage/go-ftp-server)             | [@xiongjiwei](https://github.com/xiongjiwei) |
 
-Congratulations! For those who are not drafted, you are still welcome to join the projects which you are interested in, by making PRs, committing issues, or just posting a topic in our forum.
+Congratulations! Congratulations! For those who are not drafted, you are still welcome to join the projects which you are interested in, by making PRs, committing issues, or just posting a topic in our forum.
 
 For more details, please refer to <https://forum.beyondstorage.io/t/ospp-2021-application-results/127>.
 

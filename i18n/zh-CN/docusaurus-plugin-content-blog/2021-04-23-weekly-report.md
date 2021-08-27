@@ -9,7 +9,7 @@ tags:
 
 Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstorage.io), range from 2021-04-19 to 2021-04-23.
 
-首先，让我们欢迎新人加入： [xxchan](https://github.com/xxchan/). He joined in our team since 2021-04-19 and have made many improvements of our core library [go-storage][].
+首先，让我们欢迎新人加入： [xxchan](https://github.com/xxchan/). 首先，让我们欢迎新人加入： [xxchan](https://github.com/xxchan/). He joined in our team since 2021-04-19 and have made many improvements of our core library [go-storage][].
 
 <!--truncate-->
 
@@ -30,7 +30,7 @@ func Fs(s types.Storager) fs.FS {}
 
 ### 分段上传支持
 
-`Multipart` 被广泛用于对象存储服务中用来上传大文件(最大可达 50 TB)。 In this week, we added integration tests for `Multiparter` in [go-integration-test][]. 我们将为支持这一功能的所有服务实现 Multiparter。
+`Multipart` 被广泛用于对象存储服务中用来上传大文件(最大可达 50 TB)。 In this week, we added integration tests for `Multiparter` in [go-integration-test][]. 我们将为支持这一功能的所有服务实现 Multiparter。 我们将为支持这一功能的所有服务实现 Multiparter。
 
 Keep an eye on our track issue: [Implement Multipart Support](https://github.com/beyondstorage/go-storage/issues/522).
 
@@ -38,7 +38,7 @@ Keep an eye on our track issue: [Implement Multipart Support](https://github.com
 
 `Appender` 被用于将内容附加到文件尾部。
 
-This week, we also implement the integration tests for `Appender` in [go-integration-test][]. And [@JinnyYi](https://github.com/JinnyYi) will implement appender support in [Implement Appender Support](https://github.com/beyondstorage/go-storage/issues/529).
+This week, we also implement the integration tests for `Appender` in [go-integration-test][]. And [@JinnyYi](https://github.com/JinnyYi) will implement appender support in [Implement Appender Support](https://github.com/beyondstorage/go-storage/issues/529). And [@JinnyYi](https://github.com/JinnyYi) will implement appender support in [Implement Appender Support](https://github.com/beyondstorage/go-storage/issues/529).
 
 ### 服务器端加密支持
 

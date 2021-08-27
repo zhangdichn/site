@@ -77,7 +77,7 @@ Aliyun Object Storage supports two options for Server-Side Encryption:
 - Server-side encryption by using Key Management Service (SSE-KMS)
 - Server-side encryption by using OSS-managed keys (SSE-OSS)
 
-*Note: there exists inconsistency between the two OSS docs. And take care if you want to use the SM4 algorithm.*
+*Note: there exists inconsistency between the two OSS docs. And take care if you want to use the SM4 algorithm. And take care if you want to use the SM4 algorithm.*
 
 For Chinese users, refer to https://help.aliyun.com/document_detail/31871.html for details.
 
@@ -87,7 +87,7 @@ For global users, refer to https://www.alibabacloud.com/help/doc-detail/31871.ht
 
 | Name                            | Comments                                                                                                                                                |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `server_side_encryption`        | specifies the encryption algorithm. It should be `KMS`                                                                                                  |
+| `server_side_encryption`        | specifies the encryption algorithm. specifies the encryption algorithm. It should be `KMS`                                                              |
 | `server_side_data_encryption`   | specifies the encryption algorithm when server_side_encryption is `KMS`. Can only be set to `SM4`. If this is not set, AES256 algorithm will be used. |
 | `server-side-encryption-key-id` | specifies the ID of the customer managed CMK used to protect the data                                                                                   |
 
@@ -99,9 +99,9 @@ For global users, refer to https://www.alibabacloud.com/help/doc-detail/31871.ht
 
 #### SSE-OSS
 
-| Name                     | Comments                                                            |
-| ------------------------ | ------------------------------------------------------------------- |
-| `server_side_encryption` | specifies the encryption algorithm. It should be `AES256` or `SM4`. |
+| Name                     | Comments                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| `server_side_encryption` | specifies the encryption algorithm. specifies the encryption algorithm. It should be `AES256` or `SM4`. |
 
 ##### Supported Operations
 

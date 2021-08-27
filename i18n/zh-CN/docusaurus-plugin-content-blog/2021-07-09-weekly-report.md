@@ -15,7 +15,7 @@ Hello everyone, here is the weekly report for [BeyondStorage][], range from 2021
 
 ### BeyondTeleport
 
-Several days ago, we submitted an issue on [rename the project dm](https://github.com/beyondstorage/beyond-tp/issues/97). [@Xuanwo][] proposed a name list, including:
+Several days ago, we submitted an issue on [rename the project dm](https://github.com/beyondstorage/beyond-tp/issues/97). [@Xuanwo][] proposed a name list, including: [@Xuanwo][] proposed a name list, including:
 
 - byteport
 - bytesync
@@ -36,7 +36,7 @@ This week, we have the following proposal updates.
 
 ### DMP-110: Refactor Task Distribute
 
-For now, we use for-loop to monitor task submitting, and then distribute the task into staffs. We need an elegant way to monitor task submitting.
+For now, we use for-loop to monitor task submitting, and then distribute the task into staffs. We need an elegant way to monitor task submitting. We need an elegant way to monitor task submitting.
 
 So [@Prnyself][] proposed [DMP-110](https://github.com/beyondstorage/dm/pull/110) to refactor the process of task distribution in [beyond-tp][].
 
@@ -103,9 +103,9 @@ This is also available on [GitHub marketplace](https://github.com/marketplace/ac
 
 ### Add uint64 Support in definitions
 
-We generate codes in `cmd/definition` in [go-storage][]. In type map, we defined the transfer of different types, which is lack of `uint64`.
+We generate codes in `cmd/definition` in [go-storage][]. In type map, we defined the transfer of different types, which is lack of `uint64`. In type map, we defined the transfer of different types, which is lack of `uint64`.
 
-So [@zu1k][] submitted a PR: [definitions: Add support for type uint64](https://github.com/beyondstorage/go-storage/pull/615) to fix this. Nicely done!
+So [@zu1k][] submitted a PR: [definitions: Add support for type uint64](https://github.com/beyondstorage/go-storage/pull/615) to fix this. Nicely done! Nicely done!
 
 ### Add codecov
 
@@ -125,15 +125,15 @@ The draft is [here](https://www.figma.com/file/AqHxMvbAccGQM5NtvQEGCn/BeyondStor
 
 ### Member Promotion
 
-[@zhangdichn][] has been nominated as [beyond-tp][] committer. <https://github.com/beyondstorage/community/pull/10>
+[@zhangdichn][] has been nominated as [beyond-tp][] committer. <https://github.com/beyondstorage/community/pull/10> <https://github.com/beyondstorage/community/pull/10>
 
-[@zu1k][] has been nominated as [go-storage][] reviewer. <https://github.com/beyondstorage/community/pull/13>
+[@zu1k][] has been nominated as [go-storage][] reviewer. <https://github.com/beyondstorage/community/pull/13> <https://github.com/beyondstorage/community/pull/13>
 
 Congratulations!
 
 ### 开源软件供应链点亮计划 - 暑期2021
 
-Projects are all in heavy developing, and some projects has already got points. Here are PRs list:
+Projects are all in heavy developing, and some projects has already got points. Here are PRs list: Here are PRs list:
 
 - [go-service-ipfs][]: [Implement go-storage Storager](https://github.com/beyondstorage/go-service-ipfs/pull/3) by [@zu1k][]
 - [go-service-minio][]: [Initial implement on Servicer and Storager](https://github.com/beyondstorage/go-service-minio/pull/6) by [@aeinrw][]

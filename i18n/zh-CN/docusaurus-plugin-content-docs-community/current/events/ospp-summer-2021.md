@@ -50,7 +50,7 @@ FTP 是互联网历史上最悠久的网络工具，至今仍在多个领域被�
 
 ### go-storage 的 minio 实现
 
-minio is an open-source cloud-native high-performance object storage service. 这个项目将会使用 minio 原生的 SDK 来实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 minio 服务器上的数据。
+minio is an open-source cloud-native high-performance object storage service. 这个项目将会使用 minio 原生的 SDK 来实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 minio 服务器上的数据。 这个项目将会使用 minio 原生的 SDK 来实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 minio 服务器上的数据。
 
 - 导师: [lanceren](https://matrix.to/#/@lanceren:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-minio/issues/2>
@@ -72,7 +72,7 @@ Hadoop 分布式文件系统 (HDFS) 是一款为大规模数据集上的应用�
 
 ### go-storage 的 ipfs 实现
 
-the InterPlanetary File System（IPFS）即星际文件系统，是一种基于内容寻址、版本化、点对点的超媒体传输协议，集合了P2P网络技术、BitTorrent 传输技术、Git 版本控制、自证明文件系统等技术，对标 HTTP 的新一代通信协议。这个项目将会为 IPFS 实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 ipfs 节点上的数据。
+the InterPlanetary File System（IPFS）即星际文件系统，是一种基于内容寻址、版本化、点对点的超媒体传输协议，集合了P2P网络技术、BitTorrent 传输技术、Git 版本控制、自证明文件系统等技术，对标 HTTP 的新一代通信协议。 这个项目将会为 IPFS 实现 go-storage 的 Storager 接口，使得用户能够通过统一的接口来操作 ipfs 节点上的数据。
 
 - 导师： [xxchan](https://matrix.to/#/@xxchan:matrix.org)
 - Issue: <https://github.com/beyondstorage/go-service-ipfs/issues/1>
@@ -141,9 +141,9 @@ The application deadline is June 13.
 
 :::
 
-> Be **open**. Please don't try to connect or ask questions privately.
+> Be **open**. Please don't try to connect or ask questions privately. Please don't try to connect or ask questions privately.
 
-Send your application in our [forum](https://forum.beyondstorage.io/) so that we can review it publicly. We screen candidates based on applications from the forum!
+Send your application in our [forum](https://forum.beyondstorage.io/) so that we can review it publicly. We screen candidates based on applications from the forum! We screen candidates based on applications from the forum!
 
 Also, register in the [official system](https://portal.summer-ospp.ac.cn/summer/login) of OSPP to complete the official application process.
 
@@ -155,11 +155,11 @@ You can apply for more than one projects (up to three among all the projects in 
 
 ### What's the requirements/selection criteria?
 
-We will mainly look at your resume, Github account and your project schedule. Please tell us why you are interested in the project and establish a feasible schedule.
+We will mainly look at your resume, Github account and your project schedule. Please tell us why you are interested in the project and establish a feasible schedule. Please tell us why you are interested in the project and establish a feasible schedule.
 
-There are no hard and fast requirements. It will be better if you know a little golang, but it will be definitely okay if you don't know golang. No advanced techniques will be used.
+There are no hard and fast requirements. There are no hard and fast requirements. It will be better if you know a little golang, but it will be definitely okay if you don't know golang. No advanced techniques will be used. No advanced techniques will be used.
 
-Actually the original purpose of this event is to attract new students to participate in open source projects and lower the threshold. If you are an experienced open source contributor, e.g., the committer of some well-known open source project, perhaps you are over-qualified and should be a mentor instead of a mentee :)
+Actually the original purpose of this event is to attract new students to participate in open source projects and lower the threshold. If you are an experienced open source contributor, e.g., the committer of some well-known open source project, perhaps you are over-qualified and should be a mentor instead of a mentee :) If you are an experienced open source contributor, e.g., the committer of some well-known open source project, perhaps you are over-qualified and should be a mentor instead of a mentee :)
 
 ### What can I get from the project?
 
@@ -180,21 +180,21 @@ So the background knowledge you will need to know is the interface defined by `g
 
 ### How much should I know about HDFS/IPFS/...?
 
-Don't panic if you find there is too much to learn. You will only need to know how to use them, and advanced knowledge like implementation details are not required.
+Don't panic if you find there is too much to learn. Don't panic if you find there is too much to learn. You will only need to know how to use them, and advanced knowledge like implementation details are not required.
 
 For example, it is enough to know how to deploy a Hadoop cluster via docker (https://github.com/big-data-europe/docker-hadoop), and then how to use an SDK to access it.
 
 ### What's the expected outcome?
 
-In this project, you will only need to implement `Storager`. Take `go-service-hdfs` as an example; you will need to implement the functions [here](https://github.com/beyondstorage/go-service-hdfs/blob/master/storage.go).
+In this project, you will only need to implement `Storager`. In this project, you will only need to implement `Storager`. Take `go-service-hdfs` as an example; you will need to implement the functions [here](https://github.com/beyondstorage/go-service-hdfs/blob/master/storage.go).
 
-The implementation won't be very hard, but you should set up and pass the integration tests. This will be relatively harder. You will perhaps need to deploy a server or cluster and handle some corner cases.
+The implementation won't be very hard, but you should set up and pass the integration tests. This will be relatively harder. You will perhaps need to deploy a server or cluster and handle some corner cases. This will be relatively harder. You will perhaps need to deploy a server or cluster and handle some corner cases.
 
-You only need to use our [integration test framework](https://github.com/beyondstorage/go-integration-test). Further testing is not required.
+You only need to use our [integration test framework](https://github.com/beyondstorage/go-integration-test). Further testing is not required. Further testing is not required.
 
 ### Do we have to use an official SDK?
 
-No. We can also use a well-maintained community SDK.
+No. No. We can also use a well-maintained community SDK.
 
 But you will need to communicate with your mentor to clarify the choices and trade-offs.
 
@@ -204,7 +204,7 @@ But you will need to communicate with your mentor to clarify the choices and tra
 
 开源软件供应链点亮计划鼓励大家关注开源软件和开源社区，致力于培养和发掘更多优秀的开发者。
 
-活动将在暑期进行， 我们将与开源社区紧密合作，提供一对一的导师指导，邀请技术大牛开展线上免费讲座。 我们鼓励研究人员、开源爱好者、在校师生参与开源软件的开发与维护，促进开源软件的发展和优秀开源软件社区建设， Furthermore, 'Summer 2021' is supposed to increase the activity of open source projects, and promote the development of open source ecology.
+活动将在暑期进行， 我们将与开源社区紧密合作，提供一对一的导师指导，邀请技术大牛开展线上免费讲座。 我们鼓励研究人员、开源爱好者、在校师生参与开源软件的开发与维护，促进开源软件的发展和优秀开源软件社区建设， 我们鼓励研究人员、开源爱好者、在校师生参与开源软件的开发与维护，促进开源软件的发展和优秀开源软件社区建设， Furthermore, 'Summer 2021' is supposed to increase the activity of open source projects, and promote the development of open source ecology.
 
 链接： [https://summer.iscas.cn/](https://summer.iscas.ac.cn/)
 

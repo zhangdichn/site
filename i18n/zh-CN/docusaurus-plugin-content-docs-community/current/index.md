@@ -7,9 +7,9 @@ Here are community-related pages for `Beyond Storage`.
 
 ## Tips
 
-- Be **open**. Please don't try to connect or ask questions privately.
-- Be **nice**. Please try to understand others from the perspective of kindness.
-- Be **async**. Please respect each other's time and try to complete the communication asynchronously.
+- Be **open**. Please don't try to connect or ask questions privately. Please don't try to connect or ask questions privately.
+- Be **nice**. Please try to understand others from the perspective of kindness. Please try to understand others from the perspective of kindness.
+- Be **async**. Please respect each other's time and try to complete the communication asynchronously. Please respect each other's time and try to complete the communication asynchronously.
 
 ## Discussions
 
@@ -32,7 +32,7 @@ We host our matrix server on `https://matrix.org`.
 
 #### Slack
 
-We have linked our matrix room to slack. Please join our slack via <https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg> <!-- Need Update. -->
+We have linked our matrix room to slack. We have linked our matrix room to slack. Please join our slack via <https://join.slack.com/t/aos-wg/shared_invite/zt-pf4yk96u-7znnJVYpQvY57C3rRrbDPg> <!-- Need Update. -->
 
 #### WeChat
 

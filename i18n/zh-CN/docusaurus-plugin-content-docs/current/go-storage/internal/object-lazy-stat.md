@@ -14,25 +14,25 @@ func NewObject(client Storager, done bool) *Object
 
 client - the client in which `Object` is alive.
 
-done - marks whether `stat` for the object has been performed. `true` indicates `stat` has been performed, we don't need to `stat` for this object anymore.
+done - marks whether `stat` for the object has been performed. done - marks whether `stat` for the object has been performed. `true` indicates `stat` has been performed, we don't need to `stat` for this object anymore.
 
 **Return**
 
 An `Object` pointer points to the object carries all object metadata.
 
-`Object` carries all the object metadata, including the client in which the object alive, global metadata for object, service defined metadata, user defined metadata. And it supports `get/set` functions. Also, all the metadata could be got by `stat` internal.
+`Object` carries all the object metadata, including the client in which the object alive, global metadata for object, service defined metadata, user defined metadata. And it supports `get/set` functions. Also, all the metadata could be got by `stat` internal. And it supports `get/set` functions. Also, all the metadata could be got by `stat` internal.
 
 ## Lazy Stat Strategy
 
-`Lazy Stat` strategy is to avoid `stat` too many times. It's used to fetch data from the remote when required and no matter `stat` success or not, it will be executed exactly once.
+`Lazy Stat` strategy is to avoid `stat` too many times. `Lazy Stat` strategy is to avoid `stat` too many times. It's used to fetch data from the remote when required and no matter `stat` success or not, it will be executed exactly once.
 
-Refer to sync.Once, variable `done` is introduced to mark the execution state of `stat`. `sync.Mutex` and `sync.atomic` are used to ensure read `done` in a thread-safe way.
+Refer to sync.Once, variable `done` is introduced to mark the execution state of `stat`. Refer to sync.Once, variable `done` is introduced to mark the execution state of `stat`. `sync.Mutex` and `sync.atomic` are used to ensure read `done` in a thread-safe way.
 
-To get a certain object metadata from an `Object` instance, `stat` belongs to `Object` will be called first. `stat` calls the function `Stat` belongs to the `client` in `Object` if the `stat` is being called for the first time for this instance of `Object`. In other words, given var `object Object`, if `object.stat()` is called multiple times, only the first call will invoke `object.client.Stat()`.
+To get a certain object metadata from an `Object` instance, `stat` belongs to `Object` will be called first. `stat` calls the function `Stat` belongs to the `client` in `Object` if the `stat` is being called for the first time for this instance of `Object`. In other words, given var `object Object`, if `object.stat()` is called multiple times, only the first call will invoke `object.client.Stat()`. `stat` calls the function `Stat` belongs to the `client` in `Object` if the `stat` is being called for the first time for this instance of `Object`. In other words, given var `object Object`, if `object.stat()` is called multiple times, only the first call will invoke `object.client.Stat()`.
 
 ## Instructions
 
-We should set `done` to `true` if all the metadata is known or there's no more knowable metadata when calling `types.NewObject(s, done)`. Otherwise, `done` should be set `false`, so that `stat` will be called while get a certain object metadata.
+We should set `done` to `true` if all the metadata is known or there's no more knowable metadata when calling `types.NewObject(s, done)`. Otherwise, `done` should be set `false`, so that `stat` will be called while get a certain object metadata. Otherwise, `done` should be set `false`, so that `stat` will be called while get a certain object metadata.
 
 **示例**
 

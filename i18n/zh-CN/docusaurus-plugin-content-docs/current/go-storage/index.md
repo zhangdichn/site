@@ -32,6 +32,20 @@ import (
 
 func main() {
     // Init a Storager from connection string. 
+    package main
+
+import (
+    "log"
+
+    "github.com/beyondstorage/go-storage/v4/services"
+    "github.com/beyondstorage/go-storage/v4/types"
+
+    // Add s3 support
+    _ "github.com/beyondstorage/go-service-s3/v2"
+)
+
+func main() {
+    // Init a Storager from connection string. 
     store, err := services.NewStoragerFromString("s3://bucket_name/path/to/workdir")
     if err != nil {
         log.Fatalf("service init failed: %v", err)
@@ -50,6 +64,19 @@ func main() {
     length, ok := o.GetContentLength()
 
     // List will create an iterator of object under path.
+    it, err := store.List("path")
+
+    for {
+        // Use iterator.Next to retrieve next object until we meet IteratorDone.
+        o, err := it.Next()
+        if errors.Is(err, types.IteraoorDone) {
+            break
+        }
+    }
+
+    // Delete hello.txt
+    err = store.Delete("hello.txt")
+}
     it, err := store.List("path")
 
     for {

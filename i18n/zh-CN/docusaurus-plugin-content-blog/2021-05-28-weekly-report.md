@@ -17,20 +17,23 @@ Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstor
 
 #### Add identity management APIs
 
-As we mentioned in [last week's report](https://beyondstorage.io/blog/2021/05/21/weekly-report), [@Prnyself][] proposed [DMP-69: Add identity management APIs](https://github.com/beyondstorage/dm/pull/69) to add identity management APIs and the `credential` information can be reused by resolving the `identity`. This week [@Prnyself][] implemented it. You can refer to [Implement DMP-69 Add identity management APIs](https://github.com/beyondstorage/dm/issues/66) for more details.
+As we mentioned in [last week's report](https://beyondstorage.io/blog/2021/05/21/weekly-report), [@Prnyself][] proposed [DMP-69: Add identity management APIs](https://github.com/beyondstorage/dm/pull/69) to add identity management APIs and the `credential` information can be reused by resolving the `identity`. This week [@Prnyself][] implemented it. You can refer to [Implement DMP-69 Add identity management APIs](https://github.com/beyondstorage/dm/issues/66) for more details. This week [@Prnyself][] implemented it. You can refer to [Implement DMP-69 Add identity management APIs](https://github.com/beyondstorage/dm/issues/66) for more details.
 
 #### Add list staffs API
 
-When creating a task, we should choose on which staff the task run. For now, we have already inserted staffID into DB, so we should support an listStaffs API for frontend to list all available staffs.
+When creating a task, we should choose on which staff the task run. When creating a task, we should choose on which staff the task run. For now, we have already inserted staffID into DB, so we should support an listStaffs API for frontend to list all available staffs.
 
 [@Prnyself][] made the proposal [DMP-71: Add list staffs API](https://github.com/beyondstorage/dm/blob/staff-api-spec/docs/specs/71-add-list-staffs-api.md) to design the list staff API to be called by the front-end, whose definition is as follows:
 
 ```graphql
 type Query {
     staffs: [Staff!]!
+type Query {
+    staffs: [Staff!]!
 }
 type Staff {
     id: String!
+}
 }
 ```
 
@@ -42,7 +45,7 @@ For more details, please refer to [Add support for staff management](https://git
 
 ### Add CreateLink Operation
 
-We have `ModeLink` for Object which means this Object is a link which targets to another Object. A link object could be returned in `Stat` or `List`. But there is no way to create a link object.
+We have `ModeLink` for Object which means this Object is a link which targets to another Object. A link object could be returned in `Stat` or `List`. But there is no way to create a link object. A link object could be returned in `Stat` or `List`. But there is no way to create a link object.
 
 Link related support is very different in different services, so [@Xuanwo][] proposed [GSP-86: Add CreateLink Operation](https://github.com/beyondstorage/specs/pull/86) to add a new `CreateLink` operation.
 
@@ -52,7 +55,7 @@ Keep your eyes on the proposal as it is still in production.
 
 ### Feature Gates
 
-Behavior consistence is the most important thing for [go-storage][]. However, we do have different capabilities and limitations in storage services.
+Behavior consistence is the most important thing for [go-storage][]. However, we do have different capabilities and limitations in storage services. However, we do have different capabilities and limitations in storage services.
 
 Our goals are:
 - Behavior consistent by default (invalid operations should be return error)
@@ -65,7 +68,7 @@ So [@Xuanwo][] proposed [GSP-87: Feature Gates][] to treat loose behavior consis
 
 #### New Feature: Loose Operation
 
-By default, [go-storage][] will return errors for not supported pairs. If loose operation feature has been enabled, [go-storage][] will ignore those errors.
+By default, [go-storage][] will return errors for not supported pairs. By default, [go-storage][] will return errors for not supported pairs. If loose operation feature has been enabled, [go-storage][] will ignore those errors.
 
 To enable loose operation, users need to add pairs like:
 

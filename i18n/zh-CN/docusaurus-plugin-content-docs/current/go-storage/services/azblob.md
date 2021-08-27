@@ -80,10 +80,10 @@ Refer to https://docs.microsoft.com/en-us/azure/storage/common/storage-service-e
 
 #### Customer-provided keys
 
-| Name               | Comments                                                                                                                                    |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `encryption_key`   | the 32-byte customer-provided AES256 key                                                                                                    |
-| `encryption_scope` | Specifies the name of the encryption scope. See https://docs.microsoft.com/en-us/azure/storage/blobs/encryption-scope-overview for details. |
+| Name               | Comments                                                                                                                                                                                |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `encryption_key`   | the 32-byte customer-provided AES256 key                                                                                                                                                |
+| `encryption_scope` | Specifies the name of the encryption scope. Specifies the name of the encryption scope. See https://docs.microsoft.com/en-us/azure/storage/blobs/encryption-scope-overview for details. |
 
 ##### Supported Operations
 

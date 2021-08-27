@@ -14,7 +14,7 @@ As `make build` succeed, your project has been set up, please read following doc
 
 ## Specs
 
-`service.toml` is core of our services: `go-storage` provides a code generator  `definitions` to generate code that based on `service.toml`. We will use this config file to declare our service name, ability and limitations.
+`service.toml` is core of our services: `go-storage` provides a code generator  `definitions` to generate code that based on `service.toml`. We will use this config file to declare our service name, ability and limitations. We will use this config file to declare our service name, ability and limitations.
 
 The simplest config looks like following:
 
@@ -48,7 +48,7 @@ We can add endpoint support in `new` operations:
 required = ["endpoint"]
 ```
 
-If our service has a default endpoint, we can set `endpoint` as an optional value. In this way, our service need to set default when user don't pass endpoint.
+If our service has a default endpoint, we can set `endpoint` as an optional value. In this way, our service need to set default when user don't pass endpoint. In this way, our service need to set default when user don't pass endpoint.
 
 ```toml
 [namespace.service.new]
@@ -82,7 +82,7 @@ required = ["credential"]
 
 ### iowrap
 
-[go-storage][] provides an [iowrap](https://pkg.go.dev/github.com/beyondstorage/go-storage/v4/pkg/iowrap) package. We can use the `CallbackifyReader`, `LimitedReadCloser` and so on directly instead of implementing by ourselves.
+[go-storage][] provides an [iowrap](https://pkg.go.dev/github.com/beyondstorage/go-storage/v4/pkg/iowrap) package. We can use the `CallbackifyReader`, `LimitedReadCloser` and so on directly instead of implementing by ourselves. We can use the `CallbackifyReader`, `LimitedReadCloser` and so on directly instead of implementing by ourselves.
 
 ### content md5
 

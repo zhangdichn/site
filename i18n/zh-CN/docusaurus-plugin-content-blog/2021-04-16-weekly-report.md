@@ -15,7 +15,7 @@ This is the weekly report for [BeyondStorage](https://beyondstorage.io), range f
 
 ### dm
 
-This week we started design review. https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B.
+This week we started design review. https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B. https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B.
 
 And we pre-released: [v0.2.0](https://github.com/beyondstorage/dm/releases/tag/v0.2.0).
 
@@ -32,7 +32,7 @@ This week we fixed code generation by [Increase stablility of generated code (#5
 
 And add UnimplementedStub to have forward compatible implementations [#524](https://github.com/beyondstorage/go-storage/pull/524), in which we introduced a breaking change by `UnimplementedStub`.
 
-So we will make sure all service implement it after we release go-storage v3.5.0 in next weeks. [Roadmap](https://github.com/beyondstorage/go-storage/issues/527)
+So we will make sure all service implement it after we release go-storage v3.5.0 in next weeks. [Roadmap](https://github.com/beyondstorage/go-storage/issues/527) [Roadmap](https://github.com/beyondstorage/go-storage/issues/527)
 
 ### Create API Support
 

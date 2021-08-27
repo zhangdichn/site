@@ -2,4 +2,4 @@
 
 ## Behavior
 
-- `list_multipart` will return an `Iterator`. Then you can retrieve all the uploaded parts by calling `Next` continuously until get the `IterateDone`.
+- `list_multipart` will return an `Iterator`. `list_multipart` will return an `Iterator`. Then you can retrieve all the uploaded parts by calling `Next` continuously until get the `IterateDone`.

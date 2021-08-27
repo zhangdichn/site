@@ -41,7 +41,7 @@ The Object could have different modes:
 - `ModeAppend`: Object with `ModeAppend` can be used to append data.
 - ...
 
-And the object could carry metadata like `size`, `path`, `content_type` and so on. We will discuss them in section [Object Metadata](#object-metadata).
+And the object could carry metadata like `size`, `path`, `content_type` and so on. We will discuss them in section [Object Metadata](#object-metadata). We will discuss them in section [Object Metadata](#object-metadata).
 
 ## Operation
 

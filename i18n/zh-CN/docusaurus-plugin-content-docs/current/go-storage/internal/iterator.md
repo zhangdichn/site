@@ -4,7 +4,7 @@ title: Iterator
 
 ## 介绍
 
-`Iterator` is an important part of go-storage APIs. All `List`-alike operations will return a storage-typed `Iterator`. In this document, we will describe exactly how it is implemented and how to use it.
+`Iterator` is an important part of go-storage APIs. `Iterator` is an important part of go-storage APIs. All `List`-alike operations will return a storage-typed `Iterator`. In this document, we will describe exactly how it is implemented and how to use it. In this document, we will describe exactly how it is implemented and how to use it.
 
 > We will use `Storager.List` and `ObjectIterator` for example, other iterator should be similar.
 
@@ -39,9 +39,10 @@ for {
     }
     // handle object.
 }
+}
 ```
 
-`ContinuationToken()` will return a token that reflects the current internal state of the iterator. We can use this token to create the same iterator so that we can resume an iteration.
+`ContinuationToken()` will return a token that reflects the current internal state of the iterator. We can use this token to create the same iterator so that we can resume an iteration. We can use this token to create the same iterator so that we can resume an iteration.
 
 - The token defined by services and SHOULD be fetched from the iterator
 - The token is meaningless outside list operations.
@@ -49,6 +50,10 @@ for {
 So the most common case will be:
 
 ```go
+// Fetch token from the iterator and save to file or other places.
+token := it.ContinuationToken()
+
+// Use this token to construct new iterator.
 // Fetch token from the iterator and save to file or other places.
 token := it.ContinuationToken()
 
@@ -61,11 +66,11 @@ if err != nil {
 
 ## Internal Implementation
 
-All iterators are generated via our code generator under `internal/cmd/iterator`. In this section, we care more about the internal logic of iterator and ignore the code generate.
+All iterators are generated via our code generator under `internal/cmd/iterator`. In this section, we care more about the internal logic of iterator and ignore the code generate. In this section, we care more about the internal logic of iterator and ignore the code generate.
 
 `ObjectIterator` will hold the following things:
 
-- an `ObjectPage` which carries the current object page. Every page includes the current status and a slice of objects to be consumed.
+- an `ObjectPage` which carries the current object page. an `ObjectPage` which carries the current object page. Every page includes the current status and a slice of objects to be consumed.
 - a `NextObjectFunc` which used to fetch next object page.
 - Other flags to mark the internal status.
 
@@ -98,6 +103,8 @@ So the logic is simple:
 ```go
 func (it *ObjectIterator) Next() (object *Object, err error) {
    // Consume Data via index.
+   func (it *ObjectIterator) Next() (object *Object, err error) {
+   // Consume Data via index.
    if it.index < len(it.o.Data) {
       it.index++
       return it.o.Data[it.index-1], nil
@@ -126,11 +133,34 @@ func (it *ObjectIterator) Next() (object *Object, err error) {
    it.index = 1
    return it.o.Data[0], nil
 }
+   if it.done {
+      return nil, IterateDone
+   }
+
+   // Reset buf before call next.
+   it.o.Data = it.o.Data[:0]
+
+   err = it.next(it.ctx, &it.o)
+   if err != nil && !errors.Is(err, IterateDone) {
+      return nil, fmt.Errorf("iterator next failed: %w", err)
+   }
+   // Make iterator to done so that we will not fetch from upstream anymore.
+   if err != nil {
+      it.done = true
+   }
+   // Return IterateDone directly if we don't have any data.
+   if len(it.o.Data) == 0 {
+      return nil, IterateDone
+   }
+   // Return the first object.
+   it.index = 1
+   return it.o.Data[0], nil
+}
 ```
 
 ## How to implement NextObjectFunc?
 
-Implement `NextObjectFunc` is the most complex thing in implement `Storager.List`. We will provide an example and explain why we should do this.
+Implement `NextObjectFunc` is the most complex thing in implement `Storager.List`. We will provide an example and explain why we should do this. We will provide an example and explain why we should do this.
 
 ```go
 type objectPageStatus struct {
@@ -162,6 +192,25 @@ func (s *Storage) nextObjectPageByDir(ctx context.Context, page *ObjectPage) err
    input := page.Status.(*objectPageStatus)
 
    // construct API input via objectPageStatus.
+   ...
+
+   // Send API call only once.
+   output, err := s.service.ListObjectsV2WithContext(ctx, listInput)
+   if err != nil {
+      return err
+   }
+
+   // Handle and parse output to object
+   ...
+
+   // Return IterateDone when this is no more data.
+   if !aws.BoolValue(output.IsTruncated) {
+      return IterateDone
+   }
+
+   input.continuationToken = *output.NextContinuationToken
+   return nil
+}
    ...
 
    // Send API call only once.

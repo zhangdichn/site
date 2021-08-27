@@ -9,7 +9,7 @@ tags:
 
 Hello everyone, here is the weekly report for [BeyondStorage](https://beyondstorage.io), range from 2021-05-06 to 2021-05-08.
 
-Due to the [International Workers' Day](https://en.wikipedia.org/wiki/International_Workers%27_Day), we only have three workdays this week. However, we still made lots of effort and managed to get some results.
+Due to the [International Workers' Day](https://en.wikipedia.org/wiki/International_Workers%27_Day), we only have three workdays this week. However, we still made lots of effort and managed to get some results. However, we still made lots of effort and managed to get some results.
 
 <!--truncate-->
 
@@ -19,7 +19,7 @@ Due to the [International Workers' Day](https://en.wikipedia.org/wiki/Internatio
 
 `Appender` 被用于将内容附加到文件尾部。
 
-This week, [@JinnyYi][] finished implement appender support in [Implement Appender Support](https://github.com/beyondstorage/go-storage/issues/529). Great work!
+This week, [@JinnyYi][] finished implement appender support in [Implement Appender Support](https://github.com/beyondstorage/go-storage/issues/529). Great work! Great work!
 
 ### Idempotent Storager Delete Operation
 
@@ -31,7 +31,7 @@ For more details, please refer to [Implement GSP-46: Idempotent Storager Delete 
 
 ### Additional Error Specification
 
-In this week, [@xxchan][] has finished his first proposal: [GSP-47: Additional Error Specification](https://github.com/beyondstorage/specs/blob/master/rfcs/47-additional-error-specification.md) in our team! Congratulations!
+In this week, [@xxchan][] has finished his first proposal: [GSP-47: Additional Error Specification](https://github.com/beyondstorage/specs/blob/master/rfcs/47-additional-error-specification.md) in our team! Congratulations! Congratulations!
 
 After a study of our existing implementations in different services, [@xxchan][] did a great job for this proposal, which is designed to offer users unified experience when handle errors with [go-storage][].
 
@@ -59,7 +59,7 @@ Applications need the ability to create a directory, and for now we did not offe
 
 So [@Xuanwo][] made a proposal: [GSP-49: Add CreateDir Operation](https://github.com/beyondstorage/specs/blob/master/rfcs/49-add-create-dir-operation.md) to allow user create a directory in the same way.
 
-The [`Direr` interface](https://github.com/beyondstorage/go-storage/blob/master/types/operation.generated.go#L166) has been added in [go-storage][], and more implementations in different services is now **help wanted**. You are welcome to make your own PR for this.
+The [`Direr` interface](https://github.com/beyondstorage/go-storage/blob/master/types/operation.generated.go#L166) has been added in [go-storage][], and more implementations in different services is now **help wanted**. You are welcome to make your own PR for this. You are welcome to make your own PR for this.
 
 For more details, please refer to [Implement GSP-49 Add CreateDir Operation](https://github.com/beyondstorage/go-storage/issues/560).
 
@@ -67,7 +67,7 @@ For more details, please refer to [Implement GSP-49 Add CreateDir Operation](htt
 
 ### 开源软件供应链点亮计划 - 暑期2021
 
-So far, over 30 students have shown their interest in our projects. You are welcome to keep an eye on our forum: <https://forum.beyondstorage.io/>, where all event-related announcements will be posted.
+So far, over 30 students have shown their interest in our projects. So far, over 30 students have shown their interest in our projects. You are welcome to keep an eye on our forum: <https://forum.beyondstorage.io/>, where all event-related announcements will be posted.
 
 For more details, please refer to <https://beyondstorage.io/community/events/ospp-summer-2021>.
 

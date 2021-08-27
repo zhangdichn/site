@@ -27,10 +27,10 @@ The format of the connection string is (optional parts marked by squared bracket
 
 `<type>://[<name>][<work_dir>][?key1=value1&...&keyN=valueN]`
 
-- name: storage name, e.g., bucket name. MUST NOT contain /
-- work_dir: For object storage, it is prefix; for fs, it is directory path. MUST start with / for every storage services.
+- name: storage name, e.g., bucket name. MUST NOT contain / MUST NOT contain /
+- work_dir: For object storage, it is prefix; for fs, it is directory path. MUST start with / for every storage services. MUST start with / for every storage services.
 - For the `key=value` pairs:
-  - If `=value` is missing, we just ignore the pair. But `key=` means a pair with a blank value.
+  - If `=value` is missing, we just ignore the pair. But `key=` means a pair with a blank value. But `key=` means a pair with a blank value.
   - The `key` is the pair name defined in `toml` and the format SHOULD be exactly the same.
 - If their are multiple pairs with the same key, the first one will be picked.
 

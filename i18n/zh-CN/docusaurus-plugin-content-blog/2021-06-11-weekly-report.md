@@ -49,9 +49,9 @@ const (
 )
 ```
 
-But it's not enough, we need `ObjectMode` pair too. For example, the `Create` operation needs `ObjectMode` to create a new object. And `ObjectMode` COULD be used as input restriction for operations.
+But it's not enough, we need `ObjectMode` pair too. For example, the `Create` operation needs `ObjectMode` to create a new object. And `ObjectMode` COULD be used as input restriction for operations. For example, the `Create` operation needs `ObjectMode` to create a new object. And `ObjectMode` COULD be used as input restriction for operations.
 
-For example: In services like s3 which doesn't have native `CreateDir` support, we usually simulated it via creating an object that ends with `/`. But the behavior doesn't work in `Stat` and `Delete`.
+For example: In services like s3 which doesn't have native `CreateDir` support, we usually simulated it via creating an object that ends with `/`. But the behavior doesn't work in `Stat` and `Delete`. But the behavior doesn't work in `Stat` and `Delete`.
 
   - If user call `Stat("test")` after `CreateDir("test")`, he will get `ObjectNotExist` error.
   - If user call `Delete("test")` after `CreateDir("test")`, no object will be removed and `test/` will be kept in service.
@@ -67,7 +67,7 @@ For `Stat` and `Delete`
   - Service SHOULD use the `ObjectMode` pair as a hint.
   - Service could have different implementations for different `ObjectMode`.
 
-Take `s3` as an example, we simulate `CreateDir` via creating object ends with `/`. `CreateDir("test")` will create an object `test/` in s3. And we can
+Take `s3` as an example, we simulate `CreateDir` via creating object ends with `/`. Take `s3` as an example, we simulate `CreateDir` via creating object ends with `/`. `CreateDir("test")` will create an object `test/` in s3. And we can And we can
 
   - stat this object via `Stat("test", pairs.WithObjectMode(types.ObjectModeDir))`
   - delete this object via `Delete("test", pairs.WithObjectMode(types.ObjectModeDir))`
@@ -83,7 +83,7 @@ We use `Write` to handle single write operation, and the size is not unlimited.
   - S3 alike storage services have 5GB limit for a single PUT operation.
   - azblob limited to 5000 MiB(<https://docs.microsoft.com/en-us/rest/api/storageservices/put-blob>).
 
-If we upload a file with size out of limit in a single operation, we will get an error like `Request Entity Too Large` in azblob. Same with `copy`,`fetch`, etc.
+If we upload a file with size out of limit in a single operation, we will get an error like `Request Entity Too Large` in azblob. Same with `copy`,`fetch`, etc. Same with `copy`,`fetch`, etc.
 
 We should figure out the error before sending request to reduce the consumption of network resources.
 
@@ -95,11 +95,11 @@ This proposal is still a draft, and any comments are welcome.
 
 ### 开源软件供应链点亮计划 - 暑期2021
 
-This week, we got more new hands join in, and the discussion group is getting more and more active. You are welcome to keep an eye on our forum: <https://forum.beyondstorage.io/>, where all event-related announcements will be posted.
+This week, we got more new hands join in, and the discussion group is getting more and more active. This week, we got more new hands join in, and the discussion group is getting more and more active. You are welcome to keep an eye on our forum: <https://forum.beyondstorage.io/>, where all event-related announcements will be posted.
 
-For convenience, [@xxchan][] added [Q&A](https://beyondstorage.io/community/events/ospp-summer-2021#qa) at community's website. You can also add more questions at [OSPP 2021 Q&A collection](https://forum.beyondstorage.io/t/ospp-2021-q-a-collection/86).
+For convenience, [@xxchan][] added [Q&A](https://beyondstorage.io/community/events/ospp-summer-2021#qa) at community's website. You can also add more questions at [OSPP 2021 Q&A collection](https://forum.beyondstorage.io/t/ospp-2021-q-a-collection/86). You can also add more questions at [OSPP 2021 Q&A collection](https://forum.beyondstorage.io/t/ospp-2021-q-a-collection/86).
 
-**Notice**: The deadline for registration for the program is 13th June. Please submit your application asap.
+**Notice**: The deadline for registration for the program is 13th June. Please submit your application asap. Please submit your application asap.
 
 For more details, please refer to <https://beyondstorage.io/community/events/ospp-summer-2021>.
 

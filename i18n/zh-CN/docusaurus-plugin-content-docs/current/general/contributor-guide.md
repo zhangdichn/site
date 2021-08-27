@@ -23,14 +23,16 @@ Take [go-storage](https://github.com/beyondstorage/go-storage) as an example:
 
 ```shell
 # Clone the forked repo to local, replace the username with your github login.
+# Clone the forked repo to local, replace the username with your github login.
 git clone git@github.com:<username>/go-storage.git
 # Setup beyondstorage/go-storage as a new remote called upstream.
+git remote add upstream git@github.com:beyondstorage/go-storage.git
 git remote add upstream git@github.com:beyondstorage/go-storage.git
 ```
 
 ### Choose an issue
 
-1. Please choose your target issue. If it is a new issue discovered or a new function enhancement to offer, please create an issue and set the right label for it.
+1. Please choose your target issue. Please choose your target issue. If it is a new issue discovered or a new function enhancement to offer, please create an issue and set the right label for it.
 1. After choosing the relevant issue, please reply with a deadline to indicate that you are working on it.
 1. Depends on your working on projects, please ping different groups to give you feedback about your PR or issue in time.
 

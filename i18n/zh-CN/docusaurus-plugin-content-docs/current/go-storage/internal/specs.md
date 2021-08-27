@@ -32,8 +32,18 @@ type Storager interface {
     ...
 
     // Read will read the file's data.
+    type Storager interface {
+    ...
+
+    // Read will read the file's data.
     Read(path string, w io.Writer, pairs ...Pair) (n int64, err error)
     // ReadWithContext will read the file's data.
+    ReadWithContext(ctx context.Context, path string, w io.Writer, pairs ...Pair) (n int64, err error)
+
+    ...
+
+    mustEmbedUnimplementedStorager()
+}
     ReadWithContext(ctx context.Context, path string, w io.Writer, pairs ...Pair) (n int64, err error)
 
     ...
@@ -139,7 +149,7 @@ type = "string"
 
 ## Service
 
-[definitions][] will use `service.toml` to generate service code. The full example of `service.toml` looks like following:
+[definitions][] will use `service.toml` to generate service code. The full example of `service.toml` looks like following: The full example of `service.toml` looks like following:
 
 ```toml
 name = "s3"

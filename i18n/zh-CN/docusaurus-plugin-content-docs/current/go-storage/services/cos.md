@@ -80,9 +80,9 @@ Refer to https://cloud.tencent.com/document/product/436/18145 for more details.
 
 #### SSE-COS
 
-| Name                     | Comments                                          |
-| ------------------------ | ------------------------------------------------- |
-| `server-side-encryption` | the encryption algorithm. It should be `AES256` . |
+| Name                     | Comments                                                                    |
+| ------------------------ | --------------------------------------------------------------------------- |
+| `server-side-encryption` | the encryption algorithm. the encryption algorithm. It should be `AES256` . |
 
 ##### Supported Operations
 
@@ -91,11 +91,11 @@ Refer to https://cloud.tencent.com/document/product/436/18145 for more details.
 
 #### SSE-KMS
 
-| Name                                    | Comments                                                                                                                                                                                                                  |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `server-side-encryption`                | the server-side encryption algorithm used. It should be `cos/kms` .                                                                                                                                                       |
-| `server-side-encryption-cos-kms-key-id` | specify the ID of the customer managed CMK used to protect the data                                                                                                                                                       |
-| `server-side-encryption-context`        | an optional set of key-value pairs that can contain additional contextual information about the data. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs. |
+| Name                                    | Comments                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `server-side-encryption`                | the server-side encryption algorithm used. the server-side encryption algorithm used. It should be `cos/kms` .                                                                                                                                                                                                                  |
+| `server-side-encryption-cos-kms-key-id` | specify the ID of the customer managed CMK used to protect the data                                                                                                                                                                                                                                                             |
+| `server-side-encryption-context`        | an optional set of key-value pairs that can contain additional contextual information about the data. an optional set of key-value pairs that can contain additional contextual information about the data. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs. |
 
 ##### Supported Operations
 
@@ -106,10 +106,10 @@ Refer to https://cloud.tencent.com/document/product/436/18145 for more details.
 
 Server-Side Encryption with Customer-Provided Keys
 
-| Name                                        | Comments                                                                                |
-| ------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `server-side-encryption-customer-algorithm` | Use this header to specify the encryption algorithm. The header value must be "AES256". |
-| `server-side-encryption-customer-key`       | a 32-byte customer-provided AES256 key                                                  |
+| Name                                        | Comments                                                                                                                                     |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `server-side-encryption-customer-algorithm` | Use this header to specify the encryption algorithm. Use this header to specify the encryption algorithm. The header value must be "AES256". |
+| `server-side-encryption-customer-key`       | a 32-byte customer-provided AES256 key                                                                                                       |
 
 ##### Supported Operations
 

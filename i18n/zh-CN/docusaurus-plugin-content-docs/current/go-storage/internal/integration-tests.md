@@ -12,6 +12,7 @@ We use [go-integration-test][] to execute integration tests on services.
 func TestStorager(t *testing.T, store types.Storager) {
 ...
 }
+}
 ```
 
 For now, go-integration-test implement three test cases:
@@ -119,7 +120,7 @@ Use `make integration_test` to execute integration tests.
 
 ## How to run integration tests via GitHub Actions?
 
-[GitHub Actions](https://github.com/features/actions) is the CI/CD service provided by GitHub. We provide our actions runners to execute all integration tests.
+[GitHub Actions](https://github.com/features/actions) is the CI/CD service provided by GitHub. We provide our actions runners to execute all integration tests. We provide our actions runners to execute all integration tests.
 
 To run integration tests every time a new commit has been pushed, please add `.github/workflows/integration-test.yml` with the following content:
 
