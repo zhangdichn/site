@@ -41,7 +41,7 @@ module.exports = {
             className: 'navbar__item--language',
             dropdownItemsAfter: [
                 {
-                    to: 'https://aos-dev.crowdin.com/site',
+                    to: 'https://crowdin.beyondstorage.io/site',
                     label: 'Help Us Translate',
                 },
             ],
