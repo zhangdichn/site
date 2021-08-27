@@ -1,0 +1,1 @@
+`create_page` is used to create a page object.
