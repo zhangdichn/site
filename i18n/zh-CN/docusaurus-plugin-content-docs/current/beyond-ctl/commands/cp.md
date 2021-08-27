@@ -1,8 +1,8 @@
 # cp
 
-BeyondCTL support copy dirs and files between storage services.
+BeyondCTL 支持在存储服务之间复制文件和文件夹。
 
-> CopyDir support is under development, see our [tracking issue](https://github.com/beyondstorage/beyond-ctl/issues/3) to know more.
+> CopyDir 支持正在开发中，请查看我们的 [跟踪问题](https://github.com/beyondstorage/beyond-ctl/issues/3) 了解更多信息。
 
 ```shell
 NAME:
@@ -23,41 +23,41 @@ OPTIONS:
    --help, -h                   show help (default: false)
 ```
 
-For example:
+例如：
 
 ```shell
 beyondctl cp test.mp4 example:/test.mp4
 ```
 
-## Speed up via Multipart
+## 通过分段上传加速复制
 
-BeyondCTL supports speed up the copy procedure via [Multipart](/docs/go-storage/operations/multiparter/index).
+BeyondCTL 支持通过 [Multipart](/docs/go-storage/operations/multiparter/index) 加快复制过程。
 
-By default, BeyondCTL will switch to `multipart` method while the source file is larger than 1 GiB. We can specify the threshold by `--multipart-threshold`: We can specify the threshold by `--multipart-threshold`:
+By default, BeyondCTL will switch to `multipart` method while the source file is larger than 1 GiB. We can specify the threshold by `--multipart-threshold`: 我们可以通过 `--multipart-directly` 指定阈值：
 
-For example, we can reduce the threshold to `100MiB` to enforce beyondctl use multipart method once file is larger than `100MiB`.
+例如， 我们可以将阈值降低为 `100MB`  以强制 beyondctl 为大于 `100MB` 的文件使用分段上传。
 
 ```shell
 beyondctl cp --multipart-threshold=100MiB test.mp4 example:/test.mp4
 ```
 
-## Speed limit
+## 速度限制
 
-Sometimes, we don't want beyondctl use too many resources. Sometimes, we don't want beyondctl use too many resources. We can limit the read or write speed via `--read-speed-limit` or `--write-speed-limit`.
+有时，我们不想要 beyondctl 使用太多资源。 我们可以通过 `--read-speedlimit` 或 `--rardspeedlimit` 来限制读取或写入速度。
 
-For example, we can limit the global read speed to 1 MiB.
+例如，我们可以将全局读取速度限制为 1 MiB。
 
 ```shell
 beyondctl cp --read-speed-limit=1MiB test.mp4 example:/test.mp4
 ```
 
-## Control concurrency via Workers
+## 限制并发数量
 
-BeyondCTL support concurrency copy be default. We can control the concurrent workers by `--workers`. We can control the concurrent workers by `--workers`.
+BeyondCTL 默认采取并发的方式复制文件。 我们可以通过 `--workers` 控制并行数量。
 
-By default, we will have `4` workers.
+默认情况下，我们将有 `4` 工作者。
 
-We can increase the workers number to `10` via:
+我们可以将工人人数增加到 `10`：
 
 ```shell
 beyondctl cp --workers=10 test.mp4 example:/test.mp4
