@@ -28,6 +28,7 @@ module.exports = {
             items: [
                 {label: 'General', to: '/docs/general/index'},
                 {label: 'go-storage', to: '/docs/go-storage/index'},
+                {label: 'BeyondCTL', to: '/docs/beyond-ctl/index'},
                 {label: 'BeyondTP', to: '/docs/beyond-tp/index'},
                 {label: 'BeyondFS', to: '/docs/beyond-fs/index'},
                 {label: 'BeyondFTP', to: '/docs/beyond-ftp/index'},

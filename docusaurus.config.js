@@ -37,6 +37,10 @@ module.exports = {
                 url: "/docs/beyond-tp/index"
             },
             {
+                name: "BeyondCTL",
+                url: "/docs/beyond-ctl/index"
+            },
+            {
                 name: "BeyondFS",
                 url: "/docs/beyond-fs/index"
             },
@@ -154,6 +158,18 @@ module.exports = {
                 sidebarPath: require.resolve('./docs/beyond-ftp/sidebars.js'),
                 path: 'docs/beyond-ftp',
                 routeBasePath: 'docs/beyond-ftp',
+                editUrl: 'https://github.com/beyondstorage/site/edit/master/',
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'beyond-ctl',
+                sidebarPath: require.resolve('./docs/beyond-ctl/sidebars.js'),
+                path: 'docs/beyond-ctl',
+                routeBasePath: 'docs/beyond-ctl',
                 editUrl: 'https://github.com/beyondstorage/site/edit/master/',
                 showLastUpdateAuthor: true,
                 showLastUpdateTime: true,

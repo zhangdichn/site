@@ -46,5 +46,9 @@
   "item.label.BeyondFTP": {
     "message": "BeyondFTP",
     "description": "Navbar item with label BeyondFTP"
+  },
+  "item.label.BeyondCTL": {
+    "message": "BeyondCTL",
+    "description": "Navbar item with label BeyondCTL"
   }
 }
