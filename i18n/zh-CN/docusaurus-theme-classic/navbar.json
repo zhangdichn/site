@@ -16,7 +16,7 @@
     "description": "Navbar item with label Projects"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
+    "message": "文档",
     "description": "Navbar item with label Documentation"
   },
   "item.label.go-storage": {
@@ -24,11 +24,11 @@
     "description": "Navbar item with label go-storage"
   },
   "item.label.Activity": {
-    "message": "Activity",
+    "message": "动态",
     "description": "Navbar item with label Activity"
   },
   "item.label.Forum": {
-    "message": "Forum",
+    "message": "论坛",
     "description": "Navbar item with label Forum"
   },
   "item.label.BeyondTP": {
@@ -46,5 +46,9 @@
   "item.label.BeyondFTP": {
     "message": "BeyondFTP",
     "description": "Navbar item with label BeyondFTP"
+  },
+  "item.label.BeyondCTL": {
+    "message": "BeyondCTL",
+    "description": "Navbar item with label BeyondCTL"
   }
 }

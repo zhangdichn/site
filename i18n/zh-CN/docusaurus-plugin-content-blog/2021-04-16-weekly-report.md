@@ -11,11 +11,11 @@ This is the weekly report for [BeyondStorage](https://beyondstorage.io), range f
 
 <!--truncate-->
 
-## Application
+## 应用
 
 ### dm
 
-This week we started design review. https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B.
+This week we started design review. https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B. https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B.
 
 And we pre-released: [v0.2.0](https://github.com/beyondstorage/dm/releases/tag/v0.2.0).
 
@@ -24,7 +24,7 @@ In this pre-release we:
 - add create task dialog in ui [#40](https://github.com/beyondstorage/dm/pull/40)
 - refactor into grpc services [#51](https://github.com/beyondstorage/dm/pull/51)
 
-## Library
+## 库
 
 ### go-storage
 
@@ -32,7 +32,7 @@ This week we fixed code generation by [Increase stablility of generated code (#5
 
 And add UnimplementedStub to have forward compatible implementations [#524](https://github.com/beyondstorage/go-storage/pull/524), in which we introduced a breaking change by `UnimplementedStub`.
 
-So we will make sure all service implement it after we release go-storage v3.5.0 in next weeks. [Roadmap](https://github.com/beyondstorage/go-storage/issues/527)
+So we will make sure all service implement it after we release go-storage v3.5.0 in next weeks. [Roadmap](https://github.com/beyondstorage/go-storage/issues/527) [Roadmap](https://github.com/beyondstorage/go-storage/issues/527)
 
 ### Create API Support
 
@@ -56,7 +56,7 @@ In this release we:
 - implement `Create` API [go-service-s3#56](https://github.com/beyondstorage/go-service-s3/pull/56)
 - implement default pair support for service [#16](https://github.com/beyondstorage/go-service-s3/pull/16)
 
-## Community
+## 社区
 
 ### Working with pingcap/dumpling
 
@@ -68,7 +68,7 @@ To meet the needs of dumpling's community, we will be focusing on the following:
 
 - [More Multipart support for services](https://github.com/beyondstorage/go-storage/issues/522)
     - For now, only [go-service-qingstor](https://github.com/beyondstorage/go-service-qingstor) and [go-service-s3](https://github.com/beyondstorage/go-service-s3) implement [Multiparter](https://beyondstorage.io/docs/go-storage/operations/multiparter/index)
-- [Server Side Encryption Support](https://github.com/beyondstorage/go-storage/issues/523)
+- [服务器端加密支持](https://github.com/beyondstorage/go-storage/issues/523)
     - [Dumpling](https://github.com/pingcap/dumpling) use s3/gce SSE to encrypt backup data
 - More test coverage: Our integration tests have to increase coverage, including the [multipart upload logic](https://github.com/beyondstorage/go-integration-test/issues/11) which are mainly using.
 - Performance: It is expected that the performance degradation is not more than 10% after the migration is complete, and we must ensure that our abstraction overhead is in a reasonable limit.

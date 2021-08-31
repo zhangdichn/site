@@ -1,0 +1,1 @@
+`list_block` is used to list all block under current object.

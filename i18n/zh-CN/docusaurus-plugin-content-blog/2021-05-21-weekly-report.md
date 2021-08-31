@@ -15,7 +15,7 @@ Hello everyone, here is the weekly report for [BeyondStorage][], range from 2021
 
 ### dm
 
-In order to make it easier for users to use the service without having to manually enter authentication information (e.g. ak, sk, hmac, etc.) and service endpoint information each time, we have added identity management-related functionality to the [prototype](https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B/Data-Migration-Prototype?node-id=1191%3A5). The identity information needs to be stored persistently and can be reused when adding tasks at the `server`.
+In order to make it easier for users to use the service without having to manually enter authentication information (e.g. ak, sk, hmac, etc.) and service endpoint information each time, we have added identity management-related functionality to the [prototype](https://www.figma.com/file/tZBW1fMDLlcdFpaHJYih9B/Data-Migration-Prototype?node-id=1191%3A5). The identity information needs to be stored persistently and can be reused when adding tasks at the `server`. The identity information needs to be stored persistently and can be reused when adding tasks at the `server`.
 
 So [@Prnyself][] made a proposal [DMP-69: Add identity management APIs](https://github.com/beyondstorage/dm/pull/69), to add identity management APIs, and the `credential` information can be reused by resolving the `identity`.
 
@@ -44,7 +44,7 @@ Metadata(pairs ...Pair) (meta *StorageMeta, err error)
 MetadataWithContext(ctx context.Context, pairs ...Pair) (meta *StorageMeta)
 ```
 
-However, we will not send API/RPC call in this function, a.k.a., this function never returns errors. Our user still need to check them:
+However, we will not send API/RPC call in this function, a.k.a., this function never returns errors. Our user still need to check them: Our user still need to check them:
 
 ```go
 meta, err := s.Metadata()
@@ -59,7 +59,7 @@ For more details, please refer to [Implement GSP-76 Local Function Metadata](htt
 
 ### Multipart upload part number check in go-service-qingstor
 
-As we mentioned in [last week's report](/blog/2021/05/14/weekly-report#multipart-upload-part-number-check-in-go-service-qingstor), [@xiongjiwei][] made his first PR [storage: Check if part number is valid when multipart upload](https://github.com/beyondstorage/go-service-qingstor/pull/48), which is formally merged this week. Thanks for [@xiongjiwei][]'s contribution!
+As we mentioned in [last week's report](/blog/2021/05/14/weekly-report#multipart-upload-part-number-check-in-go-service-qingstor), [@xiongjiwei][] made his first PR [storage: Check if part number is valid when multipart upload](https://github.com/beyondstorage/go-service-qingstor/pull/48), which is formally merged this week. Thanks for [@xiongjiwei][]'s contribution! Thanks for [@xiongjiwei][]'s contribution!
 
 ## 社区
 
@@ -67,10 +67,10 @@ As we mentioned in [last week's report](/blog/2021/05/14/weekly-report#multipart
 
 This week, we added two more projects:
 
-- [Google Drive for go-storage](https://github.com/beyondstorage/go-service-gdrive)
+- [go-storage 的 Google Drive 实现](https://github.com/beyondstorage/go-service-gdrive)
   - Mentor: [@xuanwo][]
   - Issue: <https://github.com/beyondstorage/go-service-gdrive/issues/2>
-- [OneDrive for go-storage](https://github.com/beyondstorage/go-service-onedrive)
+- [go-storage 的 OneDrive 实现](https://github.com/beyondstorage/go-service-onedrive)
   - Mentor: [@xxchan][]
   - Issue: <https://github.com/beyondstorage/go-service-onedrive/issues/2>
 

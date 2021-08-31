@@ -22,11 +22,11 @@ This week, we have the following proposal updates.
 - `s3://bucket_name/prefix?credential=hmac:xxxx:xxxx&endpoint=http://s3.us-east-2.amazonaws.com`
 - `fs:///tmp`
 
-This week we made huge progress and finally approved this GSP. The implementations could be tracked at [Tracking issue for GSP-90: Re-support Initialization Via Connection String](https://github.com/beyondstorage/go-storage/issues/600).
+This week we made huge progress and finally approved this GSP. This week we made huge progress and finally approved this GSP. The implementations could be tracked at [Tracking issue for GSP-90: Re-support Initialization Via Connection String](https://github.com/beyondstorage/go-storage/issues/600).
 
 ### Add Restrictions In Storage Metadata
 
-[GSP-97](https://github.com/beyondstorage/specs/pull/97) intends to add restrictions in storage metadata. In this GSP, [@JinnyYi][] proposes to refactor `StorageMeta` like we do on `Object`:
+[GSP-97](https://github.com/beyondstorage/specs/pull/97) intends to add restrictions in storage metadata. In this GSP, [@JinnyYi][] proposes to refactor `StorageMeta` like we do on `Object`: In this GSP, [@JinnyYi][] proposes to refactor `StorageMeta` like we do on `Object`:
 
 ```go
 type StorageMeta struct {
@@ -52,13 +52,13 @@ type StorageMeta struct {
 
 So users can get the storage's restrictions before really call the API.
 
-This week we approved and merged this GSP. The implementations could be tracked at [Tracking issue for GSP-97: Add Restrictions In Storage Metadata](https://github.com/beyondstorage/go-storage/issues/599).
+This week we approved and merged this GSP. This week we approved and merged this GSP. The implementations could be tracked at [Tracking issue for GSP-97: Add Restrictions In Storage Metadata](https://github.com/beyondstorage/go-storage/issues/599).
 
 ### Add System Metadata In Storage Metadata
 
 [GSP-111](https://github.com/beyondstorage/specs/pull/111) is still under discussion.
 
-We are facing the problem of naming, as discussed in [this review](https://github.com/beyondstorage/specs/pull/111#pullrequestreview-687066390). We start a new issue [Idea: Find a new word to represent Service](https://github.com/beyondstorage/specs/issues/114) to resolve this problem.
+We are facing the problem of naming, as discussed in [this review](https://github.com/beyondstorage/specs/pull/111#pullrequestreview-687066390). We start a new issue [Idea: Find a new word to represent Service](https://github.com/beyondstorage/specs/issues/114) to resolve this problem. We start a new issue [Idea: Find a new word to represent Service](https://github.com/beyondstorage/specs/issues/114) to resolve this problem.
 
 ## New Ideas
 
@@ -76,7 +76,7 @@ We tried to resolve this problem in issue [Feature gates are confusing](https://
 
 ### Update RFC format
 
-[@xxchan][] found current RFC's format is hard to maintain, so he came up a new idea to [update rfc format](https://github.com/beyondstorage/specs/issues/110). We will get this into the proposal process sooner or later.
+[@xxchan][] found current RFC's format is hard to maintain, so he came up a new idea to [update rfc format](https://github.com/beyondstorage/specs/issues/110). We will get this into the proposal process sooner or later. We will get this into the proposal process sooner or later.
 
 ## New Articles
 

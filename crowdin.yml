@@ -1,12 +1,23 @@
+# See docs from https://docusaurus.io/docs/i18n/crowdin
 files:
-  - source: /docs/**/*
-    translation: >-
-      /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
-  - source: /blog/**/*
-    translation: >-
-      /i18n/%locale%/docusaurus-plugin-content-blog/**/%original_file_name%
-  - source: /community/**/*
-    translation: >-
-      /i18n/%locale%/docusaurus-plugin-content-docs-community/current/**/%original_file_name%
+  # JSON translation files
   - source: /i18n/en-US/**/*
     translation: /i18n/%locale%/**/%original_file_name%
+  # Blog Markdown files
+  - source: /blog/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-blog/**/%original_file_name%
+  # Docs Markdown files
+  - source: /community/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs-community/current/**/%original_file_name%
+  - source: /docs/general/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+  - source: /docs/beyond-ctl/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs-beyond-ctl/current/**/%original_file_name%
+  - source: /docs/beyond-fs/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs-beyond-fs/current/**/%original_file_name%
+  - source: /docs/beyond-ftp/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs-beyond-ftp/current/**/%original_file_name%
+  - source: /docs/beyond-tp/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs-beyond-tp/current/**/%original_file_name%
+  - source: /docs/go-storage/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs-go-storage/current/**/%original_file_name%

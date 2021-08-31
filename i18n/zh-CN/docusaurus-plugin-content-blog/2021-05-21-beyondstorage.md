@@ -18,7 +18,7 @@ We plan to build a storage abstraction beyond the existing storage services whic
 
 ## What's Beyond Storage
 
-`Beyond Storage` is a storage abstraction beyond the existing storage services.
+`Beyond Storage` 是一个超越现有存储服务的存储抽象。
 
 For now, we are focus on the following projects:
 

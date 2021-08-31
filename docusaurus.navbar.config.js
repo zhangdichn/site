@@ -28,6 +28,7 @@ module.exports = {
             items: [
                 {label: 'General', to: '/docs/general/index'},
                 {label: 'go-storage', to: '/docs/go-storage/index'},
+                {label: 'BeyondCTL', to: '/docs/beyond-ctl/index'},
                 {label: 'BeyondTP', to: '/docs/beyond-tp/index'},
                 {label: 'BeyondFS', to: '/docs/beyond-fs/index'},
                 {label: 'BeyondFTP', to: '/docs/beyond-ftp/index'},
@@ -40,13 +41,13 @@ module.exports = {
             className: 'navbar__item--language',
             dropdownItemsAfter: [
                 {
-                    to: 'https://aos-dev.crowdin.com/site',
+                    to: 'https://crowdin.beyondstorage.io/site',
                     label: 'Help Us Translate',
                 },
             ],
         },
         {
-            href: 'https://matrix.to/#/#campfire:aos.dev',
+            href: 'https://matrix.to/#/#beyondstorage@campfire:matrix.org',
             position: 'right',
             className: 'navbar__link--matrix',
             'aria-label': 'Matrix',

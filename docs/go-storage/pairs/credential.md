@@ -47,3 +47,10 @@ example: `env`
 
 format: `base64:<base64_content>`
 example: `base64:exmaple_base64_content`
+
+### basic
+
+`basic` has two values: `user` and `password`
+
+format: `basic:<user>:<password>`
+example: `basic:example_user:example_password`

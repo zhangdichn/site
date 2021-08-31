@@ -10,13 +10,13 @@ import TOCInline from '@theme/TOCInline';
 
 ## Communication
 
-- Matrix: <https://matrix.to/#/#event-ospp-summer-2021:aos.dev>
+- Matrix: <https://matrix.to/#/#beyondstorage@event-ospp-summer-2021:matrix.org>
 - Telegram: <https://t.me/aos_event_ospp_summer_2021>
 - Discord: <https://discord.gg/tMEmXxyeUH>
 
 ## Roadmap
 
-- Join any of our chatrooms [#event-ospp-summer-2021](https://matrix.to/#/#event-ospp-summer-2021:aos.dev) to communicate with mentors and other mentees.
+- Join any of our chatrooms [#event-ospp-summer-2021](https://matrix.to/#/#beyondstorage@event-ospp-summer-2021:matrix.org) to communicate with mentors and other mentees.
 - Choose a project from the following.
 - Send your application to [forum](https://forum.beyondstorage.io/) with the [template](https://forum.beyondstorage.io/t/ospp-2021-summer-student-application-template/41)
 
